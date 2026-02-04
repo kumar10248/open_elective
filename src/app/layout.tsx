@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'FCWMC Question Practice App',
+  title: 'Digital Marketing Question Practice App',
   description: 'Practice questions with timed sessions',
 };
 
