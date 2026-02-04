@@ -43,7 +43,7 @@ export default function Home() {
             {/* Glowing heading with animated gradient border */}
             <div className="relative inline-block">
               <h1 className="text-5xl md:text-7xl font-bold mb-8 relative z-10 py-4 tracking-tight">
-                <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">FCWMC</span>{" "}
+                <span className="bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">Digital Marketing</span>{" "}
                 <span className="text-white">Question</span>{" "}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-green-300 to-green-500">Practice</span>
               </h1>
@@ -64,7 +64,7 @@ export default function Home() {
                 </span>
               </Link>
               
-{/* <a href="/FCWMC.pdf" download="FCWMC-computing-notes.pdf"
+{/* <a href="/Digital Marketing.pdf" download="Digital Marketing-computing-notes.pdf"
                 className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-green-500 to-green-600 px-8 py-4 font-bold text-black transition duration-300 ease-out hover:scale-105">
                 <span className="absolute -right-14 -top-14 h-40 w-40 translate-x-full translate-y-full rotate-45 bg-white opacity-10 transition-all duration-700 ease-out group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span className="relative flex items-center">
@@ -98,18 +98,18 @@ export default function Home() {
                 <FaGraduationCap className="text-purple-400 text-3xl" />
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-purple-50">Master Content</h3>
-              <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">Comprehensive question bank designed to help you succeed in your FCWMC exams</p>
+              <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">Comprehensive question bank designed to help you succeed in your Digital Marketing exams</p>
             </div>
           </div>
           
         
           {<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 mb-16">
             <div className="p-6">
-              <div className="text-4xl font-bold text-amber-400 mb-2">1,500+</div>
+              <div className="text-4xl font-bold text-amber-400 mb-2">300+</div>
               <p className="text-gray-400">Practice Questions</p>
             </div>
             <div className="p-6">
-              <div className="text-4xl font-bold text-green-400 mb-2">50+</div>
+              <div className="text-4xl font-bold text-green-400 mb-2">30+</div>
               <p className="text-gray-400">Topic Cover</p>
             </div>
             <div className="p-6">
@@ -129,7 +129,7 @@ export default function Home() {
                 {/* About Section */}
                 <div className="text-center md:text-left">
                   <h3 className="text-2xl font-bold mb-4 bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">
-                    FCWMC Practice
+                    Digital Marketing Practice
                   </h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
                     Your comprehensive platform for mastering Introduction to Digital Marketing. Practice, learn, and excel!
@@ -147,7 +147,7 @@ export default function Home() {
                       </Link>
                     </li>
                     {/* <li>
-                      <a href="/FCWMC.pdf" download className="text-gray-400 hover:text-green-400 transition-colors duration-300 text-sm inline-flex items-center gap-2 group">
+                      <a href="/Digital Marketing.pdf" download className="text-gray-400 hover:text-green-400 transition-colors duration-300 text-sm inline-flex items-center gap-2 group">
                         <FaDownload className="text-xs transform group-hover:translate-y-1 transition-transform" />
                         Download Notes
                       </a>
@@ -201,7 +201,7 @@ export default function Home() {
                   <div className="flex items-center gap-2">
                     <div className="w-2 h-2 bg-amber-400 rounded-full animate-pulse"></div>
                     <p className="text-sm text-gray-400">
-                      © {new Date().getFullYear()} <span className="font-bold bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">FCWMC Practice</span>
+                      © {new Date().getFullYear()} <span className="font-bold bg-gradient-to-r from-amber-400 to-yellow-500 bg-clip-text text-transparent">Digital Marketing Practice</span>
                     </p>
                   </div>
                   

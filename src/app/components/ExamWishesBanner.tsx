@@ -68,7 +68,7 @@ export const ExamWishesBanner: React.FC = () => {
     },
     {
       icon: <FaLightbulb className="text-amber-400 text-xl" />,
-      title: "Key FCWMC Patterns",
+      title: "Key Digital Marketing Patterns",
       description: "Look for familiar concepts from video lectures. Many questions follow patterns from weekly assignments.",
       color: "bg-amber-400/10"
     },
@@ -81,7 +81,7 @@ export const ExamWishesBanner: React.FC = () => {
     {
       icon: <FaStar className="text-yellow-400 text-xl" />,
       title: "Special Tips",
-      description: "Tick that option that is small in length. It is often the correct answer. It is a common pattern in FCWMC Question that I have observed it.",
+      description: "Tick that option that is small in length. It is often the correct answer. It is a common pattern in Digital Marketing Question that I have observed it.",
       color: "bg-yellow-400/10"
     }
   ];
@@ -120,7 +120,7 @@ export const ExamWishesBanner: React.FC = () => {
         <div className="flex items-center justify-center mb-4">
           <FaGraduationCap className="text-amber-400 text-3xl mr-3" />
           <h2 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-amber-400 via-amber-300 to-amber-500">
-            GOOD LUCK ON YOUR FCWMC EXAM TODAY!
+            GOOD LUCK ON YOUR Digital Marketing EXAM TODAY!
           </h2>
           <FaGraduationCap className="text-amber-400 text-3xl ml-3" />
         </div>
@@ -154,14 +154,14 @@ export const ExamWishesBanner: React.FC = () => {
             className="mx-auto flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-amber-600 hover:from-amber-600 hover:to-amber-700 text-black font-medium py-2 px-6 rounded-full transition duration-300 shadow-md"
           >
             <FaLightbulb /> 
-            <span>FCWMC Exam Tips</span>
+            <span>Digital Marketing Exam Tips</span>
             {showTips ? <FaAngleUp /> : <FaAngleDown />}
           </button>
           
           {showTips && (
             <div className="mt-6 bg-gray-800/50 rounded-lg p-4 border border-gray-700 animate-fadeIn">
               <h3 className="text-center text-xl font-semibold text-amber-300 mb-4">
-                Pro Tips for FCWMC Success
+                Pro Tips for Digital Marketing Success
               </h3>
               
               <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
@@ -195,7 +195,7 @@ export const ExamWishesBanner: React.FC = () => {
         
         <div className="mt-6 text-center">
           <p className="text-gray-400 text-sm">
-            From everyone at FCWMC Practice, we believe in you!
+            From everyone at Digital Marketing Practice, we believe in you!
           </p>
         </div>
       </div>
