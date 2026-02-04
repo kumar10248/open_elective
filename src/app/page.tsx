@@ -64,14 +64,14 @@ export default function Home() {
                 </span>
               </Link>
               
-              <a href="/FCWMC.pdf" download="FCWMC-computing-notes.pdf"
+{/* <a href="/FCWMC.pdf" download="FCWMC-computing-notes.pdf"
                 className="group relative inline-flex items-center justify-center overflow-hidden rounded-lg bg-gradient-to-br from-green-500 to-green-600 px-8 py-4 font-bold text-black transition duration-300 ease-out hover:scale-105">
                 <span className="absolute -right-14 -top-14 h-40 w-40 translate-x-full translate-y-full rotate-45 bg-white opacity-10 transition-all duration-700 ease-out group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
                 <span className="relative flex items-center">
                   <FaDownload className="mr-2 group-hover:translate-y-1 transition-transform" />
                   Download Notes
                 </span>
-              </a>
+              </a> */}
             </div>
           </div>
 
