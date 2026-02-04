@@ -255,7 +255,7 @@ export default function PracticeSelectionPage() {
                     UNIT-1
                   </h3>
                   <p className="text-sm font-semibold text-amber-400/80 group-hover:text-amber-300 transition-colors duration-300 leading-relaxed px-2">
-                    Wireless Communications<br/>for Everybody
+                    Introduction to digital <br />marketing
                   </p>
                 </div>
                 
@@ -321,7 +321,7 @@ export default function PracticeSelectionPage() {
                       UNIT-2
                     </h3>
                     <p className="text-sm font-semibold text-blue-400/80 group-hover:text-blue-300 transition-colors duration-300 leading-relaxed px-2">
-                      4G Network<br/>Fundamentals
+                      xyz<br/>abc
                     </p>
                   </div>
                   
@@ -401,7 +401,7 @@ export default function PracticeSelectionPage() {
                       UNIT-3
                     </h3>
                     <p className="text-sm font-semibold text-green-400/80 group-hover:text-green-300 transition-colors duration-300 leading-relaxed px-2">
-                      5G & Beyond<br/>Technology
+                      xyz<br/>xyz
                     </p>
                   </div>
                   

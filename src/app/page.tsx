@@ -132,7 +132,7 @@ export default function Home() {
                     FCWMC Practice
                   </h3>
                   <p className="text-gray-400 text-sm leading-relaxed">
-                    Your comprehensive platform for mastering Foundation Course in Wireless & Mobile Communication. Practice, learn, and excel!
+                    Your comprehensive platform for mastering Introduction to Digital Marketing. Practice, learn, and excel!
                   </p>
                 </div>
 
@@ -146,12 +146,12 @@ export default function Home() {
                         Start Practice
                       </Link>
                     </li>
-                    <li>
+                    {/* <li>
                       <a href="/FCWMC.pdf" download className="text-gray-400 hover:text-green-400 transition-colors duration-300 text-sm inline-flex items-center gap-2 group">
                         <FaDownload className="text-xs transform group-hover:translate-y-1 transition-transform" />
                         Download Notes
                       </a>
-                    </li>
+                    </li> */}
                   
                   </ul>
                 </div>
