@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { FaBook, FaClock, FaGraduationCap, FaInstagram, FaGithub, FaTwitter, FaCode, FaLinkedinIn,  FaArrowRight, FaDownload } from 'react-icons/fa';
+import { FaBook, FaClock, FaGraduationCap, FaInstagram, FaGithub, FaTwitter, FaCode, FaLinkedinIn,  FaArrowRight} from 'react-icons/fa';
 import {ExamWishesBanner} from './components/ExamWishesBanner';
 import {FeedbackForm} from './components/FeedbackForm';
 import {FeedbackViewer} from './components/FeedbackViewer';
