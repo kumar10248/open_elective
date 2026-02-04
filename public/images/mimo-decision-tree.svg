@@ -1,0 +1,78 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Title -->
+  <text x="400" y="40" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold" fill="#333">
+    MIMO Decision Tree Diagram
+  </text>
+  
+  <!-- Decision Tree Structure -->
+  <!-- Root node -->
+  <rect x="300" y="80" width="200" height="60" fill="#6c757d" stroke="#495057" stroke-width="2" rx="10"/>
+  <text x="400" y="105" text-anchor="middle" font-family="Arial" font-size="14" fill="white">Decision Tree</text>
+  <text x="400" y="125" text-anchor="middle" font-family="Arial" font-size="12" fill="white">2x2, 4x2 or 4x4</text>
+  
+  <!-- MU-MIMO node -->
+  <rect x="200" y="180" width="150" height="60" fill="#8e44ad" stroke="#6c2c8f" stroke-width="2" rx="10"/>
+  <text x="275" y="205" text-anchor="middle" font-family="Arial" font-size="14" fill="white">MU-MIMO</text>
+  <text x="275" y="220" text-anchor="middle" font-family="Arial" font-size="10" fill="white">(TM8)</text>
+  
+  <!-- MIMO node -->
+  <rect x="450" y="180" width="150" height="60" fill="#27ae60" stroke="#1e8449" stroke-width="2" rx="10"/>
+  <text x="525" y="205" text-anchor="middle" font-family="Arial" font-size="14" fill="white">MIMO</text>
+  
+  <!-- Left branch indicators -->
+  <rect x="50" y="280" width="120" height="40" fill="#f39c12" stroke="#d68910" stroke-width="2" rx="5"/>
+  <text x="110" y="300" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Single Stream</text>
+  <text x="110" y="312" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Rank 1</text>
+  
+  <rect x="200" y="280" width="120" height="40" fill="#16a085" stroke="#138d75" stroke-width="2" rx="5"/>
+  <text x="260" y="300" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Multi-Stream</text>
+  <text x="260" y="312" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Rank 2-4</text>
+  
+  <!-- Right branch indicators -->
+  <rect x="400" y="280" width="120" height="40" fill="#f39c12" stroke="#d68910" stroke-width="2" rx="5"/>
+  <text x="460" y="300" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Single Stream</text>
+  <text x="460" y="312" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Rank 1</text>
+  
+  <rect x="550" y="280" width="120" height="40" fill="#16a085" stroke="#138d75" stroke-width="2" rx="5"/>
+  <text x="610" y="300" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Multi-Stream</text>
+  <text x="610" y="312" text-anchor="middle" font-family="Arial" font-size="10" fill="white">Rank 2-4</text>
+  
+  <!-- Answer boxes -->
+  <rect x="80" y="380" width="60" height="60" fill="none" stroke="#333" stroke-width="3"/>
+  <text x="110" y="415" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">A</text>
+  
+  <rect x="230" y="380" width="60" height="60" fill="none" stroke="#333" stroke-width="3"/>
+  <text x="260" y="415" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">B</text>
+  
+  <rect x="430" y="380" width="60" height="60" fill="none" stroke="#333" stroke-width="3"/>
+  <text x="460" y="415" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">C</text>
+  
+  <rect x="580" y="380" width="60" height="60" fill="none" stroke="#333" stroke-width="3"/>
+  <text x="610" y="415" text-anchor="middle" font-family="Arial" font-size="24" font-weight="bold">D</text>
+  
+  <!-- Connection lines -->
+  <line x1="370" y1="140" x2="275" y2="180" stroke="#333" stroke-width="2"/>
+  <line x1="430" y1="140" x2="525" y2="180" stroke="#333" stroke-width="2"/>
+  
+  <line x1="250" y1="240" x2="110" y2="280" stroke="#333" stroke-width="2"/>
+  <line x1="275" y1="240" x2="260" y2="280" stroke="#333" stroke-width="2"/>
+  
+  <line x1="500" y1="240" x2="460" y2="280" stroke="#333" stroke-width="2"/>
+  <line x1="525" y1="240" x2="610" y2="280" stroke="#333" stroke-width="2"/>
+  
+  <line x1="110" y1="320" x2="110" y2="380" stroke="#333" stroke-width="2"/>
+  <line x1="260" y1="320" x2="260" y2="380" stroke="#333" stroke-width="2"/>
+  <line x1="460" y1="320" x2="460" y2="380" stroke="#333" stroke-width="2"/>
+  <line x1="610" y1="320" x2="610" y2="380" stroke="#333" stroke-width="2"/>
+  
+  <!-- Labels -->
+  <text x="400" y="500" text-anchor="middle" font-family="Arial" font-size="14" fill="#666">
+    Example MIMO Technology Decision Tree
+  </text>
+  <text x="400" y="520" text-anchor="middle" font-family="Arial" font-size="12" fill="#999">
+    (Replace this placeholder with your actual diagram)
+  </text>
+</svg>
