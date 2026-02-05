@@ -105,7 +105,7 @@ export default function Home() {
         
           {<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 mb-16">
             <div className="p-6">
-              <div className="text-4xl font-bold text-amber-400 mb-2">300+</div>
+              <div className="text-4xl font-bold text-amber-400 mb-2">250+</div>
               <p className="text-gray-400">Practice Questions</p>
             </div>
             <div className="p-6">
