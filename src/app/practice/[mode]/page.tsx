@@ -7,7 +7,7 @@ import { FaArrowLeft, FaArrowRight, FaClock, FaTimes, FaBars, FaCheck,
   FaTrophy, FaExclamationCircle, FaLightbulb, 
   FaChevronRight, FaBrain, FaCheckCircle, FaTimesCircle, FaHistory,
   FaInfoCircle, FaSquare, FaCheckSquare, FaBook, FaKeyboard, FaExpand, 
-  FaCompress, FaPause, FaPlay, FaFire } from 'react-icons/fa';
+  FaCompress, FaPause, FaPlay, FaFire, FaLanguage } from 'react-icons/fa';
 import { getAllQuestions, getAllPassageQuestions, getDemoExamQuestions, debugQuestionsData } from '../../lib/questions';
 import { Question, PracticeMode, OptionItem, PassageQuestion, DemoExamData, QuestionDetail, DetailedResults } from '../../types';
 import { formatTime, calculateSessionTime, validateImagePath, getImageDisplayName } from '@/app/lib/utils';
@@ -50,6 +50,17 @@ export default function QuestionPracticePage() {
   const [showKeyboardShortcuts, setShowKeyboardShortcuts] = useState(false);
   const [streak, setStreak] = useState(0);
   const [bestStreak, setBestStreak] = useState(0);
+  
+  // Hindi translation state
+  const [translatedQuestions, setTranslatedQuestions] = useState<{
+    [key: number]: {
+      question: string;
+      options: string[];
+      passage?: string;
+    }
+  }>({});
+  const [showHindi, setShowHindi] = useState<{ [key: number]: boolean }>({});
+  const [isTranslating, setIsTranslating] = useState<{ [key: number]: boolean }>({});
  
   const [isLoading, setIsLoading] = useState(true);
   const [loadingError, setLoadingError] = useState<string | null>(null);
@@ -66,6 +77,78 @@ export default function QuestionPracticePage() {
   
   const getOptionImageSize = (option: string | OptionItem): 'small' | 'medium' | 'large' => {
     return typeof option === 'string' ? 'medium' : (option.imageSize || 'medium');
+  };
+  
+  // Translate question and options to Hindi using Google Translate API
+  const translateToHindi = async (questionIndex: number, question: Question, passageText?: string) => {
+    // If already translated, just toggle visibility
+    if (translatedQuestions[questionIndex]) {
+      setShowHindi(prev => ({
+        ...prev,
+        [questionIndex]: !prev[questionIndex]
+      }));
+      return;
+    }
+    
+    // Start loading
+    setIsTranslating(prev => ({ ...prev, [questionIndex]: true }));
+    
+    try {
+      // Prepare texts to translate
+      const textsToTranslate = [
+        question.question,
+        ...question.options.map(opt => getOptionText(opt))
+      ];
+      
+      // Add passage if available
+      if (passageText) {
+        textsToTranslate.push(passageText);
+      }
+      
+      // Use Google Translate API (free endpoint)
+      const translateText = async (text: string): Promise<string> => {
+        try {
+          const response = await fetch(
+            `https://translate.googleapis.com/translate_a/single?client=gtx&sl=en&tl=hi&dt=t&q=${encodeURIComponent(text)}`
+          );
+          const data = await response.json();
+          // Extract translated text from response
+          let translatedText = '';
+          if (data && data[0]) {
+            for (const part of data[0]) {
+              if (part[0]) {
+                translatedText += part[0];
+              }
+            }
+          }
+          return translatedText || text;
+        } catch (error) {
+          console.error('Translation error:', error);
+          return text;
+        }
+      };
+      
+      // Translate all texts
+      const translatedTexts = await Promise.all(textsToTranslate.map(translateText));
+      
+      // Store translations
+      const optionsCount = question.options.length;
+      setTranslatedQuestions(prev => ({
+        ...prev,
+        [questionIndex]: {
+          question: translatedTexts[0],
+          options: translatedTexts.slice(1, 1 + optionsCount),
+          passage: passageText ? translatedTexts[1 + optionsCount] : undefined
+        }
+      }));
+      
+      // Show Hindi
+      setShowHindi(prev => ({ ...prev, [questionIndex]: true }));
+    } catch (error) {
+      console.error('Translation failed:', error);
+    } finally {
+      setIsTranslating(prev => ({ ...prev, [questionIndex]: false }));
+    }
   };
   
   // Load questions based on the mode
@@ -1427,11 +1510,29 @@ const handleSingleOptionSelect = (optionIndex: number) => {
                   {/* Passage Content */}
                   <div className="bg-gray-900/40 rounded-xl p-6 border border-blue-500/10 shadow-inner">
                     <div className="prose prose-invert prose-lg max-w-none">
-                      <p className="text-gray-200 leading-loose whitespace-pre-wrap text-base">
-                        {(mode === 'passage' || mode.endsWith('_passage')) ? 
-                          (passageQuestions[currentPassageIndex]?.passage || 'Loading passage text...') : 
-                          (getDemoExamCurrentPassage()?.passage || 'Loading passage text...')}
-                      </p>
+                      {/* Hindi Passage Translation */}
+                      {showHindi[globalQuestionIndex] && translatedQuestions[globalQuestionIndex]?.passage ? (
+                        <>
+                          <p className="text-gray-200 leading-loose whitespace-pre-wrap text-base">
+                            {translatedQuestions[globalQuestionIndex].passage}
+                          </p>
+                          {/* Show original English passage below */}
+                          <div className="mt-4 pt-4 border-t border-blue-500/20">
+                            <p className="text-sm text-blue-400/60 mb-2">Original (English):</p>
+                            <p className="text-gray-400 leading-relaxed whitespace-pre-wrap text-sm">
+                              {(mode === 'passage' || mode.endsWith('_passage')) ? 
+                                (passageQuestions[currentPassageIndex]?.passage || 'Loading passage text...') : 
+                                (getDemoExamCurrentPassage()?.passage || 'Loading passage text...')}
+                            </p>
+                          </div>
+                        </>
+                      ) : (
+                        <p className="text-gray-200 leading-loose whitespace-pre-wrap text-base">
+                          {(mode === 'passage' || mode.endsWith('_passage')) ? 
+                            (passageQuestions[currentPassageIndex]?.passage || 'Loading passage text...') : 
+                            (getDemoExamCurrentPassage()?.passage || 'Loading passage text...')}
+                        </p>
+                      )}
                     </div>
                   </div>
                 </div>
@@ -1439,8 +1540,8 @@ const handleSingleOptionSelect = (optionIndex: number) => {
               
               {/* Question Section */}
               <div className="p-8">
-                {/* Question Type Badge */}
-                <div className="flex items-center mb-6">
+                {/* Question Type Badge and Translate Button */}
+                <div className="flex items-center justify-between mb-6 flex-wrap gap-3">
                   <div className={`px-4 py-2 rounded-xl ${
                     currentQuestionIsMultipleChoice 
                       ? 'bg-gradient-to-r from-purple-600/30 to-pink-600/30 border border-purple-500/30' 
@@ -1451,15 +1552,58 @@ const handleSingleOptionSelect = (optionIndex: number) => {
                       {currentQuestionIsMultipleChoice ? 'Select all that apply' : 'Select one answer'}
                     </span>
                   </div>
+                  
+                  {/* Translate to Hindi Button */}
+                  {currentQuestion && (
+                    <button
+                      onClick={() => {
+                        // Get passage text if in passage mode
+                        const passageText = (mode === 'passage' || mode.endsWith('_passage')) 
+                          ? passageQuestions[currentPassageIndex]?.passage 
+                          : (mode === 'demo-exam' ? getDemoExamCurrentPassage()?.passage : undefined);
+                        translateToHindi(globalQuestionIndex, currentQuestion, passageText);
+                      }}
+                      disabled={isTranslating[globalQuestionIndex]}
+                      className={`px-4 py-2 rounded-xl flex items-center gap-2 transition-all duration-300 shadow-lg ${
+                        showHindi[globalQuestionIndex]
+                          ? 'bg-gradient-to-r from-green-600/40 to-emerald-600/40 border border-green-500/50 text-green-200'
+                          : 'bg-gradient-to-r from-blue-600/30 to-indigo-600/30 border border-blue-500/30 text-blue-200 hover:from-blue-600/50 hover:to-indigo-600/50'
+                      }`}
+                      title={showHindi[globalQuestionIndex] ? 'Show English' : 'Translate to Hindi'}
+                    >
+                      {isTranslating[globalQuestionIndex] ? (
+                        <>
+                          <div className="w-4 h-4 border-2 border-blue-300 border-t-transparent rounded-full animate-spin"></div>
+                          <span className="text-sm font-medium">Translating...</span>
+                        </>
+                      ) : (
+                        <>
+                          <FaLanguage className="text-lg" />
+                          <span className="text-sm font-medium">
+                            {showHindi[globalQuestionIndex] ? 'English' : 'हिंदी'}
+                          </span>
+                        </>
+                      )}
+                    </button>
+                  )}
                 </div>
                 
                 {/* Question Text */}
                 <div className="mb-8">
                   <h2 className="text-2xl md:text-3xl font-semibold leading-relaxed">
                     <pre className="bg-clip-text text-transparent bg-gradient-to-r from-amber-200 via-yellow-200 to-amber-300 whitespace-pre-wrap font-sans">
-                      {currentQuestion?.question || "Question not available"}
+                      {showHindi[globalQuestionIndex] && translatedQuestions[globalQuestionIndex]
+                        ? translatedQuestions[globalQuestionIndex].question
+                        : (currentQuestion?.question || "Question not available")}
                     </pre>
                   </h2>
+                  {/* Show original English below Hindi translation */}
+                  {showHindi[globalQuestionIndex] && translatedQuestions[globalQuestionIndex] && (
+                    <div className="mt-4 p-4 bg-gray-800/50 rounded-xl border border-gray-700/30">
+                      <p className="text-sm text-gray-400 mb-1">Original (English):</p>
+                      <p className="text-gray-300 text-base">{currentQuestion?.question}</p>
+                    </div>
+                  )}
                 </div>
                 
                 {/* Question Image */}
@@ -1599,7 +1743,17 @@ const handleSingleOptionSelect = (optionIndex: number) => {
                       
                       {/* Option content */}
                       <div className="ml-5 flex-1">
-                        <div className="text-lg font-medium text-left leading-relaxed">{optionText}</div>
+                        <div className="text-lg font-medium text-left leading-relaxed">
+                          {showHindi[globalQuestionIndex] && translatedQuestions[globalQuestionIndex]?.options?.[index]
+                            ? translatedQuestions[globalQuestionIndex].options[index]
+                            : optionText}
+                        </div>
+                        {/* Show original English option below Hindi translation */}
+                        {showHindi[globalQuestionIndex] && translatedQuestions[globalQuestionIndex]?.options?.[index] && (
+                          <div className="mt-2 text-sm text-gray-400 italic">
+                            ({optionText})
+                          </div>
+                        )}
                         
                         {/* Option image */}
                         {optionImage && validateImagePath(optionImage) && (
