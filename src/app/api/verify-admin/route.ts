@@ -1,8 +1,33 @@
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
+import { checkRateLimit, getClientIP } from '@/lib/security';
 
 export async function POST(request: Request) {
   try {
+    // Strict rate limiting for auth - 5 attempts per 5 minutes per IP
+    const clientIP = getClientIP(request);
+    const rateLimit = checkRateLimit(`admin-auth:${clientIP}`, { 
+      windowMs: 300000, // 5 minutes
+      maxRequests: 5 
+    });
+    
+    if (rateLimit.isLimited) {
+      console.warn(`Rate limit exceeded for admin auth from IP: ${clientIP}`);
+      return NextResponse.json(
+        { 
+          success: false, 
+          error: 'Too many authentication attempts. Please try again later.',
+          retryAfter: Math.ceil(rateLimit.resetIn / 1000)
+        },
+        { 
+          status: 429,
+          headers: {
+            'Retry-After': String(Math.ceil(rateLimit.resetIn / 1000)),
+          }
+        }
+      );
+    }
+
     const { password } = await request.json();
 
     if (!password) {

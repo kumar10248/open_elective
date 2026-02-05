@@ -1,5 +1,6 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import getClientPromise from '@/lib/mongodb';
+import { checkRateLimit, getClientIP } from '@/lib/security';
 
 interface Feedback {
   name: string;
@@ -10,8 +11,22 @@ interface Feedback {
   filename?: string;
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
   try {
+    // Rate limiting - 30 requests per minute
+    const clientIP = getClientIP(request);
+    const rateLimit = checkRateLimit(`feedbacks-get:${clientIP}`, { 
+      windowMs: 60000, 
+      maxRequests: 30 
+    });
+    
+    if (rateLimit.isLimited) {
+      return NextResponse.json(
+        { error: 'Too many requests. Please try again later.' },
+        { status: 429 }
+      );
+    }
+
     // Connect to MongoDB
     const client = await getClientPromise();
     const db = client.db('fcwmc-feedback');
@@ -54,8 +69,22 @@ export async function GET() {
   }
 }
 
-export async function DELETE() {
+export async function DELETE(request: NextRequest) {
   try {
+    // Rate limiting - 3 delete operations per hour
+    const clientIP = getClientIP(request);
+    const rateLimit = checkRateLimit(`feedbacks-delete:${clientIP}`, { 
+      windowMs: 3600000, // 1 hour
+      maxRequests: 3 
+    });
+    
+    if (rateLimit.isLimited) {
+      return NextResponse.json(
+        { error: 'Too many delete requests. Please try again later.' },
+        { status: 429 }
+      );
+    }
+
     // Connect to MongoDB
     const client = await getClientPromise();
     const db = client.db('fcwmc-feedback');

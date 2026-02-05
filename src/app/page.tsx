@@ -20,23 +20,23 @@ export default function Home() {
       
       <div className="container mx-auto px-4 py-12 relative z-10">
         {/* Social Media Icons with glowing effects */}
-        <div className="flex justify-center space-x-8 mb-16">
-          <a href="https://www.devashish.top" className="text-2xl hover:text-purple-400 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-purple-400/40 p-3 rounded-full">
-            <FaCode />
+        <nav aria-label="Social media links" className="flex justify-center space-x-8 mb-16">
+          <a href="https://www.devashish.top" aria-label="Visit portfolio website" className="text-2xl hover:text-purple-400 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-purple-400/40 p-3 rounded-full focus:outline-none focus:ring-2 focus:ring-purple-400 focus:ring-offset-2 focus:ring-offset-black">
+            <FaCode aria-hidden="true" />
           </a>
-          <a href="https://linkedin.com/in/kumar-devashishh" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-500 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-500/40 p-3 rounded-full">
-            <FaLinkedinIn />
+          <a href="https://linkedin.com/in/kumar-devashishh" target="_blank" rel="noopener noreferrer" aria-label="Connect on LinkedIn (opens in new tab)" className="text-2xl hover:text-blue-500 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-500/40 p-3 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-black">
+            <FaLinkedinIn aria-hidden="true" />
           </a>
-          <a href="https://instagram.com/mathmaverick_man" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-amber-400 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-amber-400/40 p-3 rounded-full">
-            <FaInstagram />
+          <a href="https://instagram.com/mathmaverick_man" target="_blank" rel="noopener noreferrer" aria-label="Follow on Instagram (opens in new tab)" className="text-2xl hover:text-amber-400 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-amber-400/40 p-3 rounded-full focus:outline-none focus:ring-2 focus:ring-amber-400 focus:ring-offset-2 focus:ring-offset-black">
+            <FaInstagram aria-hidden="true" />
           </a>
-          <a href="https://github.com/kumar10248" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-green-400 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-green-400/40 p-3 rounded-full">
-            <FaGithub />
+          <a href="https://github.com/kumar10248" target="_blank" rel="noopener noreferrer" aria-label="View GitHub profile (opens in new tab)" className="text-2xl hover:text-green-400 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-green-400/40 p-3 rounded-full focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-offset-2 focus:ring-offset-black">
+            <FaGithub aria-hidden="true" />
           </a>
-          <a href="https://twitter.com/kumarDe10248" target="_blank" rel="noopener noreferrer" className="text-2xl hover:text-blue-400 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-400/40 p-3 rounded-full">
-            <FaTwitter />
+          <a href="https://twitter.com/kumarDe10248" target="_blank" rel="noopener noreferrer" aria-label="Follow on Twitter (opens in new tab)" className="text-2xl hover:text-blue-400 transition duration-300 transform hover:scale-110 hover:shadow-lg hover:shadow-blue-400/40 p-3 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-offset-2 focus:ring-offset-black">
+            <FaTwitter aria-hidden="true" />
           </a>
-        </div>
+        </nav>
         <ExamWishesBanner />
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-20 relative">
@@ -76,31 +76,32 @@ export default function Home() {
           </div>
 
           {/* Feature cards with hover effects */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl border border-amber-400/20 hover:border-amber-400/50 transition-all duration-500 group backdrop-blur-sm hover:shadow-xl hover:shadow-amber-500/10 transform hover:-translate-y-2">
-              <div className="bg-amber-400/10 p-5 rounded-full inline-block mb-6 group-hover:bg-amber-400/20 transition-all duration-300">
+          <section aria-labelledby="features-heading" className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
+            <h2 id="features-heading" className="sr-only">Platform Features</h2>
+            <article className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl border border-amber-400/20 hover:border-amber-400/50 transition-all duration-500 group backdrop-blur-sm hover:shadow-xl hover:shadow-amber-500/10 transform hover:-translate-y-2">
+              <div className="bg-amber-400/10 p-5 rounded-full inline-block mb-6 group-hover:bg-amber-400/20 transition-all duration-300" aria-hidden="true">
                 <FaClock className="text-amber-400 text-3xl" />
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-amber-50">Timed Practice</h3>
-              <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">1 minutes per question to challenge your knowledge and improve your exam speed</p>
-            </div>
+              <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">1 minute per question to challenge your knowledge and improve your exam speed</p>
+            </article>
             
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl border border-green-400/20 hover:border-green-400/50 transition-all duration-500 group backdrop-blur-sm hover:shadow-xl hover:shadow-green-500/10 transform hover:-translate-y-2">
-              <div className="bg-green-400/10 p-5 rounded-full inline-block mb-6 group-hover:bg-green-400/20 transition-all duration-300">
+            <article className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl border border-green-400/20 hover:border-green-400/50 transition-all duration-500 group backdrop-blur-sm hover:shadow-xl hover:shadow-green-500/10 transform hover:-translate-y-2">
+              <div className="bg-green-400/10 p-5 rounded-full inline-block mb-6 group-hover:bg-green-400/20 transition-all duration-300" aria-hidden="true">
                 <FaBook className="text-green-400 text-3xl" />
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-green-50">Track Progress</h3>
               <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">Monitor your scores and improvement over time with detailed analytics</p>
-            </div>
+            </article>
             
-            <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl border border-purple-400/20 hover:border-purple-400/50 transition-all duration-500 group backdrop-blur-sm hover:shadow-xl hover:shadow-purple-500/10 transform hover:-translate-y-2">
-              <div className="bg-purple-400/10 p-5 rounded-full inline-block mb-6 group-hover:bg-purple-400/20 transition-all duration-300">
+            <article className="bg-gradient-to-br from-gray-900 to-gray-800 p-8 rounded-xl border border-purple-400/20 hover:border-purple-400/50 transition-all duration-500 group backdrop-blur-sm hover:shadow-xl hover:shadow-purple-500/10 transform hover:-translate-y-2">
+              <div className="bg-purple-400/10 p-5 rounded-full inline-block mb-6 group-hover:bg-purple-400/20 transition-all duration-300" aria-hidden="true">
                 <FaGraduationCap className="text-purple-400 text-3xl" />
               </div>
               <h3 className="text-2xl font-semibold mb-3 text-purple-50">Master Content</h3>
               <p className="text-gray-400 group-hover:text-gray-300 transition-colors duration-300">Comprehensive question bank designed to help you succeed in your Digital Marketing exams</p>
-            </div>
-          </div>
+            </article>
+          </section>
           
         
           {<div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-20 mb-16">
