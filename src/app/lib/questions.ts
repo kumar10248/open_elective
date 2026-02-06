@@ -6,854 +6,1998 @@ console.log('=== questions.ts module loaded ===');
 const allQuestionsData: AllQuestionsData = {
   unit1: {
     module1:  [
-  {
-    "question": "A small business owner wants to create social media copy that connects with their audience. They’re unsure how to describe their tone. What’s the best first step they should take?",
-    "options": [
-      "Ask close friends or colleagues to describe their brand in 3–5 words.",
-      "Choose a few trending hashtags that match their industry.",
-      "Research the top-performing memes in their market"
-    ],
-    "explanation": "Brand tone define karne ke liye sabse pehla step hota hai brand perception samajhna. Close log authentic feedback de sakte hain.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A wellness coach wants to grow her audience by publishing weekly blog posts. She doesn’t want them to feel like sales pitches, but she still wants to strengthen her business over time. What should she focus on to achieve this?",
-    "options": [
-      "Post more often than her competitors, regardless of quality.",
-      "Create valuable content that builds trust and loyalty by offering value beyond selling.",
-      "Avoid all paid marketing efforts."
-    ],
-    "explanation": "Content marketing ka core idea hai pehle value dena, trust build karna, phir business grow hota hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A travel agency launches an interactive What’s Your Perfect Adventure? quiz. The owners want to keep potential customers engaged until they’re ready to book. What’s the best next step?",
-    "options": [
-      "Offer a 50% discount to all quiz participants immediately.",
-      "Email personalized trip ideas to participants based on their quiz results.",
-      "Send a generic brochure with all available trips."
-    ],
-    "explanation": "Personalized follow-ups engagement badhate hain aur customers ko naturally funnel me aage le jaate hain.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A software company wants to be recognized as a go-to authority in its field. Which approach would best achieve this?",
-    "options": [
-      "Limit online content to product pricing pages.",
-      "Offer free webinars, guides, and templates that solve customer challenges.",
-      "Run daily flash sales on all products."
-    ],
-    "explanation": "Authority tab banti hai jab brand logon ki real problems solve karta hai through educational content.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A personal finance blog notices that readers rarely click on articles. The writer wants to increase engagement. What’s the best action to take?",
-    "options": [
-      "Keep headlines as short as possible without giving details.",
-      "Use all capital letters to grab attention.",
-      "Write specific, relatable headlines that promise a solution."
-    ],
-    "explanation": "Clear aur benefit-driven headlines users ko click karne ke liye motivate karte hain.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A fitness app wants to increase free trial sign-ups. Which CTA should they use?",
-    "options": [
-      "Start Your 7-Day Personal Training Plan Now",
-      "Learn More",
-      "Click Here"
-    ],
-    "explanation": "Strong CTA specific, action-oriented aur value clearly batata hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "An outdoor gear brand wants to create deeper emotional connections with its audience. What should the marketing team do?",
-    "options": [
-      "Publish only technical product manuals.",
-      "Run a limited-time flash sale on tents.",
-      "Produce a documentary on the lives of mountain guides who use their gear."
-    ],
-    "explanation": "Storytelling emotional connection build karta hai jo sirf discounts ya manuals nahi kar sakte.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A software company wants potential customers to try its premium plan before committing. What’s the best promotion for the company to use?",
-    "options": [
-      "Send a survey asking why people haven’t purchased.",
-      "Offer a free one-month trial so customers can experience value risk-free.",
-      "Post blog content about the product’s features."
-    ],
-    "explanation": "Free trials risk kam karte hain aur users ko real value experience karne dete hain.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A tech brand wants to position itself as an authority in cybersecurity while building trust. What should the marketing team do?",
-    "options": [
-      "Publish blogs, videos, and webinars on cybersecurity best practices.",
-      "Mail printed brochures to random households.",
-      "Offer a flash sale on security software."
-    ],
-    "explanation": "Educational content trust aur authority dono build karta hai, especially cybersecurity jaise field me.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A local bookstore wants to increase sales of a new novel by a popular author. What’s the best promotional tactic to use?",
-    "options": [
-      "Send a generic monthly newsletter mentioning the book in passing.",
-      "Post a single photo of the book on social media without context.",
-      "Host an in-store signing event and offer a limited-time discount on the book."
-    ],
-    "explanation": "Experience + urgency + promotion milke sabse strong impact create karte hain.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A content creator wants to use a stock photo in a paid ad campaign that will reach over 1 million impressions. Which license do they need to ensure proper use?",
-    "options": [
-      "Limited License — Adobe Express",
-      "Creative Commons License",
-      "Standard License",
-      "Enhanced License"
-    ],
-    "explanation": "High-reach paid campaigns ke liye enhanced license required hota hai, especially large-scale distribution ke cases me.",
-    "correctAnswer": [3]
-  },
-  {
-    "question": "A customer repeatedly messages a brand account about a complex billing issue. What’s the best approach for resolution?",
-    "options": [
-      "Post a generic FAQ in response.",
-      "Continue responding in public threads.",
-      "Stop responding after one reply.",
-      "Transition the conversation to direct messages or email."
-    ],
-    "explanation": "Complex aur sensitive issues private channel (DM/email) me handle karna best practice hoti hai.",
-    "correctAnswer": [3]
-  },
-  {
-    "question": "A social media intern is unsure whether they can reuse a trending image found online. What should they do first?",
-    "options": [
-      "Use the image and credit the creator later.",
-      "Crop and filter the image to change its appearance.",
-      "Confirm the licensing rights or get permission from the source.",
-      "Assume social media content is fair use."
-    ],
-    "explanation": "Image reuse se pehle licensing ya permission confirm karna legal aur ethical dono ke liye zaroori hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A social media creator is working on a high-volume campaign and wants to streamline bulk asset creation using AI tools. What's the best way to approach this in Adobe Express?",
-    "options": [
-      "Use the Adobe Firefly Bulk Create feature by uploading a spreadsheet with variables.",
-      "Use Adobe Photoshop and paste assets into each frame.",
-      "Manually duplicate and edit each design variation.",
-      "Rebuild templates daily from scratch."
-    ],
-    "explanation": "Firefly Bulk Create automation ke through large-scale variations fast generate karta hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A brand manager notices a meme circulating that misrepresents one of their posts, potentially harming the brand’s reputation. How should they respond?",
-    "options": [
-      "Acknowledge the issue and clarify the intended message.",
-      "Immediately block all users sharing the meme.",
-      "Ignore the meme and hope it dies down.",
-      "Post aggressively to counter the backlash."
-    ],
-    "explanation": "Clear, calm clarification trust rebuild karta hai aur reputation damage control me help karta hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A freelancer working on client content is unsure whether an image from a stock library can be used to sell merchandise. How should they proceed?",
-    "options": [
-      "Review the stock license type and ensure that it allows merchandise use.",
-      "Include a disclaimer noting that the image is stock.",
-      "Apply a filter to make the image appear original.",
-      "Use the image as long as the client approves."
-    ],
-    "explanation": "Merchandise use often restricted hota hai, isliye license terms carefully review karna mandatory hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A content strategist is building a campaign using AI-generated content. They want to make sure their audience knows what was AI-assisted. What can help them communicate this clearly?",
-    "options": [
-      "Watermark every image with “AI.”",
-      "Avoid telling the audience to maintain consistency.",
-      "Mention it casually in the caption.",
-      "Use Content Credentials to tag posts with AI usage metadata."
-    ],
-    "explanation": "Content Credentials AI usage ko transparent aur verifiable way me communicate karta hai.",
-    "correctAnswer": [3]
-  },
-  {
-    "question": "A junior designer asks how Adobe Firefly knows how to create specific aesthetics based on user inputs. What foundational component enables this?",
-    "options": [
-      "AI training datasets",
-      "Public-facing content",
-      "Plugin interfaces",
-      "User licenses"
-    ],
-    "explanation": "Firefly ko aesthetics samajhne ki ability AI training datasets se aati hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A campaign manager wants to design platform-specific content faster without starting from scratch each time. What can help streamline this?",
-    "options": [
-      "Schedule only one post and repost it daily.",
-      "Download static ad designs and crop them for each platform.",
-      "Use the Remix tool to duplicate competitor content.",
-      "Use AI-generated templates and tweak them to match voice and visuals."
-    ],
-    "explanation": "AI templates fast creation allow karte hain while keeping brand consistency.",
-    "correctAnswer": [3]
-  },
-  {
-    "question": "A content manager wants to create quick visuals for early feedback before launching a campaign. How can AI help?",
-    "options": [
-      "Wait until professional photos are finalized before pitching.",
-      "Design layouts by hand and scan them as PDFs.",
-      "Use AI to generate mockups or concept images for internal review.",
-      "Use stock images from old campaigns without changes."
-    ],
-    "explanation": "AI-generated mockups early-stage ideation aur feedback ke liye perfect hote hain.",
-    "correctAnswer": [2]
-  }
-],
+    {
+      "question": "Digital marketing mainly refers to marketing through which medium?",
+      "options": [
+        "Radio and TV only",
+        "Newspapers only",
+        "Digital channels like websites and social media",
+        "Posters and banners"
+      ],
+      "explanation": "Digital marketing uses online platforms like websites, social media, and email.",
+      "correctAnswer": [2]
+    },
+    {
+      "question": "Which of the following is a digital marketing platform?",
+      "options": [
+        "Instagram",
+        "Newspaper",
+        "Billboard",
+        "Pamphlet"
+      ],
+      "explanation": "Instagram is an online social media platform used for digital marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the main advantage of digital marketing?",
+      "options": [
+        "It cannot be measured",
+        "It provides measurable results",
+        "It works only offline",
+        "It is always more expensive"
+      ],
+      "explanation": "Digital marketing can be tracked using analytics tools.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which is an example of traditional marketing?",
+      "options": [
+        "Email marketing",
+        "SEO",
+        "TV advertisement",
+        "Instagram reels"
+      ],
+      "explanation": "TV advertisement is a traditional marketing method.",
+      "correctAnswer": [2]
+    },
+    {
+      "question": "What does SEO stand for?",
+      "options": [
+        "Social Engagement Optimization",
+        "Search Engine Optimization",
+        "Sales Expansion Operation",
+        "Search Email Output"
+      ],
+      "explanation": "SEO means Search Engine Optimization.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which marketing type involves unpaid promotion?",
+      "options": [
+        "Paid marketing",
+        "Organic marketing",
+        "Television marketing",
+        "SMS marketing"
+      ],
+      "explanation": "Organic marketing does not require direct payment for ads.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which is an example of paid marketing?",
+      "options": [
+        "Word-of-mouth",
+        "Google Ads",
+        "SEO blog content",
+        "Free social media posts"
+      ],
+      "explanation": "Google Ads is a paid marketing strategy.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "What is the purpose of digital marketing analytics?",
+      "options": [
+        "To design logos",
+        "To measure campaign performance",
+        "To create posters",
+        "To print newspapers"
+      ],
+      "explanation": "Analytics measures clicks, engagement, conversions, and traffic.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which metric measures the percentage of users who click on an ad?",
+      "options": [
+        "CTR",
+        "ROI",
+        "SEO",
+        "Bounce Rate"
+      ],
+      "explanation": "CTR (Click Through Rate) measures ad clicks compared to impressions.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "A brand uses storytelling to create an emotional connection. This is called?",
+      "options": [
+        "Paid marketing",
+        "Emotional marketing",
+        "Affiliate marketing",
+        "Direct selling"
+      ],
+      "explanation": "Emotional marketing focuses on feelings and storytelling.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which color is most commonly associated with trust and security?",
+      "options": [
+        "Red",
+        "Blue",
+        "Green",
+        "Orange"
+      ],
+      "explanation": "Blue is linked with trust and security in branding.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which color is often associated with urgency and excitement?",
+      "options": [
+        "Blue",
+        "Red",
+        "Green",
+        "Black"
+      ],
+      "explanation": "Red is linked with urgency and excitement.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which color is mostly used for eco-friendly and nature-based branding?",
+      "options": [
+        "Green",
+        "Black",
+        "Purple",
+        "Grey"
+      ],
+      "explanation": "Green represents nature, health, and sustainability.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What does ROI stand for in digital marketing?",
+      "options": [
+        "Rate of Internet",
+        "Return on Investment",
+        "Reach of Influence",
+        "Ranking of Index"
+      ],
+      "explanation": "ROI means Return on Investment.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which platform is best for professional business marketing?",
+      "options": [
+        "LinkedIn",
+        "Snapchat",
+        "Pinterest",
+        "Telegram"
+      ],
+      "explanation": "LinkedIn is mainly used for professional networking and business marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Email marketing is mainly used for?",
+      "options": [
+        "Sending newsletters and promotional offers",
+        "Printing banners",
+        "Offline advertisements",
+        "Radio marketing"
+      ],
+      "explanation": "Email marketing is used for newsletters, offers, and customer communication.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is a major benefit of social media marketing?",
+      "options": [
+        "It reduces customer engagement",
+        "It increases brand awareness and interaction",
+        "It avoids customer feedback",
+        "It works only for offline customers"
+      ],
+      "explanation": "Social media increases awareness and allows direct engagement with customers.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which of the following is an example of content marketing?",
+      "options": [
+        "Writing blog posts for customers",
+        "Printing posters daily",
+        "Calling customers directly",
+        "Increasing product price"
+      ],
+      "explanation": "Content marketing includes blogs, videos, guides, etc.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is a key benefit of organic marketing?",
+      "options": [
+        "Instant sales in one hour",
+        "Long-term brand trust and loyalty",
+        "Always requires high budget",
+        "No need of content"
+      ],
+      "explanation": "Organic marketing builds long-term trust and brand authority.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Digital marketing helps businesses because it allows them to?",
+      "options": [
+        "Target specific audiences",
+        "Avoid online customers",
+        "Stop using analytics",
+        "Only sell in stores"
+      ],
+      "explanation": "Targeting specific audiences is a major advantage of digital marketing.",
+      "correctAnswer": [0]
+    }
+  ],
 module2:[
-   {
-    "question": "A shopper clicks an Instagram ad, receives a follow-up email, and later visits the store. The brand uses their data to deliver a continuous, connected experience. What marketing approach does this represent?",
-    "options": [
-      "Multichannel marketing.",
-      "Omnichannel marketing.",
-      "Influencer strategy.",
-      "Event-based automation."
-    ],
-    "explanation": "Customer data ko use karke multiple touchpoints par seamless experience dena omnichannel marketing hota hai.",
-    "correctAnswer": [1]
-  },
   {
-    "question": "A wellness brand develops a long-form blog on stress management. They later break it into Instagram quotes, a TikTok tip video, and an email summary. What technique are they using?",
-    "options": [
-      "Content atomization.",
-      "Persona mapping.",
-      "Direct response marketing.",
-      "Vertical integration."
-    ],
-    "explanation": "Ek long content ko multiple smaller platform-specific pieces me todna content atomization kehlata hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "Market research reveals that a fitness brand’s audience is increasingly focused on mental health. How can the company use this insight effectively?",
-    "options": [
-      "Rebrand to eliminate wellness content.",
-      "Integrate messaging around holistic wellness.",
-      "Focus messaging only on physical strength.",
-      "Increase ad frequency on unrelated channels."
-    ],
-    "explanation": "Audience insight ko follow karte hue holistic wellness messaging add karna sabse effective response hota hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A brand planning a multichannel campaign wants to ensure that messaging stays consistent across social media, email, and their website. Which strategy supports this goal?",
-    "options": [
-      "Integrated content strategy.",
-      "Retargeting automation.",
-      "Funnel segmentation.",
-      "Inbound content stacking."
-    ],
-    "explanation": "Integrated content strategy ensure karti hai ki messaging sab channels par consistent rahe.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A marketer notices that their company’s competitor thrives on Instagram but rarely posts on LinkedIn. How can the marketer turn this into an advantage?",
-    "options": [
-      "Pause all competitive analysis and wait for new trends.",
-      "Use the same visuals with updated captions.",
-      "Promote only one channel aggressively.",
-      "Build a content strategy that fills the LinkedIn gap."
-    ],
-    "explanation": "Competitor ke weak channel ko target karna strategic advantage deta hai.",
-    "correctAnswer": [3]
-  },
-  {
-    "question": "What’s the main benefit of using market research tools like BuzzSumo or SEMrush in competitive analysis?",
-    "options": [
-      "They automatically create ads.",
-      "They block competitor ads from search results.",
-      "They replace the need for surveys.",
-      "They reveal competitor content performance and audience engagement."
-    ],
-    "explanation": "Ye tools competitors ke content performance aur audience engagement ke insights dete hain.",
-    "correctAnswer": [3]
-  },
-  {
-    "question": "What is one major risk of not collaborating across content, design, and product teams?",
-    "options": [
-      "Fragmented messaging across platforms.",
-      "Duplicate posts on a single platform.",
-      "Limited campaign budget usage.",
-      "Too much brand consistency."
-    ],
-    "explanation": "Teams ke beech collaboration na hone se messaging fragmented ho jati hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A clothing brand launches email and social campaigns with tailored content, but customers don’t experience a unified brand journey. What type of marketing is this?",
-    "options": [
-      "Omnichannel marketing.",
-      "Multichannel marketing.",
-      "Experiential marketing.",
-      "Sequential messaging."
-    ],
-    "explanation": "Multiple channels use ho rahe hain par unified journey nahi hai — ye multichannel marketing hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A brand creates surveys to gather direct input and uses Google Trends for broader insights. What research methods are they combining?",
-    "options": [
-      "Funnel-based and algorithmic.",
-      "Primary and secondary.",
-      "Segmented and behavioral.",
-      "Paid and organic."
-    ],
-    "explanation": "Surveys = primary research, Google Trends = secondary research.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A marketing team finds that their blog content generates strong engagement, but they aren’t sure which parts are most effective. What should they do next?",
-    "options": [
-      "Use analytics to measure what’s working and then iterate based on performance.",
-      "Repost old content without changes.",
-      "Replace blogs with paid ad campaigns.",
-      "Publish only on trending platforms."
-    ],
-    "explanation": "Analytics ke through performance measure karke content optimize karna best next step hota hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A startup is launching a new eco-friendly water bottle. The marketing team wants it to stand out in a crowded market. Which step should they take first to set the product up for success?",
-    "options": [
-      "Conduct customer research to understand the design, features, and benefits the audience values most.",
-      "Copy the design of the best-selling competitor bottle.",
-      "Release the product without research to save time."
-    ],
-    "explanation": "Product success ka pehla step hota hai customer research. Ye ensure karta hai ki product real audience needs se aligned ho.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A company wants its new app to gain users quickly in a competitive space. What pricing approach would help the company build a strong early customer base?",
-    "options": [
-      "Penetration pricing with low or free introductory offers.",
-      "Match competitor prices exactly.",
-      "Skimming pricing to maximize early profits."
-    ],
-    "explanation": "Penetration pricing entry barrier kam karta hai aur fast user adoption me help karta hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A farm-to-table restaurant needs to reach more customers who can’t dine in. Which distribution change could help the restaurant serve a wider audience?",
-    "options": [
-      "Only serve food in their physical location.",
-      "Partner with local delivery apps to reach customers at home.",
-      "Offer delivery only on weekends."
-    ],
-    "explanation": "Delivery apps ke saath partnership distribution (Place) ko expand karti hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A small theater wants to boost ticket sales for an upcoming play. Which promotional effort would most likely increase audience turnout?",
-    "options": [
-      "Avoid marketing to keep costs down.",
-      "Release behind-the-scenes videos and cast interviews on social media.",
-      "Place a single ad in a local newspaper."
-    ],
-    "explanation": "Behind-the-scenes content emotional engagement aur excitement build karta hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A gym wants to sign up more members during January. Which marketing tactic could help the marketing team take advantage of New Year’s resolutions?",
-    "options": [
-      "Post one generic ad with no time limit.",
-      "Offer a New Year’s special and promote it heavily on social media and locally.",
-      "Avoid promotions to maintain exclusivity."
-    ],
-    "explanation": "Seasonal urgency + targeted promotion New Year resolutions ka best use karta hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A toy company wants to release a holiday special edition. How could it increase the chances of high seasonal sales?",
-    "options": [
-      "Launch the product after the holiday season.",
-      "Research popular trends and design toys that match seasonal interests.",
-      "Avoid advertising to save costs."
-    ],
-    "explanation": "Seasonal trends ke according product design demand ko directly impact karta hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A bakery wants to sell more during slow afternoons. Which change to pricing could help move more products during off-peak hours?",
-    "options": [
-      "Increase prices in the afternoon.",
-      "Offer afternoon-only discounts on pastries.",
-      "Keep prices the same and hope for more sales."
-    ],
-    "explanation": "Off-peak discounts demand ko stimulate karte hain without affecting peak hours.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A clothing brand wants to reach college students directly. Which placement method would make it easiest for students to buy the products?",
-    "options": [
-      "Set up pop-up shops on campus during student events.",
-      "Rely on students finding their main store downtown.",
-      "Only sell through luxury malls far from campus."
-    ],
-    "explanation": "Campus pop-ups convenience aur visibility dono provide karte hain.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A local festival organizer wants to increase attendance at next year’s event. How could they encourage more people to commit early?",
-    "options": [
-      "Announce the event only one week before it starts.",
-      "Keep all event details vague until opening day.",
-      "Start early promotion with highlights from past events and early ticket discounts."
-    ],
-    "explanation": "Early promotion + social proof + discounts early commitment badhate hain.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A travel agency is launching a summer vacation promotion. Which promotional asset would best convey its adventurous, premium brand across social media, email, and print ads?",
-    "options": [
-      "A text-only social media post listing trip prices",
-      "A short video montage of luxury destinations with the tagline Adventure Awaits, used in both digital and print materials",
-      "A local classified ad with no images or branding"
-    ],
-    "explanation": "Visual storytelling premium aur adventurous brand image ko strongly communicate karta hai.",
-    "correctAnswer": [1]
-  }
+      "question": "Which of the following is NOT a digital marketing channel?",
+      "options": [
+        "Search engines",
+        "Email",
+        "Social media",
+        "Newspaper classifieds"
+      ],
+      "explanation": "Newspaper classifieds traditional marketing me aata hai, digital marketing channel nahi hai.",
+      "correctAnswer": [3]
+    },
+    {
+      "question": "What is the main goal of marketing?",
+      "options": [
+        "To confuse customers",
+        "To connect product/service with customers",
+        "To increase product defects",
+        "To stop business growth"
+      ],
+      "explanation": "Marketing ka main goal customer tak product/service ko effectively pahuchana hota hai.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which platform is best for short video content marketing?",
+      "options": [
+        "TikTok",
+        "LinkedIn",
+        "Gmail",
+        "Wikipedia"
+      ],
+      "explanation": "TikTok short-form video content ke liye popular platform hai.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is an example of inbound marketing?",
+      "options": [
+        "Cold calling customers",
+        "Running billboard ads",
+        "Publishing helpful blogs and guides",
+        "Distributing pamphlets"
+      ],
+      "explanation": "Inbound marketing me valuable content create karke customers ko attract kiya jata hai.",
+      "correctAnswer": [2]
+    },
+    {
+      "question": "A brand uses Google Ads to appear on top of search results. This is called?",
+      "options": [
+        "Organic marketing",
+        "Search Engine Marketing (SEM)",
+        "Word-of-mouth marketing",
+        "Print marketing"
+      ],
+      "explanation": "Paid ads on search engines ko SEM kehte hain.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which marketing type gives faster results?",
+      "options": [
+        "Organic marketing",
+        "Paid marketing",
+        "Word-of-mouth only",
+        "Referral marketing only"
+      ],
+      "explanation": "Paid marketing quick visibility aur fast results deta hai.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "What is the key disadvantage of organic marketing?",
+      "options": [
+        "It takes time to show results",
+        "It requires no effort",
+        "It works instantly",
+        "It is always illegal"
+      ],
+      "explanation": "Organic marketing ka growth slow hota hai aur time lagta hai.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of these is a key benefit of paid advertising?",
+      "options": [
+        "Long-term free traffic",
+        "Instant visibility and reach",
+        "No need of budget",
+        "No targeting option"
+      ],
+      "explanation": "Paid advertising se instant reach aur visibility milti hai.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "What is a major use of digital marketing platforms like Facebook and Instagram?",
+      "options": [
+        "To send printed brochures",
+        "To engage and interact with customers",
+        "To replace customer service completely",
+        "To avoid brand awareness"
+      ],
+      "explanation": "Social media platforms audience engagement ke liye best hote hain.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which is an example of emotional marketing?",
+      "options": [
+        "Showing only technical specs of product",
+        "Using storytelling to inspire customers",
+        "Only showing discount prices",
+        "Posting product codes only"
+      ],
+      "explanation": "Emotional marketing emotions trigger karta hai through storytelling.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which emotion is often used in charity donation campaigns?",
+      "options": [
+        "Empathy and compassion",
+        "Boredom",
+        "Confusion",
+        "Indifference"
+      ],
+      "explanation": "Charity campaigns mostly empathy/compassion trigger karti hain.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which color is most associated with luxury branding?",
+      "options": [
+        "Green",
+        "Black",
+        "Yellow",
+        "Pink"
+      ],
+      "explanation": "Black luxury, elegance, power show karta hai.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which color is commonly linked with energy and excitement?",
+      "options": [
+        "Red",
+        "Grey",
+        "Blue",
+        "White"
+      ],
+      "explanation": "Red excitement aur urgency represent karta hai.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which color is often used by health and organic food brands?",
+      "options": [
+        "Green",
+        "Black",
+        "Purple",
+        "Dark grey"
+      ],
+      "explanation": "Green health, nature, eco-friendly branding represent karta hai.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of these is a digital marketing metric?",
+      "options": [
+        "CTR",
+        "Poster size",
+        "Paper quality",
+        "TV channel number"
+      ],
+      "explanation": "CTR (Click Through Rate) digital marketing KPI hai.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What does conversion mean in digital marketing?",
+      "options": [
+        "When users ignore ads",
+        "When users complete a desired action (purchase/sign-up)",
+        "When website crashes",
+        "When traffic decreases"
+      ],
+      "explanation": "Conversion means desired action complete hona (buy, sign-up, download).",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which of these is a digital marketing platform for video content?",
+      "options": [
+        "YouTube",
+        "Newspaper",
+        "Hoarding board",
+        "Magazine"
+      ],
+      "explanation": "YouTube ek major video marketing platform hai.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "A company sends weekly offers through email. This is called?",
+      "options": [
+        "Email marketing",
+        "Telemarketing",
+        "Billboard marketing",
+        "Print marketing"
+      ],
+      "explanation": "Email ke through promotions send karna email marketing hai.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which marketing approach focuses on creating valuable content to attract customers?",
+      "options": [
+        "Inbound marketing",
+        "Outbound marketing",
+        "Door-to-door marketing",
+        "Offline marketing"
+      ],
+      "explanation": "Inbound marketing customers ko valuable content se attract karta hai.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the main purpose of using branding colors consistently?",
+      "options": [
+        "To confuse customers",
+        "To build brand recognition",
+        "To reduce marketing cost instantly",
+        "To avoid product sales"
+      ],
+      "explanation": "Consistent colors brand identity aur recognition build karte hain.",
+      "correctAnswer": [1]
+    }
+  
 ],
 module3:[
+    
     {
-    "question": "Which of the following best explains a key difference between search ads and display ads?",
+      "question": "Which of the following best defines digital marketing?",
+      "options": [
+        "Marketing done only through television",
+        "Marketing done using internet and digital technologies",
+        "Marketing done only through newspapers",
+        "Marketing done only in shopping malls"
+      ],
+      "explanation": "Digital marketing uses online/digital technologies like internet, websites, social media etc.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which platform is mainly used for photo-based content marketing?",
+      "options": [
+        "Instagram",
+        "Google Maps",
+        "WhatsApp",
+        "Quora"
+      ],
+      "explanation": "Instagram is popular for image and visual-based marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the role of a website in digital marketing?",
+      "options": [
+        "To act as a digital store and information source",
+        "To replace customer service",
+        "To stop online traffic",
+        "To avoid product promotion"
+      ],
+      "explanation": "Website is the main digital platform for product details, sales, and conversions.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is an example of organic social media marketing?",
+      "options": [
+        "Posting reels without paying for promotion",
+        "Running sponsored Instagram ads",
+        "Buying YouTube ads",
+        "Paying influencers for every post"
+      ],
+      "explanation": "Unpaid posting and engagement is organic marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Paid marketing is also known as?",
+      "options": [
+        "Advertising",
+        "Word-of-mouth",
+        "Customer support",
+        "Brand loyalty"
+      ],
+      "explanation": "Paid marketing involves advertising where money is spent for promotion.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the main objective of SEO?",
+      "options": [
+        "To increase organic traffic through higher ranking",
+        "To decrease website visitors",
+        "To increase product price",
+        "To stop content creation"
+      ],
+      "explanation": "SEO improves website ranking and increases organic visitors.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which marketing method is best for long-term brand growth?",
+      "options": [
+        "Organic marketing",
+        "Only paid marketing",
+        "Only TV marketing",
+        "Only print marketing"
+      ],
+      "explanation": "Organic marketing builds trust and long-term growth.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is a major benefit of paid ads compared to organic marketing?",
+      "options": [
+        "Paid ads provide quick results",
+        "Paid ads take years to work",
+        "Paid ads cannot be targeted",
+        "Paid ads are always free"
+      ],
+      "explanation": "Paid ads provide immediate visibility and reach.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is an example of a digital marketing KPI?",
+      "options": [
+        "CTR",
+        "Font size",
+        "Poster material",
+        "Billboard length"
+      ],
+      "explanation": "CTR is a measurable performance metric in digital marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What does CTR measure?",
+      "options": [
+        "How many users clicked after seeing an ad",
+        "How many posters were printed",
+        "How many stores opened",
+        "How many products were manufactured"
+      ],
+      "explanation": "CTR = Click Through Rate, shows percentage of ad clicks.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which platform is best for search-based marketing?",
+      "options": [
+        "Google",
+        "Instagram",
+        "Snapchat",
+        "Pinterest"
+      ],
+      "explanation": "Google is the most common search engine for search-based marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "A company wants to reach customers quickly using ads. Which marketing should it choose?",
+      "options": [
+        "Paid marketing",
+        "Organic marketing",
+        "Word-of-mouth only",
+        "Referral only"
+      ],
+      "explanation": "Paid marketing gives fast results through ads.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is an example of display advertising?",
+      "options": [
+        "Banner ads on websites",
+        "Blog posts on website",
+        "Customer referrals",
+        "SEO ranking"
+      ],
+      "explanation": "Display ads include banner/image ads shown on websites/apps.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which digital marketing platform is mainly used for professional articles and networking?",
+      "options": [
+        "LinkedIn",
+        "TikTok",
+        "Snapchat",
+        "Instagram"
+      ],
+      "explanation": "LinkedIn is used for business/professional marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is a key feature of digital marketing compared to traditional marketing?",
+      "options": [
+        "Real-time tracking and analytics",
+        "No targeting possible",
+        "No online audience",
+        "Only offline promotions"
+      ],
+      "explanation": "Digital marketing provides real-time performance tracking through analytics.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which type of marketing mainly focuses on feelings like trust, happiness, and nostalgia?",
+      "options": [
+        "Emotional marketing",
+        "Paid marketing",
+        "Direct selling",
+        "Telemarketing"
+      ],
+      "explanation": "Emotional marketing uses emotions to connect with customers.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "A brand shows family moments in ads to create warmth and connection. This is an example of?",
+      "options": [
+        "Emotional marketing",
+        "SEO marketing",
+        "Paid search marketing",
+        "Product pricing strategy"
+      ],
+      "explanation": "Family storytelling creates emotional connection, so it's emotional marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which color is often associated with happiness and optimism?",
+      "options": [
+        "Yellow",
+        "Black",
+        "Brown",
+        "Dark blue"
+      ],
+      "explanation": "Yellow is linked with positivity and optimism.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which color is commonly used for urgency in sales and discount banners?",
+      "options": [
+        "Red",
+        "Green",
+        "Blue",
+        "White"
+      ],
+      "explanation": "Red creates urgency and is widely used in sale promotions.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the main benefit of using color psychology in branding?",
+      "options": [
+        "It influences customer emotions and decisions",
+        "It reduces website speed",
+        "It removes the need for ads",
+        "It stops customers from buying"
+      ],
+      "explanation": "Colors influence emotions and can affect purchase decisions.",
+      "correctAnswer": [0]
+    }
+  
+],module4:[
+  
+    {
+      "question": "Which of the following is a major objective of digital marketing?",
+      "options": [
+        "To reduce customer interaction",
+        "To increase online visibility and reach customers",
+        "To stop content creation",
+        "To avoid using analytics"
+      ],
+      "explanation": "Digital marketing ka main objective online visibility aur customer reach badhana hota hai.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "What does a digital marketing campaign mainly require?",
+      "options": [
+        "Only a printer",
+        "Only offline posters",
+        "A digital platform and target audience",
+        "Only newspapers"
+      ],
+      "explanation": "Digital marketing campaign ke liye online platform aur target audience define karna zaroori hai.",
+      "correctAnswer": [2]
+    },
+    {
+      "question": "Which is the best example of content marketing?",
+      "options": [
+        "Creating a blog explaining product benefits",
+        "Running only discount ads",
+        "Printing flyers daily",
+        "Cold calling customers"
+      ],
+      "explanation": "Blogs, videos, guides are examples of content marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "A company wants free traffic from Google. Which method is best?",
+      "options": [
+        "SEO",
+        "TV advertisements",
+        "Billboards",
+        "Direct mail"
+      ],
+      "explanation": "SEO helps in getting organic (free) traffic from search engines.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is an example of a social media marketing platform?",
+      "options": [
+        "Instagram",
+        "Google Drive",
+        "MS Excel",
+        "Windows OS"
+      ],
+      "explanation": "Instagram is a popular social media platform for marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the key advantage of paid ads on social media?",
+      "options": [
+        "Ads cannot target users",
+        "Ads can reach specific target audience quickly",
+        "Ads are always free",
+        "Ads cannot be tracked"
+      ],
+      "explanation": "Paid ads allow targeting based on interests, age, and location.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "What is a major benefit of digital marketing compared to print marketing?",
+      "options": [
+        "It cannot reach global customers",
+        "It is measurable and trackable",
+        "It is always offline",
+        "It is limited to newspapers"
+      ],
+      "explanation": "Digital marketing results can be measured easily using analytics tools.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which marketing strategy focuses on getting customers through useful content instead of direct selling?",
+      "options": [
+        "Inbound marketing",
+        "Outbound marketing",
+        "Offline marketing",
+        "Door-to-door marketing"
+      ],
+      "explanation": "Inbound marketing attracts customers through valuable content.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which marketing type includes direct promotion through ads and calls?",
+      "options": [
+        "Inbound marketing",
+        "Outbound marketing",
+        "Organic marketing",
+        "Community marketing"
+      ],
+      "explanation": "Outbound marketing includes direct promotional methods like ads, calls, and cold emails.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "What is the meaning of a target audience?",
+      "options": [
+        "Everyone in the world",
+        "A specific group of customers a brand wants to reach",
+        "Only company employees",
+        "Only competitors"
+      ],
+      "explanation": "Target audience refers to the group of people most likely to buy the product.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "Which platform is most suitable for video marketing and tutorials?",
+      "options": [
+        "YouTube",
+        "Telegram",
+        "Google Docs",
+        "Bing Maps"
+      ],
+      "explanation": "YouTube is a major platform for videos, tutorials, and ads.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which marketing method is best for building long-term customer trust?",
+      "options": [
+        "Organic marketing",
+        "Only paid ads",
+        "Only cold calling",
+        "Only discount marketing"
+      ],
+      "explanation": "Organic marketing builds trust over time through valuable content and engagement.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is an example of email marketing?",
+      "options": [
+        "Sending product offers through newsletters",
+        "Posting posters on walls",
+        "Running radio ads",
+        "Selling through offline shops only"
+      ],
+      "explanation": "Email newsletters and offers are part of email marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "A brand uses emotional marketing mainly to?",
+      "options": [
+        "Create emotional connection with customers",
+        "Increase product defects",
+        "Avoid customer trust",
+        "Remove brand identity"
+      ],
+      "explanation": "Emotional marketing helps customers feel connected to the brand.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which emotion is commonly used in travel advertisements?",
+      "options": [
+        "Adventure and excitement",
+        "Confusion",
+        "Fear only",
+        "Anger only"
+      ],
+      "explanation": "Travel ads often use adventure and excitement to attract customers.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which color is commonly associated with nature and eco-friendly products?",
+      "options": [
+        "Green",
+        "Red",
+        "Black",
+        "Grey"
+      ],
+      "explanation": "Green represents nature, health, and eco-friendly branding.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which color is associated with luxury and premium brands?",
+      "options": [
+        "Black",
+        "Yellow",
+        "Light green",
+        "Pink"
+      ],
+      "explanation": "Black represents luxury, power, and elegance.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the main use of Google Analytics?",
+      "options": [
+        "To print advertisements",
+        "To track website traffic and user behavior",
+        "To create logos",
+        "To edit videos"
+      ],
+      "explanation": "Google Analytics is used to track traffic, conversions, and user activity.",
+      "correctAnswer": [1]
+    },
+    {
+      "question": "What is the meaning of engagement in social media marketing?",
+      "options": [
+        "Likes, shares, comments, and saves",
+        "Only product pricing",
+        "Only followers count",
+        "Only printing posters"
+      ],
+      "explanation": "Engagement includes likes, comments, shares, saves, and interactions.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Why is social media important for businesses?",
+      "options": [
+        "It reduces online sales",
+        "It helps in brand awareness and customer interaction",
+        "It stops audience growth",
+        "It avoids promotions"
+      ],
+      "explanation": "Social media helps brands connect with customers and build awareness.",
+      "correctAnswer": [1]
+    }
+  
+],
+module5:[
+
+    {
+      "question": "Which of the following is a paid marketing example?",
+      "options": [
+        "Google Search Ads",
+        "SEO blog ranking",
+        "Word-of-mouth referrals",
+        "Organic Instagram reach"
+      ],
+      "explanation": "Google Search Ads are paid advertisements shown on search results.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is an organic marketing example?",
+      "options": [
+        "Instagram reels gaining views naturally",
+        "Facebook paid ads",
+        "YouTube paid promotions",
+        "Sponsored influencer post"
+      ],
+      "explanation": "Organic marketing means free reach without paid promotion.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is SEO mainly used for?",
+      "options": [
+        "To rank a website higher in search engines",
+        "To increase printing speed",
+        "To create posters",
+        "To make emails spam"
+      ],
+      "explanation": "SEO improves website visibility in search engine results.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is a digital marketing platform?",
+      "options": [
+        "Google",
+        "Newspaper",
+        "Pamphlet",
+        "Radio"
+      ],
+      "explanation": "Google is a digital platform used for search marketing and ads.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which type of marketing uses emotional connection to influence buyers?",
+      "options": [
+        "Emotional marketing",
+        "Technical marketing",
+        "Mechanical marketing",
+        "Random marketing"
+      ],
+      "explanation": "Emotional marketing focuses on feelings like trust, happiness, and excitement.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which color is commonly linked with trust and professionalism?",
+      "options": [
+        "Blue",
+        "Orange",
+        "Red",
+        "Purple"
+      ],
+      "explanation": "Blue represents trust, security, and professionalism.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which color is most associated with energy and urgency?",
+      "options": [
+        "Red",
+        "Green",
+        "Brown",
+        "Grey"
+      ],
+      "explanation": "Red is used to create urgency and excitement.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which marketing channel is best for reaching users through search intent?",
+      "options": [
+        "Search engine marketing",
+        "Billboard marketing",
+        "TV marketing",
+        "Flyer marketing"
+      ],
+      "explanation": "Search engine marketing targets users searching specific keywords.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is an example of display advertising?",
+      "options": [
+        "Banner ads on websites",
+        "SEO blog post ranking",
+        "WhatsApp personal chat",
+        "Offline store posters"
+      ],
+      "explanation": "Display ads include banner and image-based ads shown on websites/apps.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What does CPC stand for in digital marketing?",
+      "options": [
+        "Cost Per Click",
+        "Customer Paid Campaign",
+        "Clicks Per Customer",
+        "Cost Per Conversion"
+      ],
+      "explanation": "CPC means Cost Per Click, i.e., cost paid for each click on an ad.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What does CTR stand for?",
+      "options": [
+        "Click Through Rate",
+        "Customer Tracking Report",
+        "Cost To Reach",
+        "Click Target Ranking"
+      ],
+      "explanation": "CTR is Click Through Rate = clicks divided by impressions.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is an example of a digital marketing KPI?",
+      "options": [
+        "Conversion rate",
+        "Printer ink level",
+        "Store rent cost",
+        "Employee attendance"
+      ],
+      "explanation": "Conversion rate is a KPI used to measure campaign performance.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which digital marketing platform is best for professional networking?",
+      "options": [
+        "LinkedIn",
+        "Snapchat",
+        "Pinterest",
+        "Telegram"
+      ],
+      "explanation": "LinkedIn is used for professional networking and B2B marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which platform is most effective for short-form viral video marketing?",
+      "options": [
+        "TikTok",
+        "Gmail",
+        "Google Sheets",
+        "Wikipedia"
+      ],
+      "explanation": "TikTok is known for short-form viral content and trend marketing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the purpose of a landing page in digital marketing?",
+      "options": [
+        "To convert visitors into leads or customers",
+        "To store company employees data",
+        "To show random videos",
+        "To display only company logo"
+      ],
+      "explanation": "Landing pages are designed for conversion actions like signups or purchases.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is a common goal of awareness stage in marketing funnel?",
+      "options": [
+        "To make customers know about the brand",
+        "To force customers to buy instantly",
+        "To stop advertising",
+        "To remove brand identity"
+      ],
+      "explanation": "Awareness stage focuses on reach and visibility.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which marketing stage focuses on convincing customers to buy?",
+      "options": [
+        "Purchase stage",
+        "Awareness stage",
+        "Research stage",
+        "Forget stage"
+      ],
+      "explanation": "Purchase stage is where the customer finally makes a buying decision.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is an example of influencer marketing?",
+      "options": [
+        "A YouTuber promoting a smartphone in a video",
+        "A company printing posters",
+        "A radio station playing songs",
+        "A newspaper publishing news"
+      ],
+      "explanation": "Influencer marketing uses popular creators to promote products.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the biggest advantage of digital marketing over traditional marketing?",
+      "options": [
+        "It can be tracked and optimized using data",
+        "It is always expensive",
+        "It works only in one city",
+        "It does not use customer targeting"
+      ],
+      "explanation": "Digital marketing allows tracking, targeting, and optimization in real-time.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is a major factor in emotional marketing?",
+      "options": [
+        "Customer feelings and emotions",
+        "Machine speed",
+        "Office location",
+        "Printer quality"
+      ],
+      "explanation": "Emotional marketing is based on connecting with customer emotions.",
+      "correctAnswer": [0]
+    }
+  
+],
+module6:[
+
+    {
+      "question": "What is the main purpose of market segmentation?",
+      "options": [
+        "To divide customers into groups for targeted marketing",
+        "To reduce product quality",
+        "To stop advertising",
+        "To increase printing cost"
+      ],
+      "explanation": "Segmentation helps marketers target specific customer groups effectively.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Grouping customers based on age and gender is called?",
+      "options": [
+        "Demographic segmentation",
+        "Behavioral segmentation",
+        "Geographic segmentation",
+        "Psychographic segmentation"
+      ],
+      "explanation": "Demographic segmentation includes age, gender, income, education etc.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Grouping customers based on location like city or country is called?",
+      "options": [
+        "Geographic segmentation",
+        "Behavioral segmentation",
+        "Demographic segmentation",
+        "Psychographic segmentation"
+      ],
+      "explanation": "Geographic segmentation is based on region, climate, and location.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Grouping customers based on lifestyle, personality, and values is called?",
+      "options": [
+        "Psychographic segmentation",
+        "Demographic segmentation",
+        "Geographic segmentation",
+        "Product segmentation"
+      ],
+      "explanation": "Psychographic segmentation focuses on values, interests, and lifestyle.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Grouping customers based on purchase behavior and usage is called?",
+      "options": [
+        "Behavioral segmentation",
+        "Geographic segmentation",
+        "Demographic segmentation",
+        "Psychographic segmentation"
+      ],
+      "explanation": "Behavioral segmentation is based on buying habits, loyalty, usage frequency.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is an example of B2C marketing?",
+      "options": [
+        "Amazon selling products to customers",
+        "A manufacturer selling raw material to factory",
+        "A company selling software to another company",
+        "A business selling machines to industries"
+      ],
+      "explanation": "B2C means Business to Consumer (direct customer selling).",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is an example of B2B marketing?",
+      "options": [
+        "Microsoft selling cloud services to companies",
+        "A person buying shoes online",
+        "A student buying books",
+        "A customer ordering pizza"
+      ],
+      "explanation": "B2B means Business to Business selling (company-to-company).",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What does C2C business model mean?",
+      "options": [
+        "Customer selling to another customer",
+        "Company selling to customers",
+        "Company selling to company",
+        "Customer selling to business"
+      ],
+      "explanation": "C2C platforms like OLX allow customers to sell directly to other customers.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What does C2B business model mean?",
+      "options": [
+        "Customer providing services/products to business",
+        "Company selling products to customer",
+        "Customer selling to another customer",
+        "Company selling to company"
+      ],
+      "explanation": "C2B includes freelancers selling services to companies.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which platform is best suited for visual discovery and inspiration?",
+      "options": [
+        "Pinterest",
+        "LinkedIn",
+        "X (Twitter)",
+        "WhatsApp"
+      ],
+      "explanation": "Pinterest is designed for visual inspiration and discovery boards.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is the best example of omnichannel marketing?",
+      "options": [
+        "Customer sees ad online, receives email, and gets store discount linked to same profile",
+        "Brand posts on Instagram only",
+        "Brand runs Google Ads only",
+        "Brand uses email only"
+      ],
+      "explanation": "Omnichannel provides a connected experience across platforms using customer data.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is multichannel marketing?",
+      "options": [
+        "Using multiple platforms but without seamless integration",
+        "Using only one platform",
+        "Avoiding social media completely",
+        "Using only offline marketing"
+      ],
+      "explanation": "Multichannel uses many channels but not necessarily connected experience.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is an example of content atomization?",
+      "options": [
+        "Turning one blog into reels, quotes, and email snippets",
+        "Posting only memes daily",
+        "Creating one ad and running it forever",
+        "Deleting old content monthly"
+      ],
+      "explanation": "Content atomization means breaking one long content into multiple smaller pieces.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the main benefit of influencer marketing?",
+      "options": [
+        "It builds trust through creator credibility",
+        "It removes the need for product quality",
+        "It guarantees sales instantly",
+        "It works only in newspapers"
+      ],
+      "explanation": "Influencers provide social proof and trust through their audience relationship.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is a good CTA (Call to Action)?",
+      "options": [
+        "Sign up now",
+        "Maybe click here",
+        "Nothing special",
+        "Ignore this"
+      ],
+      "explanation": "A CTA should be direct and action-oriented.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which KPI measures the percentage of users who complete a purchase?",
+      "options": [
+        "Conversion rate",
+        "Retention rate",
+        "Bounce rate",
+        "Impressions"
+      ],
+      "explanation": "Conversion rate shows how many visitors take desired actions like purchase.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What does bounce rate mean?",
+      "options": [
+        "Visitors leaving after viewing only one page",
+        "Visitors buying product instantly",
+        "Visitors sharing posts",
+        "Visitors clicking multiple ads"
+      ],
+      "explanation": "Bounce rate indicates how many users exit after visiting one page only.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which metric is most useful for measuring long-term customer value?",
+      "options": [
+        "Customer Lifetime Value (CLV)",
+        "CTR",
+        "Bounce rate",
+        "Impressions"
+      ],
+      "explanation": "CLV estimates total revenue generated by a customer over time.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the main purpose of A/B testing?",
+      "options": [
+        "To compare two versions and see which performs better",
+        "To stop marketing campaigns",
+        "To increase product price",
+        "To reduce website traffic"
+      ],
+      "explanation": "A/B testing compares two versions to identify which gives better results.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which strategy is best to improve low click-through rate (CTR) in ads?",
+      "options": [
+        "Test new headlines and visuals",
+        "Remove the CTA button",
+        "Stop tracking analytics",
+        "Increase product price"
+      ],
+      "explanation": "Low CTR often means creative is weak, so testing headlines and visuals helps.",
+      "correctAnswer": [0]
+    }
+  
+]
+,
+
+module7:[
+
+    {
+      "question": "What is the main purpose of a marketing funnel?",
+      "options": [
+        "To track customer journey from awareness to purchase",
+        "To reduce customer engagement",
+        "To stop content creation",
+        "To increase printing costs"
+      ],
+      "explanation": "A marketing funnel shows stages customers go through before purchasing.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which funnel stage focuses on making people aware of a brand?",
+      "options": [
+        "Awareness",
+        "Purchase",
+        "Retention",
+        "Loyalty"
+      ],
+      "explanation": "Awareness stage is the first stage where customers discover the brand.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which funnel stage happens when customers compare options?",
+      "options": [
+        "Consideration",
+        "Awareness",
+        "Purchase",
+        "Retention"
+      ],
+      "explanation": "In consideration stage customers research and compare products.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which stage happens when customers finally buy the product?",
+      "options": [
+        "Purchase",
+        "Awareness",
+        "Interest",
+        "Consideration"
+      ],
+      "explanation": "Purchase stage is when the conversion happens.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which stage focuses on repeat customers and loyalty?",
+      "options": [
+        "Retention",
+        "Awareness",
+        "Interest",
+        "Intent"
+      ],
+      "explanation": "Retention keeps customers engaged after purchase to buy again.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the main purpose of retargeting ads?",
+      "options": [
+        "To target users who visited but didn’t convert",
+        "To reduce traffic",
+        "To block competitors",
+        "To stop users from visiting the site"
+      ],
+      "explanation": "Retargeting focuses on people who already showed interest.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which of the following is the best example of a lead magnet?",
+      "options": [
+        "Free checklist in exchange for email",
+        "Paid billboard ad",
+        "Expensive subscription plan",
+        "TV commercial"
+      ],
+      "explanation": "Lead magnets provide value to collect customer contact information.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is the best way to build trust in digital marketing?",
+      "options": [
+        "Sharing testimonials and reviews",
+        "Using fake followers",
+        "Posting random ads daily",
+        "Ignoring customer feedback"
+      ],
+      "explanation": "Reviews and testimonials create credibility and social proof.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is social proof in marketing?",
+      "options": [
+        "Evidence like reviews, testimonials, and user feedback",
+        "Random hashtags",
+        "Product packaging",
+        "Company internal reports"
+      ],
+      "explanation": "Social proof is proof that others trust or use the product.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which marketing strategy focuses on improving website ranking organically?",
+      "options": [
+        "SEO",
+        "Paid Ads",
+        "SMS marketing",
+        "Cold calling"
+      ],
+      "explanation": "SEO improves ranking in search engines without paid ads.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is the best example of display advertising?",
+      "options": [
+        "Banner ad on a website",
+        "Organic Instagram post",
+        "Customer testimonial email",
+        "SEO blog article"
+      ],
+      "explanation": "Display ads are visual ads shown on websites/apps.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is the best example of search advertising?",
+      "options": [
+        "Google Ads shown when searching a keyword",
+        "Instagram story post",
+        "YouTube vlog",
+        "Pinterest pin"
+      ],
+      "explanation": "Search ads appear on search engines based on keyword intent.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What does CTR stand for?",
+      "options": [
+        "Click Through Rate",
+        "Customer Traffic Return",
+        "Cost to Revenue",
+        "Conversion Tracking Rate"
+      ],
+      "explanation": "CTR is Click Through Rate.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which KPI shows how many people saw your content?",
+      "options": [
+        "Impressions",
+        "Conversion rate",
+        "CLV",
+        "Bounce rate"
+      ],
+      "explanation": "Impressions measure how many times content is displayed.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which KPI shows how many users liked, commented, or shared?",
+      "options": [
+        "Engagement",
+        "Bounce rate",
+        "ROI",
+        "SEO score"
+      ],
+      "explanation": "Engagement measures user interactions with content.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "What is the benefit of using Content Credentials?",
+      "options": [
+        "It provides authenticity and creator attribution metadata",
+        "It increases hashtag count",
+        "It blocks ads automatically",
+        "It removes copyright rules"
+      ],
+      "explanation": "Content Credentials ensure transparency about creator and edits.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which Adobe tool is used for AI image generation in Adobe Express ecosystem?",
+      "options": [
+        "Adobe Firefly",
+        "Adobe Reader",
+        "Adobe Acrobat",
+        "Adobe Bridge"
+      ],
+      "explanation": "Adobe Firefly is the AI tool for generating visuals and creative assets.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which is the best practice for ethical AI marketing?",
+      "options": [
+        "Provide transparency and monitor bias",
+        "Collect data without consent",
+        "Hide AI usage from customers",
+        "Ignore customer complaints"
+      ],
+      "explanation": "Ethical AI requires transparency, consent, and bias monitoring.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which license is needed for high-volume paid ad usage of stock images?",
+      "options": [
+        "Enhanced License",
+        "Creative Commons",
+        "Free License",
+        "Personal License"
+      ],
+      "explanation": "Enhanced license is required for large paid campaigns and extended usage rights.",
+      "correctAnswer": [0]
+    },
+    {
+      "question": "Which strategy ensures brand consistency across social media, email, and website?",
+      "options": [
+        "Integrated content strategy",
+        "Random posting",
+        "Only trend marketing",
+        "Ignoring brand guidelines"
+      ],
+      "explanation": "Integrated content strategy keeps messaging cohesive across all platforms.",
+      "correctAnswer": [0]
+    }
+  
+],
+    assignment:[
+       {
+    "question": "A new intern writing social media posts asks how to sound more relatable. What should they focus on?",
     "options": [
-      "Display ads don’t require a call-to-action.",
-      "Search ads rely on keyword intent, while display ads rely on visual appeal.",
-      "Search ads appear in videos, while display ads show in emails.",
-      "Display ads have higher click-through rates than search ads."
+      "Keep all posts under five words.",
+      "Skip the copy and focus only on images.",
+      "Avoid third-person and write in a conversational tone.",
+      "Use technical language to sound professional."
     ],
-    "explanation": "Search ads user ke intent (keywords) par based hote hain, jabki display ads visual appeal aur awareness ke liye hote hain.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A marketer segments leads by how engaged they are with previous emails and website visits. What’s the goal of this strategy?",
-    "options": [
-      "To qualify leads for influencer partnerships.",
-      "To eliminate inactive users from the list.",
-      "To tailor content delivery and improve conversion chances.",
-      "To reduce bounce rate from landing pages."
-    ],
-    "explanation": "Engagement-based segmentation ka goal personalized content deliver karke conversion improve karna hota hai.",
+    "explanation": "Conversational tone audience ko relatable aur friendly feel deta hai. Third-person formal lagta hai aur connection kam hota hai.",
     "correctAnswer": [2]
   },
   {
-    "question": "A brand tracks how many visitors come back to their site repeatedly. Which metric are they measuring?",
+    "question": "A social media coordinator notices that their Instagram captions aren't generating clicks or comments, even though the visuals are high quality. What should they do to improve engagement?",
     "options": [
-      "SEO score.",
-      "ROI.",
-      "Retention rate.",
-      "Conversion rate."
+      "Include a clear call to action in each caption.",
+      "Switch to posting longer captions on every platform.",
+      "Start referring to the brand in third person for consistency.",
+      "Use extra emojis to increase post visibility."
     ],
-    "explanation": "Repeat visitors ko measure karna retention rate ke under aata hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A brand’s global campaign is misunderstood in a specific region due to poor translation and tone. What should it have done differently?",
-    "options": [
-      "Invested in a celebrity endorsement.",
-      "Tested messages across cultures before launch.",
-      "Posted the same message across all channels without adjustments.",
-      "Used slang to feel more authentic."
-    ],
-    "explanation": "Cultural testing se pehle hi tone aur translation issues catch ho jaate hain.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "What does the SMART framework help marketers do?",
-    "options": [
-      "Write blog posts that rank well.",
-      "Determine target audience emotions.",
-      "Set goals that are specific, measurable, achievable, relevant, and time-bound.",
-      "Launch ads across multiple channels."
-    ],
-    "explanation": "SMART framework ka use clear aur achievable goals set karne ke liye hota hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A marketer wants to deliver lead-generation ads that allow users to submit contact info directly inside a platform like Facebook. What strategy should they use?",
-    "options": [
-      "SMS opt-ins.",
-      "Display ads with external landing pages.",
-      "Organic blog content.",
-      "Facebook lead-gen ads."
-    ],
-    "explanation": "Facebook lead-gen ads in-platform form fill karne ka option dete hain.",
-    "correctAnswer": [3]
-  },
-  {
-    "question": "Why is a multichannel marketing approach more effective than using a single platform?",
-    "options": [
-      "It increases content cost efficiency by default.",
-      "It eliminates the need for goal-setting.",
-      "It increases reach by engaging audiences across more digital touchpoints.",
-      "It requires fewer creative assets."
-    ],
-    "explanation": "Multiple touchpoints par audience ko reach karna multichannel ka biggest advantage hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A brand reviews Google Ads performance and discovers one ad is converting at a much higher rate than the others. What’s the next best step?",
-    "options": [
-      "Pause all other ads immediately.",
-      "Increase the bid amount across the board.",
-      "Replace visual assets with generic graphics.",
-      "Use A/B testing to compare creative elements and optimize results."
-    ],
-    "explanation": "A/B testing se pata chalta hai kaunsa creative element better perform kar raha hai.",
-    "correctAnswer": [3]
-  },
-  {
-    "question": "A marketer sends emails with product suggestions based on a user’s browsing history. What tactic are they using?",
-    "options": [
-      "Dynamic content.",
-      "Manual scheduling.",
-      "Static segmentation.",
-      "Cold outreach."
-    ],
-    "explanation": "User behavior ke basis par content change hona dynamic content kehlata hai.",
+    "explanation": "CTA audience ko directly guide karta hai ki unhe kya action lena hai (comment/click/share).",
     "correctAnswer": [0]
   },
   {
-    "question": "A brand publishes a blog post, which gets shared on social media and then promoted via a paid ad. What strategy is this an example of?",
+    "question": "A creator is designing Instagram Reels and wants to avoid having important text covered by interface elements. What should they do?",
     "options": [
-      "Integrating owned, earned, and paid media.",
-      "Segmenting display and search media.",
-      "Relying solely on earned outreach.",
-      "Creating UGC campaigns only."
+      "Add more text to the top and bottom edges.",
+      "Avoid using any text onscreen.",
+      "Place key text near the center of the screen.",
+      "Rely on voiceover alone to convey all information."
     ],
-    "explanation": "Blog (owned), shares (earned), aur ads (paid) — teeno ka integration ho raha hai.",
+    "explanation": "Instagram UI top/bottom cover kar sakta hai, isliye safe zone center hota hai.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A team is preparing a series of posts for Instagram and wants to optimize reach without appearing spammy. What is the recommended number of hashtags to include per post?",
+    "options": [
+      "Around three hashtags per post for maximum clarity.",
+      "Around 11, though fewer can still be effective.",
+      "20 or more hashtags to appear in more searches.",
+      "Avoid hashtags altogether to maintain a clean aesthetic."
+    ],
+    "explanation": "Instagram me around 11 hashtags recommended hota hai. Ye reach optimize karta hai without spammy look.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A social media manager wants to showcase real-world use of their products in a way that builds trust. What’s a practical approach?",
+    "options": [
+      "Generate visuals with AI to simulate customer activity.",
+      "Share staff selfies to represent customer experiences.",
+      "Repost user-generated content after asking for permission.",
+      "Use anonymous reviews without any visuals."
+    ],
+    "explanation": "User-generated content authentic hota hai aur trust build karta hai, especially permission ke saath repost karne par.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A business is hosting a launch event and wants to encourage followers to attend. Which type of post would best support this goal?",
+    "options": [
+      "Infographic with event data",
+      "Story meme with countdown sticker",
+      "Testimonial quote card",
+      "Branded invitation"
+    ],
+    "explanation": "Branded invitation event details clearly communicate karta hai aur professional invite feel deta hai.",
+    "correctAnswer": [3]
+  },
+  {
+    "question": "A team wants to create branded promotional content quickly for an upcoming flash sale. What’s an efficient first step in Adobe Express?",
+    "options": [
+      "Start with a platform-specific template that features photography.",
+      "Add audio narration before finalizing the design.",
+      "Use a document template to repurpose a company report.",
+      "Begin from scratch using blank canvas mode."
+    ],
+    "explanation": "Templates fastest way hote hain branded promo content create karne ke liye, especially platform-specific.",
     "correctAnswer": [0]
   },
   {
-    "question": "A smartphone brand designs ads for customers aged 18–25, highlighting gaming features. Which segmentation type would best fit this approach?",
+    "question": "A designer wants to make the environmental consequences of overconsumption feel more personal and emotional. What design technique would support that goal?",
     "options": [
-      "Behavioral segmentation.",
+      "Include everyday clothing items in the image to spark viewer reflection.",
+      "Focus on bold typography without visual metaphors.",
+      "Avoid using human elements to keep the image neutral.",
+      "Use abstract textures to create artistic distance from the subject."
+    ],
+    "explanation": "Everyday objects audience ko relate karne dete hain, jisse emotional impact zyada hota hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A creator is developing a promo video for a new product and plans to post it on Facebook, where many users view videos without sound. They want to ensure that viewers still understand the message clearly. What’s the best strategy?",
+    "options": [
+      "Skip captions and rely on voiceover instead.",
+      "Add clear subtitles or captions to each video.",
+      "Avoid all text overlays to keep visuals clean.",
+      "Keep the video under 10 seconds to reduce effort."
+    ],
+    "explanation": "Facebook users often mute videos, so subtitles/captions message clearly deliver karte hain.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A small business owner posts regularly on Instagram, but a friend points out several spelling errors and missing punctuation in their captions. What impact can this have?",
+    "options": [
+      "It can reduce credibility and make the posts harder to read.",
+      "It makes the captions feel more casual and human.",
+      "It boosts follower growth through curiosity.",
+      "It increases post visibility through algorithm hacks."
+    ],
+    "explanation": "Spelling/punctuation mistakes professionalism aur trust ko harm karte hain, aur readability reduce karte hain.",
+    "correctAnswer": [0]
+  },
+  
+  {
+    "question": "A clothing retailer groups customers by purchase habits, such as frequent sales shoppers versus premium buyers. Which option would most likely describe this segmentation approach?",
+    "options": [
       "Demographic segmentation.",
+      "Behavioral segmentation.",
       "Psychographic segmentation."
     ],
-    "explanation": "Yahan segmentation age group (18–25) ke basis par ho rahi hai, jo demographic variable hai.",
+    "explanation": "Grouping customers based on buying habits, shopping frequency, and purchase behavior is called behavioral segmentation.",
     "correctAnswer": [1]
   },
   {
     "question": "A skincare brand markets different sunscreen products to customers in their 20s, 40s, and 60s. What type of segmentation does this illustrate?",
     "options": [
-      "Behavioral segmentation.",
+      "Demographic segmentation.",
       "Geographic segmentation.",
-      "Demographic segmentation."
+      "Behavioral segmentation."
     ],
-    "explanation": "Age-based product targeting demographic segmentation ka example hota hai.",
-    "correctAnswer": [2]
+    "explanation": "Segmenting customers based on age groups is demographic segmentation.",
+    "correctAnswer": [0]
   },
   {
-    "question": "A software company is reviewing its Remote-working Rachel persona before launching a new product. What’s the best first step to ensure that the persona is still accurate?",
+    "question": "A sports retailer is preparing a campaign for a persona it calls Weekend Warrior Will, who enjoys outdoor activities but shops only during big sales. Which tactic would most effectively connect with Will?",
     "options": [
-      "Update the persona with recent customer research.",
-      "Ignore the persona and focus on the product’s features.",
-      "Base the persona only on one team member’s opinion."
+      "Promote unrelated fitness apps.",
+      "Offer limited-time discounts on outdoor gear.",
+      "Run ads highlighting luxury gear at premium prices."
     ],
-    "explanation": "Personas ko hamesha updated customer research ke saath validate karna chahiye.",
-    "correctAnswer": [0]
+    "explanation": "Since the persona shops mainly during sales, limited-time discounts match his shopping behavior and motivation.",
+    "correctAnswer": [1]
   },
   {
     "question": "A sports brand wants its ads to resonate with Active Andy, the brand’s most engaged customer type. What’s the first step to ensure that the messaging connects?",
     "options": [
+      "Review Andy’s persona profile to align messaging with his interests and needs.",
       "Launch a new campaign without research.",
-      "Guess what Andy might like based on trends.",
-      "Review Andy’s persona profile to align messaging with his interests and needs."
+      "Guess what Andy might like based on trends."
     ],
-    "explanation": "Effective messaging ke liye persona ke interests, needs aur motivations samajhna zaroori hota hai.",
-    "correctAnswer": [2]
+    "explanation": "The best way to create relevant messaging is to review the persona profile and align the campaign with their needs and interests.",
+    "correctAnswer": [0]
   },
   {
-    "question": "A restaurant owner sees that behind-the-scenes stories get more responses than menu specials. What change would most likely increase engagement?",
+    "question": "An online clothing store’s style advice articles draw more clicks than sales announcements. Which action would help them make the most of this insight?",
     "options": [
-      "Post the same type of specials without changes.",
-      "Eliminate all behind-the-scenes posts.",
-      "Share more behind-the-scenes content while integrating specials naturally."
+      "Stop publishing style advice entirely.",
+      "Publish more style advice articles with links to related products.",
+      "Focus only on sales announcements."
     ],
-    "explanation": "Jo content audience ko engage karta hai, usko zyada use karna best strategy hoti hai.",
-    "correctAnswer": [2]
+    "explanation": "Doubling down on high-performing content (style advice) while linking products naturally increases engagement and potential conversions.",
+    "correctAnswer": [1]
   },
   {
     "question": "A mobile app team sees that new users often drop off during onboarding. Which step would most likely help improve completion rates?",
     "options": [
-      "Streamline onboarding into short, interactive steps.",
+      "Leave the onboarding process exactly as it is.",
       "Extend the onboarding process with more detailed tutorials.",
-      "Leave the onboarding process exactly as it is."
+      "Streamline onboarding into short, interactive steps."
     ],
-    "explanation": "Simple aur interactive onboarding user drop-off kam karta hai.",
-    "correctAnswer": [0]
+    "explanation": "Shorter, interactive onboarding reduces friction and keeps users engaged, improving completion rates.",
+    "correctAnswer": [2]
   },
   {
-    "question": "A clothing retailer sells directly to individual shoppers online and in-store. What’s the correct marketing type for this scenario?",
+    "question": "A graphic design marketplace allows freelancers to offer their services to companies. Which category best fits this business model?",
     "options": [
       "C2B.",
-      "B2C.",
+      "C2C.",
       "B2B."
     ],
-    "explanation": "Business directly consumers ko sell kar raha hai, jo B2C model hota hai.",
-    "correctAnswer": [1]
+    "explanation": "In this model, individual freelancers (consumers) provide services to businesses, which is Consumer-to-Business (C2B).",
+    "correctAnswer": [0]
   },
   {
-    "question": "An online resale marketplace enables customers to buy and sell clothing directly with one another. Which model is this an example of?",
+    "question": "A photographer sells stock images directly to a large media company. Which business model is at work?",
     "options": [
-      "C2C.",
-      "B2C.",
-      "B2B."
+      "B2B.",
+      "C2B.",
+      "C2C."
     ],
-    "explanation": "Customers ke beech direct buying aur selling C2C model hota hai.",
-    "correctAnswer": [0]
+    "explanation": "An individual (consumer/creator) selling services or products to a business is C2B marketing.",
+    "correctAnswer": [1]
   },
   {
     "question": "An apparel company wants to appeal to indigenous communities. Which approach would build the strongest relationships?",
     "options": [
-      "Collaborate with community members in product design.",
       "Avoid acknowledging cultural traditions entirely.",
-      "Copy traditional designs without permission."
+      "Copy traditional designs without permission.",
+      "Collaborate with community members in product design."
     ],
-    "explanation": "Collaboration aur respect trust aur long-term relationship build karta hai.",
-    "correctAnswer": [0]
+    "explanation": "Collaboration and respectful co-creation builds trust and long-term relationships with indigenous communities.",
+    "correctAnswer": [2]
   },
   {
     "question": "A fashion brand is criticized online for an ad that unintentionally stereotypes a cultural group. What’s the best first step?",
     "options": [
+      "Issue a public apology and outline corrective actions.",
       "Delete the ad quietly and ignore questions.",
-      "Continue running the ad until the campaign ends.",
-      "Issue a public apology and outline corrective actions."
+      "Continue running the ad until the campaign ends."
     ],
-    "explanation": "Transparency aur accountability culturally sensitive situations me sabse zaroori hoti hai.",
-    "correctAnswer": [2]
+    "explanation": "A public apology with corrective actions shows accountability and helps rebuild trust after a cultural mistake.",
+    "correctAnswer": [0]
   }
-],module4:[
-  {
-    "question": "A new skincare brand wants to increase visibility before launch. Which action would most likely capture the attention of the brand’s target audience?",
+,
+       {
+    "question": "A creator begins tracking their analytics weekly and notices that user comments have decreased over the past month. What is the best use of this insight?",
     "options": [
-      "Send personalized follow-up emails to past customers.",
-      "Offer a loyalty program to repeat buyers.",
-      "Partner with influencers to create shareable content on social media."
+      "Review which types of posts previously encouraged comments.",
+      "Increase posting frequency to regain lost visibility.",
+      "Shift focus entirely to follower count instead.",
+      "Pause all posting to reset their engagement baseline."
     ],
-    "explanation": "Awareness stage me influencers brand visibility aur reach increase karte hain, jo attention capture karne ka best way hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "An online fitness platform experiences high traffic to its workout library page but few sign-ups. What should the company do to strengthen interest?",
-    "options": [
-      "Post only product announcements on social media.",
-      "Limit free content to one workout per month.",
-      "Add personalized workout recommendations based on browsing."
-    ],
-    "explanation": "Interest stage me personalization users ko engaged rakhta hai aur sign-up ke chances badhata hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A software company offers free webinars to compare solutions and answer questions. How does this support the consideration stage?",
-    "options": [
-      "It shortens onboarding without explaining benefits.",
-      "It provides value and builds trust while showcasing expertise.",
-      "It focuses on impulse buying rather than informed decisions."
-    ],
-    "explanation": "Consideration stage me customers compare karte hain, webinars trust aur value provide karke decision-making me help karte hain.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "An electronics store has customers who are comparing prices and features but haven’t purchased yet. What’s the best way to move them to intent?",
-    "options": [
-      "Offer a limited-time bundle with added value.",
-      "Focus only on unrelated blog content.",
-      "Remove product details to create urgency."
-    ],
-    "explanation": "Intent stage me urgency + extra value customers ko purchase ke liye ready karta hai.",
+    "explanation": "Analytics ka purpose ye samajhna hota hai ki pehle kya kaam kar raha tha. Past high-comment posts review karna best next step hai.",
     "correctAnswer": [0]
   },
   {
-    "question": "An online retailer wants to increase conversions at checkout. Which action would have the greatest impact in the purchase stage?",
+    "question": "A small business creator sees that posts with customer testimonials perform significantly better than promotional content. What adjustment would best support their social strategy?",
     "options": [
-      "Add pop-ups promoting unrelated blog posts.",
-      "Simplify the checkout process to reduce clicks.",
-      "Delay showing shipping costs until after payment."
+      "Increase promotional content to match testimonial frequency.",
+      "Ignore testimonial results since they aren’t product-focused.",
+      "Incorporate more user stories and testimonials into future posts.",
+      "Focus only on platform aesthetics and layout changes."
     ],
-    "explanation": "Purchase stage me friction reduce karna sabse important hota hai. Simple checkout conversions badhata hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A clothing retailer wants to increase repeat purchases. Which approach best supports post-purchase engagement?",
-    "options": [
-      "Send personalized style suggestions based on past purchases.",
-      "Send only generic ads unrelated to purchase history.",
-      "Ignore customers until the next seasonal sale."
-    ],
-    "explanation": "Post-purchase stage me personalized recommendations loyalty aur repeat purchases increase karte hain.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "An eco-friendly cleaning brand wants customers to keep buying and promoting the brand. Which program would help most?",
-    "options": [
-      "Offer one-time discounts without follow-up.",
-      "Introduce a points-based loyalty program with exclusive perks.",
-      "Randomly change reward structures each month."
-    ],
-    "explanation": "Loyalty programs customers ko retain karte hain aur advocacy/referrals encourage karte hain.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A nonprofit wants supporters to connect emotionally with its mission. Which content type would best create emotional ROI?",
-    "options": [
-      "Stories of individuals whose lives were changed by donations.",
-      "Generic thank-you messages without personalization.",
-      "Detailed spreadsheets showing donations."
-    ],
-    "explanation": "Emotional ROI ke liye storytelling sabse effective hoti hai, jo emotional connection create karti hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A retailer is running ads but not seeing conversions. What’s the most likely funnel issue?",
-    "options": [
-      "The retailer avoids any engagement after purchase.",
-      "Awareness stage content is too focused on closing the sale.",
-      "The retailer provides too much educational content in the interest stage."
-    ],
-    "explanation": "Awareness stage me direct selling push karna audience ko repel kar deta hai. Har stage ka proper messaging zaroori hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "Your marketing team uses a generative AI funnel analysis to detect that customers are disengaging at the consideration stage. Which action would best use these AI insights to improve conversions?",
-    "options": [
-      "Ignore the AI findings and continue with the current generic strategy.",
-      "Show unrelated promotions to capture attention.",
-      "Personalize product recommendations and address objections through targeted content."
-    ],
-    "explanation": "AI insights ka best use personalization aur objection handling me hota hai, jo consideration stage drop-off reduce karta hai.",
-    "correctAnswer": [2]
-  },
-   {
-    "question": "After running an A/B test on two landing page versions, the team sees higher click-through rates but no improvement in conversions. What should they do next?",
-    "options": [
-      "Evaluate and revise the landing page content.",
-      "Rerun the test with the same design.",
-      "Change the campaign’s KPI targets.",
-      "Focus solely on increasing email open rates."
-    ],
-    "explanation": "High CTR but low conversions usually means landing page content ya UX issue hai, jise optimize karna next logical step hota hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A food delivery company wants to offer free delivery to users near their restaurant during peak hours. What strategy should they use to deliver this personalized, timely offer?",
-    "options": [
-      "General email campaigns",
-      "Seasonal blog content",
-      "Geolocated marketing",
-      "Influencer endorsements"
-    ],
-    "explanation": "Location aur time ke basis par offers dena geolocated marketing ka use case hai.",
+    "explanation": "Testimonials social proof dete hain. Jo content perform kar raha hai, usko scale karna smart strategy hoti hai.",
     "correctAnswer": [2]
   },
   {
-    "question": "A brand wants to improve accessibility and SEO by making its images more understandable to both users and search engines. What should the marketing team do?",
+    "question": "A wellness creator wants to understand how well their posts resonate with their audience. Which metric should they focus on?",
     "options": [
-      "Add descriptive alt tags to all images.",
-      "Replace all images with large text blocks.",
-      "Use filenames like_image1.jpg_for faster loading.",
-      "Remove all images to reduce distractions."
-    ],
-    "explanation": "Alt tags accessibility aur SEO dono ke liye essential hote hain.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A team reviews their latest data report and notices that video posts consistently outperform text posts in terms of audience interaction. What should they do based on this insight?",
-    "options": [
-      "Replace all video content with static images.",
-      "Shift resources toward creating more video content.",
-      "Stop all text content production immediately.",
-      "Remove performance tracking to simplify content planning."
-    ],
-    "explanation": "Data-driven decision ka matlab hai jo format perform kar raha hai usme investment badhana.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A marketing analyst notices that while their campaign generates many visitors, most of them leave the website after viewing only one page. Which KPI should the analyst examine to assess this issue?",
-    "options": [
-      "Conversion rate",
-      "Customer lifetime value",
-      "Bounce rate",
-      "Click-through rate"
-    ],
-    "explanation": "Single-page visit ke baad exit ko bounce rate measure karta hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A stakeholder asks for proof that the marketing campaign delivered strong results. Which benefit of using KPIs does this situation reflect?",
-    "options": [
-      "KPIs eliminate the need for stakeholder updates.",
-      "KPIs identify new campaign topics.",
-      "KPIs help personalize the customer journey.",
-      "KPIs provide a quantifiable way to demonstrate the success of marketing efforts."
-    ],
-    "explanation": "KPIs measurable numbers provide karte hain jo campaign success ko clearly show karte hain.",
-    "correctAnswer": [3]
-  },
-  {
-    "question": "A marketing team wants to increase conversions by tailoring messages to different audience groups based on their behaviors and preferences. Which strategy should they use?",
-    "options": [
-      "Scheduling identical posts at random times",
-      "Running the same message across all demographics",
-      "Increasing the campaign budget across all platforms",
-      "Audience segmentation and personalization"
-    ],
-    "explanation": "Behavior aur preference ke basis par messaging tailor karna personalization strategy hoti hai.",
-    "correctAnswer": [3]
-  },
-  {
-    "question": "A campaign manager wants to make sure their advertising budget is spent on the most effective channels. What should they use data for in this case?",
-    "options": [
-      "Use audience polls instead of behavioral data.",
-      "Identify high-converting audiences and focus spend accordingly.",
-      "Distribute budget evenly across all platforms by default.",
-      "Choose the cheapest platforms regardless of performance."
-    ],
-    "explanation": "Performance data se pata chalta hai kaunse audiences aur channels best convert kar rahe hain.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A digital marketing manager needs to evaluate the long-term financial value a customer brings to the business. Which KPI should they use?",
-    "options": [
-      "Bounce rate",
-      "Click-through rate (CTR)",
-      "Customer lifetime value (CLV)",
+      "Follower growth",
+      "Reach",
+      "Engagement",
       "Conversion rate"
     ],
-    "explanation": "Customer ke long-term revenue contribution ko CLV measure karta hai.",
+    "explanation": "Engagement batata hai ki audience content ke saath interact kar rahi hai ya nahi.",
     "correctAnswer": [2]
   },
   {
-    "question": "A campaign is driving traffic to the site, but analytics reveal a high bounce rate and minimal time spent on landing pages. What’s the best next step for the team to take?",
+    "question": "A beauty creator wants to show that their brand is modern and culturally aware. How can participating in social media trends support this goal?",
     "options": [
-      "Add urgency to the email subject lines.",
-      "Improve landing page content and design.",
-      "Launch a retargeting campaign immediately.",
-      "Adjust targeting parameters in ad sets."
+      "It allows them to reduce time spent responding to comments.",
+      "It shows that their brand is in tune with current conversations and culture.",
+      "It helps their audience ignore older content that no longer reflects the brand.",
+      "It guarantees viral reach among younger demographics."
     ],
-    "explanation": "High bounce aur low time ka matlab landing page experience weak hai, jise improve karna zaroori hai.",
+    "explanation": "Relevant trends me participate karna brand ko culturally updated aur relatable dikhata hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A dog toy brand wants to make sure its new Valentine’s Day post will display correctly on Instagram, Facebook, and Pinterest. What feature in Content Scheduler should they use to check how the post will appear across platforms?",
+    "options": [
+      "Preview tool that shows post appearance on multiple platforms",
+      "Link shortener",
+      "AI caption generator",
+      "Analytics report"
+    ],
+    "explanation": "Preview tool se creators dekh sakte hain ki post har platform par kaisa dikhega.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A brand posts regularly but notices low engagement. The marketing team rarely replies to comments or interacts with followers. What action is most likely to improve results?",
+    "options": [
+      "Focus entirely on product videos.",
+      "Turn off comments to avoid negative feedback.",
+      "Respond to comments and DMs to build stronger audience connections.",
+      "Post more often using paid ads for each post."
+    ],
+    "explanation": "Social media two-way hota hai. Replies aur interaction engagement ko naturally badhate hain.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A career coach wants to promote their services by sharing polls, blog links, and professional tips. Which platform would best suit this strategy?",
+    "options": [
+      "TikTok",
+      "Instagram",
+      "Pinterest",
+      "LinkedIn"
+    ],
+    "explanation": "Professional content, blogs aur career tips ke liye LinkedIn best platform hai.",
+    "correctAnswer": [3]
+  },
+  {
+    "question": "An author wants to build awareness by sharing short, punchy takes on trending topics. What platform best supports this strategy?",
+    "options": [
+      "X (formerly Twitter)",
+      "Instagram",
+      "LinkedIn",
+      "Pinterest"
+    ],
+    "explanation": "Short, fast-moving opinions aur trends ke liye X (Twitter) ideal platform hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A mental health advocate wants to participate in a trending meme challenge but wonders whether it’s a good fit. What’s the most important first step before jumping in?",
+    "options": [
+      "Choose a random variation to stand out from the crowd.",
+      "Consider whether the trend aligns with their brand’s values and message.",
+      "Wait to see if the trend stays popular for at least two weeks.",
+      "Focus on copying exactly how top creators used the trend."
+    ],
+    "explanation": "Sensitive domains me brand values aur message alignment sabse important hota hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A travel creator wants to improve their posting strategy but isn’t sure how to measure progress. What’s the best way to begin?",
+    "options": [
+      "Start benchmarking by reviewing current performance levels.",
+      "Only review analytics after reaching major follower milestones.",
+      "Post new content consistently without measuring results.",
+      "Wait for audience feedback before analyzing post performance."
+    ],
+    "explanation": "Benchmarking se baseline milta hai jisse future improvement measure ki ja sakti hai.",
+    "correctAnswer": [0]
+  }
+  ,
+  
+  {
+    "question": "A small business owner wants to create social media copy that connects with their audience. They’re unsure how to describe their tone. What’s the best first step they should take?",
+    "options": [
+      "Research the top-performing memes in their market",
+      "Ask close friends or colleagues to describe their brand in 3–5 words.",
+      "Choose a few trending hashtags that match their industry."
+    ],
+    "explanation": "Brand tone define karne ke liye pehle brand perception samajhna zaroori hota hai. Close friends/colleagues ke words authentic feedback dete hain.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A software startup wants visitors to keep coming back to its site even before buying anything. What should the company do to achieve this?",
+    "options": [
+      "Create a free resource center with tutorials and troubleshooting tips that meet customer needs.",
+      "Focus only on social media ads with purchase links.",
+      "Stop posting content until their product launches."
+    ],
+    "explanation": "Free valuable resources trust build karte hain aur repeat visits increase karte hain, jo long-term loyalty me help karta hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A local pet supply store needs to attract new followers on Facebook. The owners have a blog post called 10 Healthy Treats Your Dog Will Love. What’s the best way to use this content to meet their goal?",
+    "options": [
+      "Email it only to their most loyal customers.",
+      "Share it on Facebook with an engaging caption that encourages clicks.",
+      "Use it as a loyalty reward for existing customers."
+    ],
+    "explanation": "Facebook followers badhane ke liye blog post ko engaging caption ke saath share karna best strategy hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A tech gadget company wants to inspire customers while showcasing product capabilities. What’s the best way to achieve both goals?",
+    "options": [
+      "Create only in-house promotional videos with scripted actors.",
+      "Feature customer-submitted videos using the products in creative or adventurous ways.",
+      "Publish a weekly blog post about company policies."
+    ],
+    "explanation": "Customer-submitted content authentic hota hai aur real-world use cases show karta hai, jo inspiration aur product showcase dono achieve karta hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A nonprofit’s campaign page has the headline Join Us, but donations are low. What change is most likely to improve results?",
+    "options": [
+      "Keep the headline vague to create curiosity.",
+      "Replace the headline with a large logo.",
+      "Rewrite the headline to include a specific benefit, like Join Us to Protect 1,000 Acres of Rainforest."
+    ],
+    "explanation": "Specific benefit-driven headline clear impact dikhata hai aur donation motivation increase karta hai.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A coffee subscription service wants more customers to sign up. Which approach should they use in their email subject line?",
+    "options": [
+      "Use a generic statement about coffee trends.",
+      "Write a long paragraph explaining the subscription details.",
+      "Create a call to action (CTA) that sparks curiosity and action, such as Discover Your Perfect Roast."
+    ],
+    "explanation": "Strong CTA curiosity create karta hai aur users ko action lene ke liye push karta hai.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A camera company wants to build community and authenticity. What should it do?",
+    "options": [
+      "Create an internal newsletter for employees only.",
+      "Feature customer-shot adventure videos on the company Instagram page.",
+      "Hire only professional photographers for campaigns."
+    ],
+    "explanation": "Customer content community build karta hai aur authenticity increase karta hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A skincare brand wants to encourage immediate purchases during a short campaign. What should they do?",
+    "options": [
+      "Run a 48-hour “Buy One, Get One Free” deal",
+      "Publish weekly skincare tips on social media only",
+      "Launch a year-long loyalty points program"
+    ],
+    "explanation": "Short campaign me urgency create karne ke liye limited-time offer best hota hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A marketing consultant wants to grow their email list. What should they do?",
+    "options": [
+      "Post only on social media without a sign-up link.",
+      "Run paid ads with only a phone number listed.",
+      "Offer a downloadable Social Media Strategy Checklist in exchange for an email address."
+    ],
+    "explanation": "Lead magnet (downloadable checklist) email list growth ke liye effective strategy hoti hai.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A bakery wants to grow its customer base through word-of-mouth marketing. Which approach would be most effective?",
+    "options": [
+      "Only advertise inside the store with posters.",
+      "Give customers a free pastry for every new customer they refer.",
+      "Increase prices for loyal customers to boost revenue."
+    ],
+    "explanation": "Referral rewards word-of-mouth ko boost karte hain aur customer base grow karte hain.",
     "correctAnswer": [1]
   }
-],
-module5:[
-    {
+,
+        {
     "question": "A fitness app uses automation to recommend workout plans. However, some users report receiving biased suggestions that don’t match their goals. What should the company do first?",
     "options": [
       "Limit the personalization to only premium users.",
@@ -1072,440 +2216,854 @@ module5:[
     ],
     "explanation": "Transparency audience ke trust aur credibility ko maintain karti hai.",
     "correctAnswer": [3]
-  }
-],
-module6:[
-   {
-    "question": "A creator begins tracking their analytics weekly and notices that user comments have decreased over the past month. What is the best use of this insight?",
-    "options": [
-      "Review which types of posts previously encouraged comments.",
-      "Increase posting frequency to regain lost visibility.",
-      "Shift focus entirely to follower count instead.",
-      "Pause all posting to reset their engagement baseline."
-    ],
-    "explanation": "Analytics ka purpose ye samajhna hota hai ki pehle kya kaam kar raha tha. Past high-comment posts review karna best next step hai.",
-    "correctAnswer": [0]
   },
-  {
-    "question": "A small business creator sees that posts with customer testimonials perform significantly better than promotional content. What adjustment would best support their social strategy?",
+      {
+    "question": "A new skincare brand wants to increase visibility before launch. Which action would most likely capture the attention of the brand’s target audience?",
     "options": [
-      "Increase promotional content to match testimonial frequency.",
-      "Ignore testimonial results since they aren’t product-focused.",
-      "Incorporate more user stories and testimonials into future posts.",
-      "Focus only on platform aesthetics and layout changes."
+      "Send personalized follow-up emails to past customers.",
+      "Offer a loyalty program to repeat buyers.",
+      "Partner with influencers to create shareable content on social media."
     ],
-    "explanation": "Testimonials social proof dete hain. Jo content perform kar raha hai, usko scale karna smart strategy hoti hai.",
+    "explanation": "Awareness stage me influencers brand visibility aur reach increase karte hain, jo attention capture karne ka best way hai.",
     "correctAnswer": [2]
   },
   {
-    "question": "A wellness creator wants to understand how well their posts resonate with their audience. Which metric should they focus on?",
+    "question": "An online fitness platform experiences high traffic to its workout library page but few sign-ups. What should the company do to strengthen interest?",
     "options": [
-      "Follower growth",
-      "Reach",
-      "Engagement",
+      "Post only product announcements on social media.",
+      "Limit free content to one workout per month.",
+      "Add personalized workout recommendations based on browsing."
+    ],
+    "explanation": "Interest stage me personalization users ko engaged rakhta hai aur sign-up ke chances badhata hai.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A software company offers free webinars to compare solutions and answer questions. How does this support the consideration stage?",
+    "options": [
+      "It shortens onboarding without explaining benefits.",
+      "It provides value and builds trust while showcasing expertise.",
+      "It focuses on impulse buying rather than informed decisions."
+    ],
+    "explanation": "Consideration stage me customers compare karte hain, webinars trust aur value provide karke decision-making me help karte hain.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "An electronics store has customers who are comparing prices and features but haven’t purchased yet. What’s the best way to move them to intent?",
+    "options": [
+      "Offer a limited-time bundle with added value.",
+      "Focus only on unrelated blog content.",
+      "Remove product details to create urgency."
+    ],
+    "explanation": "Intent stage me urgency + extra value customers ko purchase ke liye ready karta hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "An online retailer wants to increase conversions at checkout. Which action would have the greatest impact in the purchase stage?",
+    "options": [
+      "Add pop-ups promoting unrelated blog posts.",
+      "Simplify the checkout process to reduce clicks.",
+      "Delay showing shipping costs until after payment."
+    ],
+    "explanation": "Purchase stage me friction reduce karna sabse important hota hai. Simple checkout conversions badhata hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A clothing retailer wants to increase repeat purchases. Which approach best supports post-purchase engagement?",
+    "options": [
+      "Send personalized style suggestions based on past purchases.",
+      "Send only generic ads unrelated to purchase history.",
+      "Ignore customers until the next seasonal sale."
+    ],
+    "explanation": "Post-purchase stage me personalized recommendations loyalty aur repeat purchases increase karte hain.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "An eco-friendly cleaning brand wants customers to keep buying and promoting the brand. Which program would help most?",
+    "options": [
+      "Offer one-time discounts without follow-up.",
+      "Introduce a points-based loyalty program with exclusive perks.",
+      "Randomly change reward structures each month."
+    ],
+    "explanation": "Loyalty programs customers ko retain karte hain aur advocacy/referrals encourage karte hain.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A nonprofit wants supporters to connect emotionally with its mission. Which content type would best create emotional ROI?",
+    "options": [
+      "Stories of individuals whose lives were changed by donations.",
+      "Generic thank-you messages without personalization.",
+      "Detailed spreadsheets showing donations."
+    ],
+    "explanation": "Emotional ROI ke liye storytelling sabse effective hoti hai, jo emotional connection create karti hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A retailer is running ads but not seeing conversions. What’s the most likely funnel issue?",
+    "options": [
+      "The retailer avoids any engagement after purchase.",
+      "Awareness stage content is too focused on closing the sale.",
+      "The retailer provides too much educational content in the interest stage."
+    ],
+    "explanation": "Awareness stage me direct selling push karna audience ko repel kar deta hai. Har stage ka proper messaging zaroori hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "Your marketing team uses a generative AI funnel analysis to detect that customers are disengaging at the consideration stage. Which action would best use these AI insights to improve conversions?",
+    "options": [
+      "Ignore the AI findings and continue with the current generic strategy.",
+      "Show unrelated promotions to capture attention.",
+      "Personalize product recommendations and address objections through targeted content."
+    ],
+    "explanation": "AI insights ka best use personalization aur objection handling me hota hai, jo consideration stage drop-off reduce karta hai.",
+    "correctAnswer": [2]
+  },
+   {
+    "question": "After running an A/B test on two landing page versions, the team sees higher click-through rates but no improvement in conversions. What should they do next?",
+    "options": [
+      "Evaluate and revise the landing page content.",
+      "Rerun the test with the same design.",
+      "Change the campaign’s KPI targets.",
+      "Focus solely on increasing email open rates."
+    ],
+    "explanation": "High CTR but low conversions usually means landing page content ya UX issue hai, jise optimize karna next logical step hota hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A food delivery company wants to offer free delivery to users near their restaurant during peak hours. What strategy should they use to deliver this personalized, timely offer?",
+    "options": [
+      "General email campaigns",
+      "Seasonal blog content",
+      "Geolocated marketing",
+      "Influencer endorsements"
+    ],
+    "explanation": "Location aur time ke basis par offers dena geolocated marketing ka use case hai.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A brand wants to improve accessibility and SEO by making its images more understandable to both users and search engines. What should the marketing team do?",
+    "options": [
+      "Add descriptive alt tags to all images.",
+      "Replace all images with large text blocks.",
+      "Use filenames like_image1.jpg_for faster loading.",
+      "Remove all images to reduce distractions."
+    ],
+    "explanation": "Alt tags accessibility aur SEO dono ke liye essential hote hain.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A team reviews their latest data report and notices that video posts consistently outperform text posts in terms of audience interaction. What should they do based on this insight?",
+    "options": [
+      "Replace all video content with static images.",
+      "Shift resources toward creating more video content.",
+      "Stop all text content production immediately.",
+      "Remove performance tracking to simplify content planning."
+    ],
+    "explanation": "Data-driven decision ka matlab hai jo format perform kar raha hai usme investment badhana.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A marketing analyst notices that while their campaign generates many visitors, most of them leave the website after viewing only one page. Which KPI should the analyst examine to assess this issue?",
+    "options": [
+      "Conversion rate",
+      "Customer lifetime value",
+      "Bounce rate",
+      "Click-through rate"
+    ],
+    "explanation": "Single-page visit ke baad exit ko bounce rate measure karta hai.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A stakeholder asks for proof that the marketing campaign delivered strong results. Which benefit of using KPIs does this situation reflect?",
+    "options": [
+      "KPIs eliminate the need for stakeholder updates.",
+      "KPIs identify new campaign topics.",
+      "KPIs help personalize the customer journey.",
+      "KPIs provide a quantifiable way to demonstrate the success of marketing efforts."
+    ],
+    "explanation": "KPIs measurable numbers provide karte hain jo campaign success ko clearly show karte hain.",
+    "correctAnswer": [3]
+  },
+  {
+    "question": "A marketing team wants to increase conversions by tailoring messages to different audience groups based on their behaviors and preferences. Which strategy should they use?",
+    "options": [
+      "Scheduling identical posts at random times",
+      "Running the same message across all demographics",
+      "Increasing the campaign budget across all platforms",
+      "Audience segmentation and personalization"
+    ],
+    "explanation": "Behavior aur preference ke basis par messaging tailor karna personalization strategy hoti hai.",
+    "correctAnswer": [3]
+  },
+  {
+    "question": "A campaign manager wants to make sure their advertising budget is spent on the most effective channels. What should they use data for in this case?",
+    "options": [
+      "Use audience polls instead of behavioral data.",
+      "Identify high-converting audiences and focus spend accordingly.",
+      "Distribute budget evenly across all platforms by default.",
+      "Choose the cheapest platforms regardless of performance."
+    ],
+    "explanation": "Performance data se pata chalta hai kaunse audiences aur channels best convert kar rahe hain.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A digital marketing manager needs to evaluate the long-term financial value a customer brings to the business. Which KPI should they use?",
+    "options": [
+      "Bounce rate",
+      "Click-through rate (CTR)",
+      "Customer lifetime value (CLV)",
       "Conversion rate"
     ],
-    "explanation": "Engagement batata hai ki audience content ke saath interact kar rahi hai ya nahi.",
+    "explanation": "Customer ke long-term revenue contribution ko CLV measure karta hai.",
     "correctAnswer": [2]
   },
   {
-    "question": "A beauty creator wants to show that their brand is modern and culturally aware. How can participating in social media trends support this goal?",
+    "question": "A campaign is driving traffic to the site, but analytics reveal a high bounce rate and minimal time spent on landing pages. What’s the best next step for the team to take?",
     "options": [
-      "It allows them to reduce time spent responding to comments.",
-      "It shows that their brand is in tune with current conversations and culture.",
-      "It helps their audience ignore older content that no longer reflects the brand.",
-      "It guarantees viral reach among younger demographics."
+      "Add urgency to the email subject lines.",
+      "Improve landing page content and design.",
+      "Launch a retargeting campaign immediately.",
+      "Adjust targeting parameters in ad sets."
     ],
-    "explanation": "Relevant trends me participate karna brand ko culturally updated aur relatable dikhata hai.",
+    "explanation": "High bounce aur low time ka matlab landing page experience weak hai, jise improve karna zaroori hai.",
+    "correctAnswer": [1]
+  },
+      {
+    "question": "Which of the following best explains a key difference between search ads and display ads?",
+    "options": [
+      "Display ads don’t require a call-to-action.",
+      "Search ads rely on keyword intent, while display ads rely on visual appeal.",
+      "Search ads appear in videos, while display ads show in emails.",
+      "Display ads have higher click-through rates than search ads."
+    ],
+    "explanation": "Search ads user ke intent (keywords) par based hote hain, jabki display ads visual appeal aur awareness ke liye hote hain.",
     "correctAnswer": [1]
   },
   {
-    "question": "A dog toy brand wants to make sure its new Valentine’s Day post will display correctly on Instagram, Facebook, and Pinterest. What feature in Content Scheduler should they use to check how the post will appear across platforms?",
+    "question": "A marketer segments leads by how engaged they are with previous emails and website visits. What’s the goal of this strategy?",
     "options": [
-      "Preview tool that shows post appearance on multiple platforms",
-      "Link shortener",
-      "AI caption generator",
-      "Analytics report"
+      "To qualify leads for influencer partnerships.",
+      "To eliminate inactive users from the list.",
+      "To tailor content delivery and improve conversion chances.",
+      "To reduce bounce rate from landing pages."
     ],
-    "explanation": "Preview tool se creators dekh sakte hain ki post har platform par kaisa dikhega.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A brand posts regularly but notices low engagement. The marketing team rarely replies to comments or interacts with followers. What action is most likely to improve results?",
-    "options": [
-      "Focus entirely on product videos.",
-      "Turn off comments to avoid negative feedback.",
-      "Respond to comments and DMs to build stronger audience connections.",
-      "Post more often using paid ads for each post."
-    ],
-    "explanation": "Social media two-way hota hai. Replies aur interaction engagement ko naturally badhate hain.",
+    "explanation": "Engagement-based segmentation ka goal personalized content deliver karke conversion improve karna hota hai.",
     "correctAnswer": [2]
   },
   {
-    "question": "A career coach wants to promote their services by sharing polls, blog links, and professional tips. Which platform would best suit this strategy?",
+    "question": "A brand tracks how many visitors come back to their site repeatedly. Which metric are they measuring?",
     "options": [
-      "TikTok",
-      "Instagram",
-      "Pinterest",
-      "LinkedIn"
+      "SEO score.",
+      "ROI.",
+      "Retention rate.",
+      "Conversion rate."
     ],
-    "explanation": "Professional content, blogs aur career tips ke liye LinkedIn best platform hai.",
+    "explanation": "Repeat visitors ko measure karna retention rate ke under aata hai.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A brand’s global campaign is misunderstood in a specific region due to poor translation and tone. What should it have done differently?",
+    "options": [
+      "Invested in a celebrity endorsement.",
+      "Tested messages across cultures before launch.",
+      "Posted the same message across all channels without adjustments.",
+      "Used slang to feel more authentic."
+    ],
+    "explanation": "Cultural testing se pehle hi tone aur translation issues catch ho jaate hain.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "What does the SMART framework help marketers do?",
+    "options": [
+      "Write blog posts that rank well.",
+      "Determine target audience emotions.",
+      "Set goals that are specific, measurable, achievable, relevant, and time-bound.",
+      "Launch ads across multiple channels."
+    ],
+    "explanation": "SMART framework ka use clear aur achievable goals set karne ke liye hota hai.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A marketer wants to deliver lead-generation ads that allow users to submit contact info directly inside a platform like Facebook. What strategy should they use?",
+    "options": [
+      "SMS opt-ins.",
+      "Display ads with external landing pages.",
+      "Organic blog content.",
+      "Facebook lead-gen ads."
+    ],
+    "explanation": "Facebook lead-gen ads in-platform form fill karne ka option dete hain.",
     "correctAnswer": [3]
   },
   {
-    "question": "An author wants to build awareness by sharing short, punchy takes on trending topics. What platform best supports this strategy?",
+    "question": "Why is a multichannel marketing approach more effective than using a single platform?",
     "options": [
-      "X (formerly Twitter)",
-      "Instagram",
-      "LinkedIn",
-      "Pinterest"
+      "It increases content cost efficiency by default.",
+      "It eliminates the need for goal-setting.",
+      "It increases reach by engaging audiences across more digital touchpoints.",
+      "It requires fewer creative assets."
     ],
-    "explanation": "Short, fast-moving opinions aur trends ke liye X (Twitter) ideal platform hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A mental health advocate wants to participate in a trending meme challenge but wonders whether it’s a good fit. What’s the most important first step before jumping in?",
-    "options": [
-      "Choose a random variation to stand out from the crowd.",
-      "Consider whether the trend aligns with their brand’s values and message.",
-      "Wait to see if the trend stays popular for at least two weeks.",
-      "Focus on copying exactly how top creators used the trend."
-    ],
-    "explanation": "Sensitive domains me brand values aur message alignment sabse important hota hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A travel creator wants to improve their posting strategy but isn’t sure how to measure progress. What’s the best way to begin?",
-    "options": [
-      "Start benchmarking by reviewing current performance levels.",
-      "Only review analytics after reaching major follower milestones.",
-      "Post new content consistently without measuring results.",
-      "Wait for audience feedback before analyzing post performance."
-    ],
-    "explanation": "Benchmarking se baseline milta hai jisse future improvement measure ki ja sakti hai.",
-    "correctAnswer": [0]
-  }
-  ,
-  
-  {
-    "question": "A small business owner wants to create social media copy that connects with their audience. They’re unsure how to describe their tone. What’s the best first step they should take?",
-    "options": [
-      "Research the top-performing memes in their market",
-      "Ask close friends or colleagues to describe their brand in 3–5 words.",
-      "Choose a few trending hashtags that match their industry."
-    ],
-    "explanation": "Brand tone define karne ke liye pehle brand perception samajhna zaroori hota hai. Close friends/colleagues ke words authentic feedback dete hain.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A software startup wants visitors to keep coming back to its site even before buying anything. What should the company do to achieve this?",
-    "options": [
-      "Create a free resource center with tutorials and troubleshooting tips that meet customer needs.",
-      "Focus only on social media ads with purchase links.",
-      "Stop posting content until their product launches."
-    ],
-    "explanation": "Free valuable resources trust build karte hain aur repeat visits increase karte hain, jo long-term loyalty me help karta hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A local pet supply store needs to attract new followers on Facebook. The owners have a blog post called 10 Healthy Treats Your Dog Will Love. What’s the best way to use this content to meet their goal?",
-    "options": [
-      "Email it only to their most loyal customers.",
-      "Share it on Facebook with an engaging caption that encourages clicks.",
-      "Use it as a loyalty reward for existing customers."
-    ],
-    "explanation": "Facebook followers badhane ke liye blog post ko engaging caption ke saath share karna best strategy hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A tech gadget company wants to inspire customers while showcasing product capabilities. What’s the best way to achieve both goals?",
-    "options": [
-      "Create only in-house promotional videos with scripted actors.",
-      "Feature customer-submitted videos using the products in creative or adventurous ways.",
-      "Publish a weekly blog post about company policies."
-    ],
-    "explanation": "Customer-submitted content authentic hota hai aur real-world use cases show karta hai, jo inspiration aur product showcase dono achieve karta hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A nonprofit’s campaign page has the headline Join Us, but donations are low. What change is most likely to improve results?",
-    "options": [
-      "Keep the headline vague to create curiosity.",
-      "Replace the headline with a large logo.",
-      "Rewrite the headline to include a specific benefit, like Join Us to Protect 1,000 Acres of Rainforest."
-    ],
-    "explanation": "Specific benefit-driven headline clear impact dikhata hai aur donation motivation increase karta hai.",
+    "explanation": "Multiple touchpoints par audience ko reach karna multichannel ka biggest advantage hai.",
     "correctAnswer": [2]
   },
   {
-    "question": "A coffee subscription service wants more customers to sign up. Which approach should they use in their email subject line?",
+    "question": "A brand reviews Google Ads performance and discovers one ad is converting at a much higher rate than the others. What’s the next best step?",
     "options": [
-      "Use a generic statement about coffee trends.",
-      "Write a long paragraph explaining the subscription details.",
-      "Create a call to action (CTA) that sparks curiosity and action, such as Discover Your Perfect Roast."
+      "Pause all other ads immediately.",
+      "Increase the bid amount across the board.",
+      "Replace visual assets with generic graphics.",
+      "Use A/B testing to compare creative elements and optimize results."
     ],
-    "explanation": "Strong CTA curiosity create karta hai aur users ko action lene ke liye push karta hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A camera company wants to build community and authenticity. What should it do?",
-    "options": [
-      "Create an internal newsletter for employees only.",
-      "Feature customer-shot adventure videos on the company Instagram page.",
-      "Hire only professional photographers for campaigns."
-    ],
-    "explanation": "Customer content community build karta hai aur authenticity increase karta hai.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A skincare brand wants to encourage immediate purchases during a short campaign. What should they do?",
-    "options": [
-      "Run a 48-hour “Buy One, Get One Free” deal",
-      "Publish weekly skincare tips on social media only",
-      "Launch a year-long loyalty points program"
-    ],
-    "explanation": "Short campaign me urgency create karne ke liye limited-time offer best hota hai.",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A marketing consultant wants to grow their email list. What should they do?",
-    "options": [
-      "Post only on social media without a sign-up link.",
-      "Run paid ads with only a phone number listed.",
-      "Offer a downloadable Social Media Strategy Checklist in exchange for an email address."
-    ],
-    "explanation": "Lead magnet (downloadable checklist) email list growth ke liye effective strategy hoti hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A bakery wants to grow its customer base through word-of-mouth marketing. Which approach would be most effective?",
-    "options": [
-      "Only advertise inside the store with posters.",
-      "Give customers a free pastry for every new customer they refer.",
-      "Increase prices for loyal customers to boost revenue."
-    ],
-    "explanation": "Referral rewards word-of-mouth ko boost karte hain aur customer base grow karte hain.",
-    "correctAnswer": [1]
-  }
-
-]
-,
-
-module7:[
-   {
-    "question": "A new intern writing social media posts asks how to sound more relatable. What should they focus on?",
-    "options": [
-      "Keep all posts under five words.",
-      "Skip the copy and focus only on images.",
-      "Avoid third-person and write in a conversational tone.",
-      "Use technical language to sound professional."
-    ],
-    "explanation": "Conversational tone audience ko relatable aur friendly feel deta hai. Third-person formal lagta hai aur connection kam hota hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A social media coordinator notices that their Instagram captions aren't generating clicks or comments, even though the visuals are high quality. What should they do to improve engagement?",
-    "options": [
-      "Include a clear call to action in each caption.",
-      "Switch to posting longer captions on every platform.",
-      "Start referring to the brand in third person for consistency.",
-      "Use extra emojis to increase post visibility."
-    ],
-    "explanation": "CTA audience ko directly guide karta hai ki unhe kya action lena hai (comment/click/share).",
-    "correctAnswer": [0]
-  },
-  {
-    "question": "A creator is designing Instagram Reels and wants to avoid having important text covered by interface elements. What should they do?",
-    "options": [
-      "Add more text to the top and bottom edges.",
-      "Avoid using any text onscreen.",
-      "Place key text near the center of the screen.",
-      "Rely on voiceover alone to convey all information."
-    ],
-    "explanation": "Instagram UI top/bottom cover kar sakta hai, isliye safe zone center hota hai.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A team is preparing a series of posts for Instagram and wants to optimize reach without appearing spammy. What is the recommended number of hashtags to include per post?",
-    "options": [
-      "Around three hashtags per post for maximum clarity.",
-      "Around 11, though fewer can still be effective.",
-      "20 or more hashtags to appear in more searches.",
-      "Avoid hashtags altogether to maintain a clean aesthetic."
-    ],
-    "explanation": "Instagram me around 11 hashtags recommended hota hai. Ye reach optimize karta hai without spammy look.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A social media manager wants to showcase real-world use of their products in a way that builds trust. What’s a practical approach?",
-    "options": [
-      "Generate visuals with AI to simulate customer activity.",
-      "Share staff selfies to represent customer experiences.",
-      "Repost user-generated content after asking for permission.",
-      "Use anonymous reviews without any visuals."
-    ],
-    "explanation": "User-generated content authentic hota hai aur trust build karta hai, especially permission ke saath repost karne par.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A business is hosting a launch event and wants to encourage followers to attend. Which type of post would best support this goal?",
-    "options": [
-      "Infographic with event data",
-      "Story meme with countdown sticker",
-      "Testimonial quote card",
-      "Branded invitation"
-    ],
-    "explanation": "Branded invitation event details clearly communicate karta hai aur professional invite feel deta hai.",
+    "explanation": "A/B testing se pata chalta hai kaunsa creative element better perform kar raha hai.",
     "correctAnswer": [3]
   },
   {
-    "question": "A team wants to create branded promotional content quickly for an upcoming flash sale. What’s an efficient first step in Adobe Express?",
+    "question": "A marketer sends emails with product suggestions based on a user’s browsing history. What tactic are they using?",
     "options": [
-      "Start with a platform-specific template that features photography.",
-      "Add audio narration before finalizing the design.",
-      "Use a document template to repurpose a company report.",
-      "Begin from scratch using blank canvas mode."
+      "Dynamic content.",
+      "Manual scheduling.",
+      "Static segmentation.",
+      "Cold outreach."
     ],
-    "explanation": "Templates fastest way hote hain branded promo content create karne ke liye, especially platform-specific.",
+    "explanation": "User behavior ke basis par content change hona dynamic content kehlata hai.",
     "correctAnswer": [0]
   },
   {
-    "question": "A designer wants to make the environmental consequences of overconsumption feel more personal and emotional. What design technique would support that goal?",
+    "question": "A brand publishes a blog post, which gets shared on social media and then promoted via a paid ad. What strategy is this an example of?",
     "options": [
-      "Include everyday clothing items in the image to spark viewer reflection.",
-      "Focus on bold typography without visual metaphors.",
-      "Avoid using human elements to keep the image neutral.",
-      "Use abstract textures to create artistic distance from the subject."
+      "Integrating owned, earned, and paid media.",
+      "Segmenting display and search media.",
+      "Relying solely on earned outreach.",
+      "Creating UGC campaigns only."
     ],
-    "explanation": "Everyday objects audience ko relate karne dete hain, jisse emotional impact zyada hota hai.",
+    "explanation": "Blog (owned), shares (earned), aur ads (paid) — teeno ka integration ho raha hai.",
     "correctAnswer": [0]
   },
   {
-    "question": "A creator is developing a promo video for a new product and plans to post it on Facebook, where many users view videos without sound. They want to ensure that viewers still understand the message clearly. What’s the best strategy?",
+    "question": "A smartphone brand designs ads for customers aged 18–25, highlighting gaming features. Which segmentation type would best fit this approach?",
     "options": [
-      "Skip captions and rely on voiceover instead.",
-      "Add clear subtitles or captions to each video.",
-      "Avoid all text overlays to keep visuals clean.",
-      "Keep the video under 10 seconds to reduce effort."
-    ],
-    "explanation": "Facebook users often mute videos, so subtitles/captions message clearly deliver karte hain.",
-    "correctAnswer": [1]
-  },
-  {
-    "question": "A small business owner posts regularly on Instagram, but a friend points out several spelling errors and missing punctuation in their captions. What impact can this have?",
-    "options": [
-      "It can reduce credibility and make the posts harder to read.",
-      "It makes the captions feel more casual and human.",
-      "It boosts follower growth through curiosity.",
-      "It increases post visibility through algorithm hacks."
-    ],
-    "explanation": "Spelling/punctuation mistakes professionalism aur trust ko harm karte hain, aur readability reduce karte hain.",
-    "correctAnswer": [0]
-  },
-  
-  {
-    "question": "A clothing retailer groups customers by purchase habits, such as frequent sales shoppers versus premium buyers. Which option would most likely describe this segmentation approach?",
-    "options": [
-      "Demographic segmentation.",
       "Behavioral segmentation.",
+      "Demographic segmentation.",
       "Psychographic segmentation."
     ],
-    "explanation": "Grouping customers based on buying habits, shopping frequency, and purchase behavior is called behavioral segmentation.",
+    "explanation": "Yahan segmentation age group (18–25) ke basis par ho rahi hai, jo demographic variable hai.",
     "correctAnswer": [1]
   },
   {
     "question": "A skincare brand markets different sunscreen products to customers in their 20s, 40s, and 60s. What type of segmentation does this illustrate?",
     "options": [
-      "Demographic segmentation.",
+      "Behavioral segmentation.",
       "Geographic segmentation.",
-      "Behavioral segmentation."
+      "Demographic segmentation."
     ],
-    "explanation": "Segmenting customers based on age groups is demographic segmentation.",
-    "correctAnswer": [0]
+    "explanation": "Age-based product targeting demographic segmentation ka example hota hai.",
+    "correctAnswer": [2]
   },
   {
-    "question": "A sports retailer is preparing a campaign for a persona it calls Weekend Warrior Will, who enjoys outdoor activities but shops only during big sales. Which tactic would most effectively connect with Will?",
+    "question": "A software company is reviewing its Remote-working Rachel persona before launching a new product. What’s the best first step to ensure that the persona is still accurate?",
     "options": [
-      "Promote unrelated fitness apps.",
-      "Offer limited-time discounts on outdoor gear.",
-      "Run ads highlighting luxury gear at premium prices."
+      "Update the persona with recent customer research.",
+      "Ignore the persona and focus on the product’s features.",
+      "Base the persona only on one team member’s opinion."
     ],
-    "explanation": "Since the persona shops mainly during sales, limited-time discounts match his shopping behavior and motivation.",
-    "correctAnswer": [1]
+    "explanation": "Personas ko hamesha updated customer research ke saath validate karna chahiye.",
+    "correctAnswer": [0]
   },
   {
     "question": "A sports brand wants its ads to resonate with Active Andy, the brand’s most engaged customer type. What’s the first step to ensure that the messaging connects?",
     "options": [
-      "Review Andy’s persona profile to align messaging with his interests and needs.",
       "Launch a new campaign without research.",
-      "Guess what Andy might like based on trends."
+      "Guess what Andy might like based on trends.",
+      "Review Andy’s persona profile to align messaging with his interests and needs."
     ],
-    "explanation": "The best way to create relevant messaging is to review the persona profile and align the campaign with their needs and interests.",
-    "correctAnswer": [0]
+    "explanation": "Effective messaging ke liye persona ke interests, needs aur motivations samajhna zaroori hota hai.",
+    "correctAnswer": [2]
   },
   {
-    "question": "An online clothing store’s style advice articles draw more clicks than sales announcements. Which action would help them make the most of this insight?",
+    "question": "A restaurant owner sees that behind-the-scenes stories get more responses than menu specials. What change would most likely increase engagement?",
     "options": [
-      "Stop publishing style advice entirely.",
-      "Publish more style advice articles with links to related products.",
-      "Focus only on sales announcements."
+      "Post the same type of specials without changes.",
+      "Eliminate all behind-the-scenes posts.",
+      "Share more behind-the-scenes content while integrating specials naturally."
     ],
-    "explanation": "Doubling down on high-performing content (style advice) while linking products naturally increases engagement and potential conversions.",
-    "correctAnswer": [1]
+    "explanation": "Jo content audience ko engage karta hai, usko zyada use karna best strategy hoti hai.",
+    "correctAnswer": [2]
   },
   {
     "question": "A mobile app team sees that new users often drop off during onboarding. Which step would most likely help improve completion rates?",
     "options": [
-      "Leave the onboarding process exactly as it is.",
+      "Streamline onboarding into short, interactive steps.",
       "Extend the onboarding process with more detailed tutorials.",
-      "Streamline onboarding into short, interactive steps."
+      "Leave the onboarding process exactly as it is."
     ],
-    "explanation": "Shorter, interactive onboarding reduces friction and keeps users engaged, improving completion rates.",
-    "correctAnswer": [2]
-  },
-  {
-    "question": "A graphic design marketplace allows freelancers to offer their services to companies. Which category best fits this business model?",
-    "options": [
-      "C2B.",
-      "C2C.",
-      "B2B."
-    ],
-    "explanation": "In this model, individual freelancers (consumers) provide services to businesses, which is Consumer-to-Business (C2B).",
+    "explanation": "Simple aur interactive onboarding user drop-off kam karta hai.",
     "correctAnswer": [0]
   },
   {
-    "question": "A photographer sells stock images directly to a large media company. Which business model is at work?",
+    "question": "A clothing retailer sells directly to individual shoppers online and in-store. What’s the correct marketing type for this scenario?",
     "options": [
-      "B2B.",
       "C2B.",
-      "C2C."
+      "B2C.",
+      "B2B."
     ],
-    "explanation": "An individual (consumer/creator) selling services or products to a business is C2B marketing.",
+    "explanation": "Business directly consumers ko sell kar raha hai, jo B2C model hota hai.",
     "correctAnswer": [1]
+  },
+  {
+    "question": "An online resale marketplace enables customers to buy and sell clothing directly with one another. Which model is this an example of?",
+    "options": [
+      "C2C.",
+      "B2C.",
+      "B2B."
+    ],
+    "explanation": "Customers ke beech direct buying aur selling C2C model hota hai.",
+    "correctAnswer": [0]
   },
   {
     "question": "An apparel company wants to appeal to indigenous communities. Which approach would build the strongest relationships?",
     "options": [
+      "Collaborate with community members in product design.",
       "Avoid acknowledging cultural traditions entirely.",
-      "Copy traditional designs without permission.",
-      "Collaborate with community members in product design."
+      "Copy traditional designs without permission."
     ],
-    "explanation": "Collaboration and respectful co-creation builds trust and long-term relationships with indigenous communities.",
-    "correctAnswer": [2]
+    "explanation": "Collaboration aur respect trust aur long-term relationship build karta hai.",
+    "correctAnswer": [0]
   },
   {
     "question": "A fashion brand is criticized online for an ad that unintentionally stereotypes a cultural group. What’s the best first step?",
     "options": [
-      "Issue a public apology and outline corrective actions.",
       "Delete the ad quietly and ignore questions.",
-      "Continue running the ad until the campaign ends."
+      "Continue running the ad until the campaign ends.",
+      "Issue a public apology and outline corrective actions."
     ],
-    "explanation": "A public apology with corrective actions shows accountability and helps rebuild trust after a cultural mistake.",
+    "explanation": "Transparency aur accountability culturally sensitive situations me sabse zaroori hoti hai.",
+    "correctAnswer": [2]
+  },
+ {
+    "question": "A shopper clicks an Instagram ad, receives a follow-up email, and later visits the store. The brand uses their data to deliver a continuous, connected experience. What marketing approach does this represent?",
+    "options": [
+      "Multichannel marketing.",
+      "Omnichannel marketing.",
+      "Influencer strategy.",
+      "Event-based automation."
+    ],
+    "explanation": "Customer data ko use karke multiple touchpoints par seamless experience dena omnichannel marketing hota hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A wellness brand develops a long-form blog on stress management. They later break it into Instagram quotes, a TikTok tip video, and an email summary. What technique are they using?",
+    "options": [
+      "Content atomization.",
+      "Persona mapping.",
+      "Direct response marketing.",
+      "Vertical integration."
+    ],
+    "explanation": "Ek long content ko multiple smaller platform-specific pieces me todna content atomization kehlata hai.",
     "correctAnswer": [0]
+  },
+  {
+    "question": "Market research reveals that a fitness brand’s audience is increasingly focused on mental health. How can the company use this insight effectively?",
+    "options": [
+      "Rebrand to eliminate wellness content.",
+      "Integrate messaging around holistic wellness.",
+      "Focus messaging only on physical strength.",
+      "Increase ad frequency on unrelated channels."
+    ],
+    "explanation": "Audience insight ko follow karte hue holistic wellness messaging add karna sabse effective response hota hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A brand planning a multichannel campaign wants to ensure that messaging stays consistent across social media, email, and their website. Which strategy supports this goal?",
+    "options": [
+      "Integrated content strategy.",
+      "Retargeting automation.",
+      "Funnel segmentation.",
+      "Inbound content stacking."
+    ],
+    "explanation": "Integrated content strategy ensure karti hai ki messaging sab channels par consistent rahe.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A marketer notices that their company’s competitor thrives on Instagram but rarely posts on LinkedIn. How can the marketer turn this into an advantage?",
+    "options": [
+      "Pause all competitive analysis and wait for new trends.",
+      "Use the same visuals with updated captions.",
+      "Promote only one channel aggressively.",
+      "Build a content strategy that fills the LinkedIn gap."
+    ],
+    "explanation": "Competitor ke weak channel ko target karna strategic advantage deta hai.",
+    "correctAnswer": [3]
+  },
+  {
+    "question": "What’s the main benefit of using market research tools like BuzzSumo or SEMrush in competitive analysis?",
+    "options": [
+      "They automatically create ads.",
+      "They block competitor ads from search results.",
+      "They replace the need for surveys.",
+      "They reveal competitor content performance and audience engagement."
+    ],
+    "explanation": "Ye tools competitors ke content performance aur audience engagement ke insights dete hain.",
+    "correctAnswer": [3]
+  },
+  {
+    "question": "What is one major risk of not collaborating across content, design, and product teams?",
+    "options": [
+      "Fragmented messaging across platforms.",
+      "Duplicate posts on a single platform.",
+      "Limited campaign budget usage.",
+      "Too much brand consistency."
+    ],
+    "explanation": "Teams ke beech collaboration na hone se messaging fragmented ho jati hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A clothing brand launches email and social campaigns with tailored content, but customers don’t experience a unified brand journey. What type of marketing is this?",
+    "options": [
+      "Omnichannel marketing.",
+      "Multichannel marketing.",
+      "Experiential marketing.",
+      "Sequential messaging."
+    ],
+    "explanation": "Multiple channels use ho rahe hain par unified journey nahi hai — ye multichannel marketing hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A brand creates surveys to gather direct input and uses Google Trends for broader insights. What research methods are they combining?",
+    "options": [
+      "Funnel-based and algorithmic.",
+      "Primary and secondary.",
+      "Segmented and behavioral.",
+      "Paid and organic."
+    ],
+    "explanation": "Surveys = primary research, Google Trends = secondary research.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A marketing team finds that their blog content generates strong engagement, but they aren’t sure which parts are most effective. What should they do next?",
+    "options": [
+      "Use analytics to measure what’s working and then iterate based on performance.",
+      "Repost old content without changes.",
+      "Replace blogs with paid ad campaigns.",
+      "Publish only on trending platforms."
+    ],
+    "explanation": "Analytics ke through performance measure karke content optimize karna best next step hota hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A startup is launching a new eco-friendly water bottle. The marketing team wants it to stand out in a crowded market. Which step should they take first to set the product up for success?",
+    "options": [
+      "Conduct customer research to understand the design, features, and benefits the audience values most.",
+      "Copy the design of the best-selling competitor bottle.",
+      "Release the product without research to save time."
+    ],
+    "explanation": "Product success ka pehla step hota hai customer research. Ye ensure karta hai ki product real audience needs se aligned ho.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A company wants its new app to gain users quickly in a competitive space. What pricing approach would help the company build a strong early customer base?",
+    "options": [
+      "Penetration pricing with low or free introductory offers.",
+      "Match competitor prices exactly.",
+      "Skimming pricing to maximize early profits."
+    ],
+    "explanation": "Penetration pricing entry barrier kam karta hai aur fast user adoption me help karta hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A farm-to-table restaurant needs to reach more customers who can’t dine in. Which distribution change could help the restaurant serve a wider audience?",
+    "options": [
+      "Only serve food in their physical location.",
+      "Partner with local delivery apps to reach customers at home.",
+      "Offer delivery only on weekends."
+    ],
+    "explanation": "Delivery apps ke saath partnership distribution (Place) ko expand karti hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A small theater wants to boost ticket sales for an upcoming play. Which promotional effort would most likely increase audience turnout?",
+    "options": [
+      "Avoid marketing to keep costs down.",
+      "Release behind-the-scenes videos and cast interviews on social media.",
+      "Place a single ad in a local newspaper."
+    ],
+    "explanation": "Behind-the-scenes content emotional engagement aur excitement build karta hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A gym wants to sign up more members during January. Which marketing tactic could help the marketing team take advantage of New Year’s resolutions?",
+    "options": [
+      "Post one generic ad with no time limit.",
+      "Offer a New Year’s special and promote it heavily on social media and locally.",
+      "Avoid promotions to maintain exclusivity."
+    ],
+    "explanation": "Seasonal urgency + targeted promotion New Year resolutions ka best use karta hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A toy company wants to release a holiday special edition. How could it increase the chances of high seasonal sales?",
+    "options": [
+      "Launch the product after the holiday season.",
+      "Research popular trends and design toys that match seasonal interests.",
+      "Avoid advertising to save costs."
+    ],
+    "explanation": "Seasonal trends ke according product design demand ko directly impact karta hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A bakery wants to sell more during slow afternoons. Which change to pricing could help move more products during off-peak hours?",
+    "options": [
+      "Increase prices in the afternoon.",
+      "Offer afternoon-only discounts on pastries.",
+      "Keep prices the same and hope for more sales."
+    ],
+    "explanation": "Off-peak discounts demand ko stimulate karte hain without affecting peak hours.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A clothing brand wants to reach college students directly. Which placement method would make it easiest for students to buy the products?",
+    "options": [
+      "Set up pop-up shops on campus during student events.",
+      "Rely on students finding their main store downtown.",
+      "Only sell through luxury malls far from campus."
+    ],
+    "explanation": "Campus pop-ups convenience aur visibility dono provide karte hain.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A local festival organizer wants to increase attendance at next year’s event. How could they encourage more people to commit early?",
+    "options": [
+      "Announce the event only one week before it starts.",
+      "Keep all event details vague until opening day.",
+      "Start early promotion with highlights from past events and early ticket discounts."
+    ],
+    "explanation": "Early promotion + social proof + discounts early commitment badhate hain.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A travel agency is launching a summer vacation promotion. Which promotional asset would best convey its adventurous, premium brand across social media, email, and print ads?",
+    "options": [
+      "A text-only social media post listing trip prices",
+      "A short video montage of luxury destinations with the tagline Adventure Awaits, used in both digital and print materials",
+      "A local classified ad with no images or branding"
+    ],
+    "explanation": "Visual storytelling premium aur adventurous brand image ko strongly communicate karta hai.",
+    "correctAnswer": [1]
   }
+,
 
-],
-    assignment:[
+{
+    "question": "A small business owner wants to create social media copy that connects with their audience. They’re unsure how to describe their tone. What’s the best first step they should take?",
+    "options": [
+      "Ask close friends or colleagues to describe their brand in 3–5 words.",
+      "Choose a few trending hashtags that match their industry.",
+      "Research the top-performing memes in their market"
+    ],
+    "explanation": "Brand tone define karne ke liye sabse pehla step hota hai brand perception samajhna. Close log authentic feedback de sakte hain.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A wellness coach wants to grow her audience by publishing weekly blog posts. She doesn’t want them to feel like sales pitches, but she still wants to strengthen her business over time. What should she focus on to achieve this?",
+    "options": [
+      "Post more often than her competitors, regardless of quality.",
+      "Create valuable content that builds trust and loyalty by offering value beyond selling.",
+      "Avoid all paid marketing efforts."
+    ],
+    "explanation": "Content marketing ka core idea hai pehle value dena, trust build karna, phir business grow hota hai.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A travel agency launches an interactive What’s Your Perfect Adventure? quiz. The owners want to keep potential customers engaged until they’re ready to book. What’s the best next step?",
+    "options": [
+      "Offer a 50% discount to all quiz participants immediately.",
+      "Email personalized trip ideas to participants based on their quiz results.",
+      "Send a generic brochure with all available trips."
+    ],
+    "explanation": "Personalized follow-ups engagement badhate hain aur customers ko naturally funnel me aage le jaate hain.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A software company wants to be recognized as a go-to authority in its field. Which approach would best achieve this?",
+    "options": [
+      "Limit online content to product pricing pages.",
+      "Offer free webinars, guides, and templates that solve customer challenges.",
+      "Run daily flash sales on all products."
+    ],
+    "explanation": "Authority tab banti hai jab brand logon ki real problems solve karta hai through educational content.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A personal finance blog notices that readers rarely click on articles. The writer wants to increase engagement. What’s the best action to take?",
+    "options": [
+      "Keep headlines as short as possible without giving details.",
+      "Use all capital letters to grab attention.",
+      "Write specific, relatable headlines that promise a solution."
+    ],
+    "explanation": "Clear aur benefit-driven headlines users ko click karne ke liye motivate karte hain.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A fitness app wants to increase free trial sign-ups. Which CTA should they use?",
+    "options": [
+      "Start Your 7-Day Personal Training Plan Now",
+      "Learn More",
+      "Click Here"
+    ],
+    "explanation": "Strong CTA specific, action-oriented aur value clearly batata hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "An outdoor gear brand wants to create deeper emotional connections with its audience. What should the marketing team do?",
+    "options": [
+      "Publish only technical product manuals.",
+      "Run a limited-time flash sale on tents.",
+      "Produce a documentary on the lives of mountain guides who use their gear."
+    ],
+    "explanation": "Storytelling emotional connection build karta hai jo sirf discounts ya manuals nahi kar sakte.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A software company wants potential customers to try its premium plan before committing. What’s the best promotion for the company to use?",
+    "options": [
+      "Send a survey asking why people haven’t purchased.",
+      "Offer a free one-month trial so customers can experience value risk-free.",
+      "Post blog content about the product’s features."
+    ],
+    "explanation": "Free trials risk kam karte hain aur users ko real value experience karne dete hain.",
+    "correctAnswer": [1]
+  },
+  {
+    "question": "A tech brand wants to position itself as an authority in cybersecurity while building trust. What should the marketing team do?",
+    "options": [
+      "Publish blogs, videos, and webinars on cybersecurity best practices.",
+      "Mail printed brochures to random households.",
+      "Offer a flash sale on security software."
+    ],
+    "explanation": "Educational content trust aur authority dono build karta hai, especially cybersecurity jaise field me.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A local bookstore wants to increase sales of a new novel by a popular author. What’s the best promotional tactic to use?",
+    "options": [
+      "Send a generic monthly newsletter mentioning the book in passing.",
+      "Post a single photo of the book on social media without context.",
+      "Host an in-store signing event and offer a limited-time discount on the book."
+    ],
+    "explanation": "Experience + urgency + promotion milke sabse strong impact create karte hain.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A content creator wants to use a stock photo in a paid ad campaign that will reach over 1 million impressions. Which license do they need to ensure proper use?",
+    "options": [
+      "Limited License — Adobe Express",
+      "Creative Commons License",
+      "Standard License",
+      "Enhanced License"
+    ],
+    "explanation": "High-reach paid campaigns ke liye enhanced license required hota hai, especially large-scale distribution ke cases me.",
+    "correctAnswer": [3]
+  },
+  {
+    "question": "A customer repeatedly messages a brand account about a complex billing issue. What’s the best approach for resolution?",
+    "options": [
+      "Post a generic FAQ in response.",
+      "Continue responding in public threads.",
+      "Stop responding after one reply.",
+      "Transition the conversation to direct messages or email."
+    ],
+    "explanation": "Complex aur sensitive issues private channel (DM/email) me handle karna best practice hoti hai.",
+    "correctAnswer": [3]
+  },
+  {
+    "question": "A social media intern is unsure whether they can reuse a trending image found online. What should they do first?",
+    "options": [
+      "Use the image and credit the creator later.",
+      "Crop and filter the image to change its appearance.",
+      "Confirm the licensing rights or get permission from the source.",
+      "Assume social media content is fair use."
+    ],
+    "explanation": "Image reuse se pehle licensing ya permission confirm karna legal aur ethical dono ke liye zaroori hai.",
+    "correctAnswer": [2]
+  },
+  {
+    "question": "A social media creator is working on a high-volume campaign and wants to streamline bulk asset creation using AI tools. What's the best way to approach this in Adobe Express?",
+    "options": [
+      "Use the Adobe Firefly Bulk Create feature by uploading a spreadsheet with variables.",
+      "Use Adobe Photoshop and paste assets into each frame.",
+      "Manually duplicate and edit each design variation.",
+      "Rebuild templates daily from scratch."
+    ],
+    "explanation": "Firefly Bulk Create automation ke through large-scale variations fast generate karta hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A brand manager notices a meme circulating that misrepresents one of their posts, potentially harming the brand’s reputation. How should they respond?",
+    "options": [
+      "Acknowledge the issue and clarify the intended message.",
+      "Immediately block all users sharing the meme.",
+      "Ignore the meme and hope it dies down.",
+      "Post aggressively to counter the backlash."
+    ],
+    "explanation": "Clear, calm clarification trust rebuild karta hai aur reputation damage control me help karta hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A freelancer working on client content is unsure whether an image from a stock library can be used to sell merchandise. How should they proceed?",
+    "options": [
+      "Review the stock license type and ensure that it allows merchandise use.",
+      "Include a disclaimer noting that the image is stock.",
+      "Apply a filter to make the image appear original.",
+      "Use the image as long as the client approves."
+    ],
+    "explanation": "Merchandise use often restricted hota hai, isliye license terms carefully review karna mandatory hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A content strategist is building a campaign using AI-generated content. They want to make sure their audience knows what was AI-assisted. What can help them communicate this clearly?",
+    "options": [
+      "Watermark every image with “AI.”",
+      "Avoid telling the audience to maintain consistency.",
+      "Mention it casually in the caption.",
+      "Use Content Credentials to tag posts with AI usage metadata."
+    ],
+    "explanation": "Content Credentials AI usage ko transparent aur verifiable way me communicate karta hai.",
+    "correctAnswer": [3]
+  },
+  {
+    "question": "A junior designer asks how Adobe Firefly knows how to create specific aesthetics based on user inputs. What foundational component enables this?",
+    "options": [
+      "AI training datasets",
+      "Public-facing content",
+      "Plugin interfaces",
+      "User licenses"
+    ],
+    "explanation": "Firefly ko aesthetics samajhne ki ability AI training datasets se aati hai.",
+    "correctAnswer": [0]
+  },
+  {
+    "question": "A campaign manager wants to design platform-specific content faster without starting from scratch each time. What can help streamline this?",
+    "options": [
+      "Schedule only one post and repost it daily.",
+      "Download static ad designs and crop them for each platform.",
+      "Use the Remix tool to duplicate competitor content.",
+      "Use AI-generated templates and tweak them to match voice and visuals."
+    ],
+    "explanation": "AI templates fast creation allow karte hain while keeping brand consistency.",
+    "correctAnswer": [3]
+  },
+  {
+    "question": "A content manager wants to create quick visuals for early feedback before launching a campaign. How can AI help?",
+    "options": [
+      "Wait until professional photos are finalized before pitching.",
+      "Design layouts by hand and scan them as PDFs.",
+      "Use AI to generate mockups or concept images for internal review.",
+      "Use stock images from old campaigns without changes."
+    ],
+    "explanation": "AI-generated mockups early-stage ideation aur feedback ke liye perfect hote hain.",
+    "correctAnswer": [2]
+  },
+
+
+
+
+
   
   {
     "question": "A company uses AI-driven personalization to recommend products, but wants to avoid ethical missteps while maintaining innovation. Which approach best reflects responsible marketing innovation?",
@@ -2261,633 +3819,1051 @@ module7:[
   }
 
 ],
-    passage_based_questions: {
+    passage_based_questions:{
 
+      
   "passage_1": {
-    "title": "Marketing Funnel Optimization Using Data",
-    "passage": "A digital marketing team launched a campaign for a new fitness subscription app. They used Instagram ads to create awareness, a landing page to collect sign-ups, and follow-up email sequences to nurture leads. After two weeks, analytics showed high click-through rates on ads, but sign-ups remained low. Heatmap tools revealed that most users scrolled only halfway down the landing page and exited. The team also found that mobile users had a much higher bounce rate than desktop users. To improve results, the team decided to simplify the landing page layout, add a clearer call-to-action button above the fold, and reduce the number of form fields. They also planned to run A/B tests on different headlines and visuals. The goal of these optimizations was to reduce friction, improve conversions, and increase customer acquisition while keeping ad spending efficient.",
+    "title": "Marketing Funnel Basics",
+    "passage": "A marketing funnel represents the journey customers take before making a purchase. It usually begins with awareness, where customers first discover a brand. Then they move to interest and consideration, where they explore the brand and compare options. After that comes intent and purchase, where the customer decides to buy. Finally, retention focuses on keeping customers engaged after purchase through loyalty programs, support, and personalized offers.",
     "questions": [
       {
-        "question": "High click-through rates but low sign-ups most strongly suggest which issue?",
-        "options": [
-          "The ads are not reaching the audience",
-          "The landing page experience is weak or confusing",
-          "The product is already too popular",
-          "Email marketing is reducing impressions"
-        ],
-        "explanation": "High CTR shows ads are working, but low sign-ups indicate landing page or form issues.",
+        "question": "What is the first stage of a marketing funnel?",
+        "options": ["Purchase", "Awareness", "Retention", "Intent"],
+        "explanation": "Awareness is the first stage where customers discover the brand.",
         "correctAnswer": [1]
       },
       {
-        "question": "Which tool mentioned in the passage helps identify how far users scroll before leaving?",
-        "options": [
-          "SEO analyzer tool",
-          "Heatmap tool",
-          "Influencer tracker",
-          "Content scheduler"
-        ],
-        "explanation": "Heatmaps show scrolling and click behavior patterns of users.",
+        "question": "Which stage focuses on comparing options before buying?",
+        "options": ["Awareness", "Consideration", "Purchase", "Retention"],
+        "explanation": "Consideration is when customers compare brands and products.",
         "correctAnswer": [1]
       },
       {
-        "question": "Why is placing a call-to-action button above the fold an effective strategy?",
-        "options": [
-          "It increases follower count automatically",
-          "It forces users to scroll less before taking action",
-          "It guarantees viral reach",
-          "It reduces the need for email marketing"
-        ],
-        "explanation": "Above-the-fold CTA ensures users can take action immediately without scrolling.",
+        "question": "What is the main goal of the purchase stage?",
+        "options": ["Build brand identity", "Customer buys the product", "Collect impressions", "Reduce bounce rate"],
+        "explanation": "Purchase stage is when conversion happens and customer buys.",
         "correctAnswer": [1]
       },
       {
-        "question": "Reducing the number of form fields is most likely to improve which KPI?",
-        "options": [
-          "Conversion rate",
-          "Impressions",
-          "Reach",
-          "Follower growth"
-        ],
-        "explanation": "Fewer form fields reduce friction, increasing sign-up completion rate.",
-        "correctAnswer": [0]
+        "question": "Which stage happens after purchase to keep customers loyal?",
+        "options": ["Interest", "Awareness", "Retention", "Intent"],
+        "explanation": "Retention focuses on repeat purchases and loyalty.",
+        "correctAnswer": [2]
       },
       {
-        "question": "Running A/B tests on headlines and visuals mainly helps the team do what?",
-        "options": [
-          "Compare different variations to find what converts best",
-          "Reduce product development time",
-          "Increase influencer engagement",
-          "Eliminate the need for analytics"
-        ],
-        "explanation": "A/B testing compares variations to identify which performs better for conversions.",
+        "question": "Which method is best for retention?",
+        "options": ["Loyalty programs", "Ignoring customers", "Only paid ads", "Reducing product quality"],
+        "explanation": "Loyalty programs help retain customers and increase repeat purchases.",
         "correctAnswer": [0]
       }
     ]
   },
-  
+
   "passage_2": {
-    "title": "Influencer Marketing and Authentic Brand Messaging",
-    "passage": "A skincare brand partnered with a micro-influencer to promote its new vitamin C serum. The influencer’s audience matched the brand’s target market, and the brand provided campaign guidelines about product benefits, required hashtags, and disclosure rules. However, the brand also gave the influencer a fully written script and asked them to read it word-for-word. After posting, followers commented that the content felt unnatural and overly promotional. Engagement was much lower than the influencer’s usual posts. The brand realized that while guidelines are important, influencer collaborations work best when creators can communicate in their own authentic voice. For the next campaign, the brand planned to allow flexibility in tone and storytelling while still maintaining accurate product information.",
+    "title": "SEO and Website Optimization",
+    "passage": "Search Engine Optimization (SEO) is the process of improving a website so that it ranks higher in search engine results. SEO includes using relevant keywords in content, writing descriptive meta titles, improving website speed, and adding alt text to images. SEO is important because it helps attract organic traffic without paying for ads. A well-optimized website improves visibility and increases trust.",
     "questions": [
       {
-        "question": "What was the main reason the influencer post performed poorly?",
-        "options": [
-          "The influencer used too many hashtags",
-          "The brand over-scripted the content, reducing authenticity",
-          "The influencer’s audience was not relevant",
-          "The product price was too low"
-        ],
-        "explanation": "Over-scripting makes content feel fake and reduces trust, lowering engagement.",
-        "correctAnswer": [1]
-      },
-      {
-        "question": "Which type of influencer is mentioned in the passage?",
-        "options": [
-          "Celebrity influencer",
-          "Macro-influencer",
-          "Micro-influencer",
-          "Virtual influencer"
-        ],
-        "explanation": "The passage clearly states the brand partnered with a micro-influencer.",
-        "correctAnswer": [2]
-      },
-      {
-        "question": "What is the best way to balance authenticity and brand control in influencer marketing?",
-        "options": [
-          "Provide guidelines but allow creators to speak in their own voice",
-          "Force creators to use identical talking points in every post",
-          "Avoid giving any instructions to influencers",
-          "Use only paid ads instead of influencer marketing"
-        ],
-        "explanation": "Guidelines ensure accuracy, while creative freedom maintains authenticity.",
+        "question": "What does SEO stand for?",
+        "options": ["Search Engine Optimization", "Social Engagement Output", "Sales Enhancement Operation", "Search Email Optimization"],
+        "explanation": "SEO means Search Engine Optimization.",
         "correctAnswer": [0]
       },
       {
-        "question": "Which metric is most directly affected when influencer engagement drops?",
-        "options": [
-          "Bounce rate",
-          "Engagement rate",
-          "Customer lifetime value",
-          "SEO score"
-        ],
-        "explanation": "Low comments/likes/shares reflect a drop in engagement rate.",
+        "question": "Why is SEO important?",
+        "options": ["It increases organic traffic", "It stops ads completely", "It reduces website visitors", "It removes content need"],
+        "explanation": "SEO improves ranking and increases organic visitors.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "What is the purpose of alt text in SEO?",
+        "options": ["To add background music", "To help search engines understand images", "To block users", "To reduce page size"],
+        "explanation": "Alt text helps accessibility and search engines understand image content.",
         "correctAnswer": [1]
       },
       {
-        "question": "Why are disclosure rules important in influencer campaigns?",
-        "options": [
-          "They guarantee higher sales instantly",
-          "They improve video quality",
-          "They build transparency and trust with the audience",
-          "They reduce the number of followers"
-        ],
-        "explanation": "Disclosures ensure ethical marketing and transparency for sponsored content.",
-        "correctAnswer": [2]
+        "question": "Which is a good SEO practice?",
+        "options": ["Using relevant keywords", "Using random hashtags", "Hiding content", "Removing headings"],
+        "explanation": "Using relevant keywords improves search ranking.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Which type of traffic is gained from SEO?",
+        "options": ["Paid traffic", "Organic traffic", "Offline traffic", "TV traffic"],
+        "explanation": "SEO attracts organic traffic from search engines.",
+        "correctAnswer": [1]
       }
     ]
   },
-  
+
   "passage_3": {
-    "title": "AI Personalization and Ethical Responsibility",
-    "passage": "An e-commerce platform used an AI recommendation engine to suggest products based on user browsing history and purchase behavior. The goal was to increase conversions through personalized offers. After a month, the company noticed complaints from users who were receiving irrelevant or inappropriate recommendations. Some customers also reported that the suggestions seemed biased and did not match their preferences. The marketing team decided to audit the AI model to identify bias, review training data quality, and adjust recommendation rules. They also introduced monitoring systems to regularly check outputs and ensure ethical and accurate personalization. The company understood that personalization should improve customer experience, not harm trust.",
+    "title": "Influencer Marketing and Authenticity",
+    "passage": "Influencer marketing involves collaborating with creators who have a loyal audience. Brands use influencers to build trust and reach specific target groups. For influencer marketing to be successful, the influencer’s values and audience should align with the brand. Over-scripting content reduces authenticity. Giving influencers flexibility while following guidelines creates natural and believable promotions.",
     "questions": [
       {
-        "question": "What was the main issue with the AI recommendation engine?",
-        "options": [
-          "It reduced website traffic",
-          "It produced irrelevant and biased recommendations",
-          "It improved conversions too quickly",
-          "It increased customer lifetime value automatically"
-        ],
-        "explanation": "Users complained about irrelevant and biased product suggestions.",
-        "correctAnswer": [1]
-      },
-      {
-        "question": "What should the company do first to address the AI problem?",
-        "options": [
-          "Ignore complaints until legal action happens",
-          "Audit the AI system for bias and unintended consequences",
-          "Disable all marketing campaigns permanently",
-          "Increase discounts to distract users"
-        ],
-        "explanation": "The correct first step is auditing the AI model for bias and issues.",
-        "correctAnswer": [1]
-      },
-      {
-        "question": "Which marketing benefit was the AI system originally designed to improve?",
-        "options": [
-          "Conversion rate through personalization",
-          "Brand logo consistency",
-          "Offline store sales only",
-          "Hashtag performance"
-        ],
-        "explanation": "The passage states the goal was to increase conversions using personalized offers.",
+        "question": "What is influencer marketing mainly used for?",
+        "options": ["Building trust and awareness", "Reducing product quality", "Stopping digital marketing", "Avoiding audience engagement"],
+        "explanation": "Influencers help brands build trust and increase reach.",
         "correctAnswer": [0]
       },
       {
-        "question": "Why is monitoring AI outputs an ethical responsibility?",
-        "options": [
-          "Because AI never makes mistakes",
-          "Because inappropriate recommendations can damage trust",
-          "Because monitoring increases bounce rate",
-          "Because it reduces influencer reach"
-        ],
-        "explanation": "Bad AI recommendations harm customer trust and brand credibility.",
+        "question": "What is the most important factor for influencer collaboration?",
+        "options": ["Follower count only", "Audience alignment", "Posting memes daily", "Using only paid ads"],
+        "explanation": "Audience and values alignment is key for authenticity.",
         "correctAnswer": [1]
       },
       {
-        "question": "What data was the AI primarily using to recommend products?",
-        "options": [
-          "Website color themes",
-          "User browsing and purchase behavior",
-          "Random product selection",
-          "Competitor advertisements"
-        ],
-        "explanation": "The passage states AI recommendations were based on browsing history and purchase behavior.",
-        "correctAnswer": [1]
+        "question": "Why is over-scripting influencer content harmful?",
+        "options": ["It reduces authenticity", "It increases SEO", "It increases reach always", "It creates better memes"],
+        "explanation": "Over-scripting makes content feel unnatural and less trusted.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "What is the best strategy for authenticity?",
+        "options": ["Allow flexibility within guidelines", "Force identical scripts", "Avoid influencer opinion", "Stop influencer marketing"],
+        "explanation": "Flexibility keeps content natural and believable.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Influencer marketing works best because of?",
+        "options": ["Customer trust", "Random promotion", "High printing cost", "Offline distribution"],
+        "explanation": "Influencers already have trust of their audience.",
+        "correctAnswer": [0]
       }
     ]
   },
-  
+
   "passage_4": {
-    "title": "Omnichannel Strategy and Customer Experience",
-    "passage": "A retail clothing brand launched a seasonal campaign using Instagram ads, email newsletters, and in-store promotions. Customers who clicked Instagram ads were later retargeted through email with product recommendations based on what they viewed. When customers visited the store, sales staff could access the customer’s online browsing preferences and suggest matching items. This created a connected shopping journey across digital and physical channels. The brand noticed higher customer satisfaction and increased repeat purchases. The marketing team concluded that a connected experience across all touchpoints builds loyalty and improves long-term revenue.",
+    "title": "Paid Ads and Campaign Measurement",
+    "passage": "Paid advertising includes platforms like Google Ads, Instagram Ads, and Facebook Ads. Marketers use paid ads to quickly reach a targeted audience. Important metrics include impressions (how many people saw the ad), CTR (how many clicked), and conversion rate (how many completed the desired action). A/B testing helps compare two versions of an ad to see which performs better.",
     "questions": [
       {
-        "question": "Which marketing approach is best represented in the passage?",
-        "options": [
-          "Multichannel marketing",
-          "Omnichannel marketing",
-          "Affiliate marketing",
-          "Cold calling strategy"
-        ],
-        "explanation": "Customer data is connected across online and offline channels, which defines omnichannel marketing.",
+        "question": "Which is an example of paid advertising?",
+        "options": ["Google Ads", "SEO blog post", "Word-of-mouth", "Free Instagram post"],
+        "explanation": "Google Ads is a paid advertising platform.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "What does CTR measure?",
+        "options": ["Number of sales", "Number of clicks compared to impressions", "Number of followers", "Website loading speed"],
+        "explanation": "CTR = Click Through Rate measures ad clicks relative to impressions.",
         "correctAnswer": [1]
       },
       {
-        "question": "What action in the passage shows the strongest omnichannel integration?",
-        "options": [
-          "Running Instagram ads",
-          "Sending newsletters to all users",
-          "Store staff using online browsing preferences to suggest items",
-          "Posting seasonal content weekly"
-        ],
-        "explanation": "Using online behavior data inside the physical store shows a seamless connected experience.",
+        "question": "What does conversion rate measure?",
+        "options": ["How many users complete desired action", "How many ads are created", "How many hashtags used", "How many people saw the ad"],
+        "explanation": "Conversion rate measures how many users take desired action like purchase or signup.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "What does impressions mean?",
+        "options": ["How many people bought product", "How many times ad was shown", "How many people unsubscribed", "How many videos uploaded"],
+        "explanation": "Impressions measure how many times an ad is displayed.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "What is the purpose of A/B testing?",
+        "options": ["To compare two versions", "To block competitors", "To remove ads", "To increase printing cost"],
+        "explanation": "A/B testing compares two versions to see which performs better.",
+        "correctAnswer": [0]
+      }
+    ]
+  },
+
+  "passage_5": {
+    "title": "Brand Identity and Visual Consistency",
+    "passage": "Brand identity includes a company’s logo, colors, fonts, tone, and messaging. A strong brand identity builds trust and makes a business recognizable. To maintain consistency, businesses often use moodboards and style guides. A moodboard collects visual inspiration like colors, photos, and layouts. A style guide provides rules to ensure all marketing materials look and feel consistent across platforms.",
+    "questions": [
+      {
+        "question": "What does brand identity include?",
+        "options": ["Only pricing", "Logo, colors, fonts and tone", "Only hashtags", "Only paid ads"],
+        "explanation": "Brand identity includes logo, colors, fonts, and messaging style.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Why is brand consistency important?",
+        "options": ["It reduces trust", "It increases confusion", "It builds recognition and trust", "It avoids marketing"],
+        "explanation": "Consistency makes a brand recognizable and trusted.",
         "correctAnswer": [2]
       },
       {
-        "question": "What is the primary benefit of omnichannel marketing mentioned in the passage?",
-        "options": [
-          "Higher product manufacturing speed",
-          "Higher customer satisfaction and repeat purchases",
-          "Lower internet speed requirements",
-          "Fewer creative assets needed"
-        ],
-        "explanation": "The passage states omnichannel created higher satisfaction and increased repeat purchases.",
+        "question": "What is the main purpose of a moodboard?",
+        "options": ["To schedule posts", "To collect visual inspiration", "To calculate ROI", "To send emails"],
+        "explanation": "Moodboards organize visual references for consistent design.",
         "correctAnswer": [1]
       },
       {
-        "question": "Email recommendations based on what customers viewed online is an example of what tactic?",
-        "options": [
-          "Dynamic personalization",
-          "Static segmentation",
-          "Offline marketing only",
-          "Manual outreach"
-        ],
-        "explanation": "Recommendations based on browsing behavior represent dynamic personalization.",
+        "question": "What does a style guide help with?",
+        "options": ["Keeping design consistent", "Removing branding", "Avoiding SEO", "Stopping content creation"],
+        "explanation": "Style guides set rules for consistent visuals and tone.",
         "correctAnswer": [0]
       },
       {
-        "question": "Increased repeat purchases in the passage most directly relate to which KPI?",
-        "options": [
-          "Retention rate",
-          "Bounce rate",
-          "Click-through rate",
-          "Impressions"
-        ],
-        "explanation": "Repeat purchases indicate better customer retention.",
-        "correctAnswer": [0]
-      }
-    ]
-  },
-  
-  "passage_5": {
-    "title": "Marketing Funnel and Customer Journey",
-    "passage": "A marketing funnel describes how customers move from awareness to purchase. In the awareness stage, customers first learn about a brand through ads, social media, or search. In the consideration stage, they compare options, read reviews, and explore features. In the purchase stage, customers make the final decision, where smooth checkout and clear pricing are important. After purchase, brands focus on loyalty through follow-ups, support, and rewards. A good funnel strategy delivers the right message at the right stage to avoid losing potential customers.",
-    "questions": [
-      {
-        "question": "What is the main goal of the awareness stage in a marketing funnel?",
-        "options": [
-          "To collect payments immediately",
-          "To make customers aware of the brand",
-          "To provide customer support",
-          "To reduce product pricing"
-        ],
-        "explanation": "Awareness stage ka goal hota hai brand ko introduce karna aur visibility badhana.",
-        "correctAnswer": [1]
-      },
-      {
-        "question": "Which activity best fits the consideration stage?",
-        "options": [
-          "Watching product comparison videos",
-          "Submitting payment instantly",
-          "Ignoring all ads",
-          "Unsubscribing from newsletters"
-        ],
-        "explanation": "Consideration stage me customer compare karta hai, reviews dekhta hai aur options analyze karta hai.",
-        "correctAnswer": [0]
-      },
-      {
-        "question": "What is most important in the purchase stage?",
-        "options": [
-          "Long blog articles only",
-          "Smooth checkout and clear pricing",
-          "Posting memes daily",
-          "Avoiding CTAs"
-        ],
-        "explanation": "Purchase stage me friction kam hona chahiye, checkout easy hona chahiye aur pricing transparent.",
-        "correctAnswer": [1]
-      },
-      {
-        "question": "Which action supports post-purchase loyalty?",
-        "options": [
-          "Providing rewards and follow-up support",
-          "Stopping communication completely",
-          "Increasing checkout steps",
-          "Removing customer service"
-        ],
-        "explanation": "Loyalty stage me follow-up emails, rewards aur support customers ko repeat purchase ke liye encourage karta hai.",
-        "correctAnswer": [0]
-      },
-      {
-        "question": "Why should messages be different at each funnel stage?",
-        "options": [
-          "Because customers want confusion",
-          "Because each stage needs different information",
-          "Because ads are always expensive",
-          "Because customers never compare products"
-        ],
-        "explanation": "Different stages me customer mindset different hota hai, isliye content aur message stage-wise hona chahiye.",
+        "question": "Which tool is best for maintaining cohesive campaign visuals?",
+        "options": ["Random templates", "Brand style guide", "Unrelated memes", "No planning"],
+        "explanation": "A style guide ensures cohesive and consistent visuals.",
         "correctAnswer": [1]
       }
     ]
   },
 
   "passage_6": {
-    "title": "Segmentation and Target Audience",
-    "passage": "Segmentation is the process of dividing a market into smaller groups of customers with similar characteristics. Demographic segmentation is based on age, gender, income, or education. Geographic segmentation focuses on location such as city or climate. Psychographic segmentation is based on lifestyle, values, and interests. Behavioral segmentation focuses on customer actions like purchase frequency, loyalty, and product usage. Proper segmentation helps brands create more relevant marketing campaigns and increase conversions.",
+    "title": "Ethical Marketing and AI Transparency",
+    "passage": "AI tools are widely used in marketing for personalization, content generation, and automation. However, ethical marketing requires transparency and fairness. Brands should avoid biased recommendations and should audit AI systems regularly. Customers should be informed if content is AI-generated. Features like Content Credentials help by providing metadata about the creator, edits, and AI assistance. Responsible marketing builds trust and long-term loyalty.",
     "questions": [
       {
-        "question": "What is segmentation in marketing?",
-        "options": [
-          "Selling the same product to everyone",
-          "Dividing customers into smaller groups",
-          "Increasing product price every month",
-          "Reducing the number of customers"
-        ],
-        "explanation": "Segmentation ka meaning hota hai market ko similar groups me divide karna.",
+        "question": "Why should AI systems be audited in marketing?",
+        "options": ["To increase bias", "To detect bias and unintended issues", "To remove customers", "To stop personalization"],
+        "explanation": "Auditing helps ensure AI is fair and does not create biased outcomes.",
         "correctAnswer": [1]
       },
       {
-        "question": "Age-based customer grouping is an example of which segmentation?",
-        "options": [
-          "Behavioral segmentation",
-          "Geographic segmentation",
-          "Demographic segmentation",
-          "Psychographic segmentation"
-        ],
-        "explanation": "Age demographic factor hai, isliye demographic segmentation hota hai.",
-        "correctAnswer": [2]
-      },
-      {
-        "question": "Grouping customers based on city or region is called?",
-        "options": [
-          "Psychographic segmentation",
-          "Geographic segmentation",
-          "Demographic segmentation",
-          "Behavioral segmentation"
-        ],
-        "explanation": "Location-based grouping geographic segmentation hota hai.",
+        "question": "What is the key requirement of ethical marketing?",
+        "options": ["Hiding data usage", "Transparency and fairness", "Using only paid ads", "Avoiding analytics"],
+        "explanation": "Ethical marketing requires transparency and fair treatment.",
         "correctAnswer": [1]
       },
       {
-        "question": "Customers grouped by lifestyle and values represent which segmentation?",
-        "options": [
-          "Psychographic segmentation",
-          "Geographic segmentation",
-          "Demographic segmentation",
-          "Behavioral segmentation"
-        ],
-        "explanation": "Lifestyle, values, interest = psychographic segmentation.",
+        "question": "What is the purpose of Content Credentials?",
+        "options": ["To add filters", "To show creator attribution and edit history", "To increase hashtag count", "To remove copyright"],
+        "explanation": "Content Credentials provide metadata for authenticity and transparency.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which is a responsible practice when using AI-generated content?",
+        "options": ["Disclose AI assistance", "Hide AI usage", "Ignore bias complaints", "Collect unlimited data"],
+        "explanation": "Disclosure builds trust and maintains credibility.",
         "correctAnswer": [0]
       },
       {
-        "question": "Grouping customers based on purchase frequency is which segmentation?",
-        "options": [
-          "Behavioral segmentation",
-          "Demographic segmentation",
-          "Geographic segmentation",
-          "Psychographic segmentation"
-        ],
-        "explanation": "Purchase habits aur actions behavioral segmentation me aate hain.",
+        "question": "Ethical marketing helps businesses mainly by?",
+        "options": ["Increasing customer trust", "Reducing engagement", "Blocking competitors", "Removing branding"],
+        "explanation": "Ethical practices increase trust and long-term loyalty.",
         "correctAnswer": [0]
       }
     ]
   },
 
   "passage_7": {
-    "title": "Brand Identity and Visual Consistency",
-    "passage": "Brand identity is how a business presents itself visually and emotionally to customers. It includes logo, colors, fonts, tone of voice, and design style. Visual consistency is important because it helps customers recognize the brand quickly across platforms like Instagram, websites, and email campaigns. Tools like moodboards and brand style guides help maintain the same look and feel. Consistency builds trust and makes the brand appear professional and reliable.",
+    "title": "Customer Engagement and Social Media Strategy",
+    "passage": "Customer engagement includes likes, shares, comments, and direct messages. A brand that responds to its audience builds stronger relationships and loyalty. Posting regularly is important, but interacting with followers is equally important. Tracking analytics helps marketers understand which content performs best. Brands should focus on creating valuable and relatable content rather than only promotional posts.",
     "questions": [
       {
-        "question": "What does brand identity include?",
-        "options": [
-          "Only product pricing",
-          "Logo, colors, fonts, and tone",
-          "Only customer complaints",
-          "Only delivery methods"
-        ],
-        "explanation": "Brand identity includes visual + emotional elements like logo, colors, fonts, and tone.",
+        "question": "What is customer engagement?",
+        "options": ["Ignoring followers", "Likes, comments, shares and DMs", "Only paid ads", "Offline posters"],
+        "explanation": "Engagement includes interactions like likes, shares, comments, and messages.",
         "correctAnswer": [1]
       },
       {
-        "question": "Why is visual consistency important?",
-        "options": [
-          "It confuses customers",
-          "It helps customers recognize the brand quickly",
-          "It reduces the need for marketing",
-          "It increases product defects"
-        ],
-        "explanation": "Consistent visuals se brand recognition strong hoti hai.",
+        "question": "What is the best way to improve low engagement?",
+        "options": ["Turn off comments", "Respond to comments and DMs", "Post only ads", "Stop posting content"],
+        "explanation": "Interaction builds stronger connections and improves engagement.",
         "correctAnswer": [1]
       },
       {
-        "question": "Which tool helps organize visual references for a campaign?",
-        "options": [
-          "Moodboard",
-          "Bounce rate",
-          "CTR report",
-          "KPI dashboard"
-        ],
-        "explanation": "Moodboard visuals ko organize karne ke liye use hota hai.",
-        "correctAnswer": [0]
+        "question": "Why is analytics tracking important?",
+        "options": ["To remove branding", "To understand what content performs best", "To avoid customers", "To reduce visibility"],
+        "explanation": "Analytics helps measure performance and optimize strategy.",
+        "correctAnswer": [1]
       },
       {
-        "question": "What does a brand style guide mainly provide?",
-        "options": [
-          "Rules for design elements like colors and fonts",
-          "Product discount codes",
-          "Customer phone numbers",
-          "Competitor pricing details"
-        ],
-        "explanation": "Style guide design rules define karta hai so visuals consistent rahe.",
-        "correctAnswer": [0]
+        "question": "What type of content builds long-term trust?",
+        "options": ["Only promotional posts", "Valuable and relatable content", "Fake giveaways", "Random spam posts"],
+        "explanation": "Value-driven content builds trust and loyalty.",
+        "correctAnswer": [1]
       },
       {
-        "question": "What is the main benefit of consistent branding?",
-        "options": [
-          "It reduces customer trust",
-          "It builds trust and professionalism",
-          "It increases customer confusion",
-          "It eliminates competition"
-        ],
-        "explanation": "Consistency trust build karti hai aur brand professional lagta hai.",
+        "question": "What happens if a brand posts but never replies?",
+        "options": ["Engagement increases automatically", "Audience feels disconnected", "Trust increases instantly", "SEO improves"],
+        "explanation": "Lack of interaction reduces connection and audience loyalty.",
         "correctAnswer": [1]
       }
     ]
   },
 
   "passage_8": {
-    "title": "SEO and Keyword Optimization",
-    "passage": "Search Engine Optimization (SEO) helps websites rank higher on search engines like Google. One key SEO method is keyword optimization, where businesses use relevant keywords in page titles, headings, and content. For example, if customers search for 'best running shoes', the website should include these keywords naturally. SEO also improves user experience through fast loading pages, mobile-friendly design, and clear navigation. Better SEO increases organic traffic without paid ads.",
+    "title": "Licensing and Copyright in Digital Content",
+    "passage": "Digital marketers often use stock photos, videos, and templates. However, copyright laws require proper licensing. A standard license may cover normal digital usage, but large-scale paid campaigns or merchandise may require an enhanced license. Before using images from the internet, marketers should confirm permission or license terms. Ethical content use prevents legal issues and protects brand reputation.",
     "questions": [
       {
-        "question": "What is the main purpose of SEO?",
-        "options": [
-          "To reduce website speed",
-          "To rank higher in search engines",
-          "To increase product manufacturing cost",
-          "To remove keywords from websites"
-        ],
-        "explanation": "SEO ka main goal search engines me higher ranking achieve karna hota hai.",
+        "question": "Why is licensing important in digital marketing?",
+        "options": ["To increase spam posts", "To avoid legal problems", "To reduce quality", "To stop SEO"],
+        "explanation": "Licensing ensures legal permission and prevents copyright violations.",
         "correctAnswer": [1]
       },
       {
-        "question": "Keyword optimization means?",
-        "options": [
-          "Using random hashtags on a website",
-          "Using relevant search words in content",
-          "Removing headings from web pages",
-          "Hiding content inside images only"
-        ],
-        "explanation": "Relevant keywords content me naturally use karna keyword optimization hota hai.",
-        "correctAnswer": [1]
-      },
-      {
-        "question": "Which of these improves SEO indirectly?",
-        "options": [
-          "Slow loading pages",
-          "Mobile-friendly design",
-          "Hidden product details",
-          "Too many pop-ups"
-        ],
-        "explanation": "Mobile-friendly website user experience improve karta hai jo SEO ranking ko help karta hai.",
-        "correctAnswer": [1]
-      },
-      {
-        "question": "What is organic traffic?",
-        "options": [
-          "Visitors coming through paid ads only",
-          "Visitors coming naturally from search engines",
-          "Visitors coming only from emails",
-          "Visitors coming only from offline posters"
-        ],
-        "explanation": "Organic traffic means unpaid visitors from search engines.",
-        "correctAnswer": [1]
-      },
-      {
-        "question": "Why should keywords be used naturally in content?",
-        "options": [
-          "Because keyword stuffing reduces quality",
-          "Because keywords should be hidden",
-          "Because SEO does not need keywords",
-          "Because search engines block keyword use"
-        ],
-        "explanation": "Natural keyword use better ranking deta hai, keyword stuffing penalty cause kar sakta hai.",
+        "question": "Which license is usually required for high-volume paid ad campaigns?",
+        "options": ["Enhanced license", "Free license", "No license needed", "Random license"],
+        "explanation": "Enhanced licenses cover high-reach paid ads and extended use cases.",
         "correctAnswer": [0]
+      },
+      {
+        "question": "What should marketers do before using an image found online?",
+        "options": ["Crop and use it", "Confirm permission or license terms", "Remove watermark", "Assume it is free"],
+        "explanation": "Always confirm rights and licensing before using content.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Using copyrighted content without permission can lead to?",
+        "options": ["Higher engagement always", "Legal issues and reputation damage", "SEO boost", "Free promotions"],
+        "explanation": "Copyright violations can cause legal action and harm brand image.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "What is the best ethical practice for stock media usage?",
+        "options": ["Use any image freely", "Follow license rules strictly", "Hide image credits", "Remove copyright tags"],
+        "explanation": "Following license rules ensures ethical and legal content usage.",
+        "correctAnswer": [1]
       }
     ]
-  },
+  }
+,
 
   "passage_9": {
-    "title": "Social Media Engagement and Community Building",
-    "passage": "Social media engagement includes likes, comments, shares, saves, and direct messages. Engagement is important because it shows how much the audience connects with content. Brands can increase engagement by asking questions, using clear CTAs, replying to comments, and sharing user-generated content (UGC). Posting consistently and using platform features like Reels, Stories, and polls can also boost visibility. Building a community means creating two-way interaction, not just posting promotional content.",
+    "title": "Adobe Express Templates and Remix Workflow",
+    "passage": "Adobe Express helps creators design social media posts quickly using templates. Templates are platform-specific, meaning they are already optimized for Instagram posts, stories, Facebook ads, YouTube thumbnails, etc. Instead of starting from scratch, creators can select a template and customize it using brand colors, fonts, logos, and images. Adobe Express also provides tools like Remix, which allows resizing and adapting the same design for different platforms while keeping the brand identity consistent.",
     "questions": [
       {
-        "question": "Which is an example of social media engagement?",
+        "question": "What is the biggest advantage of using templates in Adobe Express?",
         "options": [
-          "Likes and comments",
-          "Website server crash",
-          "Product manufacturing",
-          "Offline newspaper printing"
+          "They require no internet connection",
+          "They save time and provide ready-made layouts",
+          "They remove the need for branding",
+          "They work only for print ads"
         ],
-        "explanation": "Engagement me likes, comments, shares, saves, DMs aate hain.",
-        "correctAnswer": [0]
-      },
-      {
-        "question": "What is a good way to increase engagement?",
-        "options": [
-          "Ignore comments completely",
-          "Ask questions and reply to comments",
-          "Post only product prices",
-          "Stop using hashtags forever"
-        ],
-        "explanation": "Audience interaction increase karne ke liye questions aur replies effective hote hain.",
+        "explanation": "Templates save time by providing ready-made designs optimized for platforms.",
         "correctAnswer": [1]
       },
       {
-        "question": "What does UGC mean?",
+        "question": "Why are platform-specific templates useful?",
         "options": [
-          "User Generated Content",
-          "Unlimited Growth Campaign",
-          "Universal Graphic Code",
-          "User Growth Conversion"
+          "They automatically increase followers",
+          "They are optimized for correct size and format of platforms",
+          "They block copyright issues",
+          "They remove the need for captions"
         ],
-        "explanation": "UGC ka full form User Generated Content hota hai.",
-        "correctAnswer": [0]
-      },
-      {
-        "question": "Why is replying to comments important?",
-        "options": [
-          "It reduces customer trust",
-          "It builds two-way community interaction",
-          "It blocks social media reach",
-          "It decreases visibility"
-        ],
-        "explanation": "Replying creates connection and community feel.",
+        "explanation": "Platform templates ensure correct sizing for Instagram, Facebook, YouTube etc.",
         "correctAnswer": [1]
       },
       {
-        "question": "Which platform feature can boost visibility?",
+        "question": "What is the main purpose of using the Remix feature?",
         "options": [
-          "Reels and Stories",
-          "Ignoring algorithms",
-          "Deleting all posts",
-          "Posting once a year"
+          "To copy competitor content",
+          "To resize and adapt content for multiple platforms",
+          "To delete all designs quickly",
+          "To generate only hashtags"
         ],
-        "explanation": "Platform features like Reels/Stories usually algorithm support deti hain.",
-        "correctAnswer": [0]
+        "explanation": "Remix helps adapt a design into different formats for different platforms.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which of the following best supports consistent branding?",
+        "options": [
+          "Using random fonts in every post",
+          "Using brand colors, fonts, and logos consistently",
+          "Avoiding logos completely",
+          "Using only trending templates without customization"
+        ],
+        "explanation": "Brand identity stays consistent with same colors, fonts, and logo.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Starting from a template is better than starting from scratch because?",
+        "options": [
+          "Templates are always free",
+          "Templates reduce design effort and speed up creation",
+          "Templates increase SEO ranking directly",
+          "Templates avoid analytics tracking"
+        ],
+        "explanation": "Templates reduce effort and make content creation faster.",
+        "correctAnswer": [1]
       }
     ]
   },
 
   "passage_10": {
-    "title": "AI in Marketing and Ethical Responsibility",
-    "passage": "AI is widely used in marketing for personalization, content creation, and customer support automation. AI can recommend products based on browsing behavior, send automated emails, and predict customer needs. However, AI systems may sometimes show bias or suggest irrelevant products. Ethical AI marketing requires transparency, user consent, and regular auditing of AI outputs. Brands should provide opt-in and opt-out choices for data tracking and ensure human oversight for sensitive decisions. Responsible AI use builds trust and prevents long-term reputation damage.",
+    "title": "Content Scheduler and Posting Strategy",
+    "passage": "Content Scheduler is a feature used to plan and publish social media posts in advance. It helps brands maintain consistent posting schedules without manual daily effort. Using Content Scheduler, marketers can preview how a post will look across platforms, set publishing dates, and reschedule content when needed. If a major event or sensitive news occurs, marketers should review scheduled posts to ensure they remain appropriate. Scheduling tools improve productivity and help brands post at the best times based on audience activity.",
     "questions": [
       {
-        "question": "Which is a common use of AI in marketing?",
+        "question": "What is the main purpose of Content Scheduler?",
         "options": [
-          "Product recommendation based on browsing",
-          "Printing newspaper manually",
-          "Building roads for delivery",
-          "Increasing product weight"
+          "To generate AI videos automatically",
+          "To schedule and publish posts in advance",
+          "To block customer comments",
+          "To remove hashtags from posts"
         ],
-        "explanation": "AI marketing me personalization aur recommendations commonly use hote hain.",
+        "explanation": "Content Scheduler helps plan and publish posts automatically in the future.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Why is scheduling posts useful for brands?",
+        "options": [
+          "It ensures random posting patterns",
+          "It helps maintain consistency and saves time",
+          "It removes the need for branding",
+          "It guarantees viral success"
+        ],
+        "explanation": "Scheduling ensures consistent posting and saves manual effort.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which feature helps check how a post will appear across platforms?",
+        "options": [
+          "Preview tool",
+          "Hashtag generator",
+          "SEO analyzer",
+          "Bulk delete option"
+        ],
+        "explanation": "Preview tool shows how content will look on different platforms.",
         "correctAnswer": [0]
       },
       {
-        "question": "What is a major risk of AI-driven personalization?",
+        "question": "If sensitive news happens on the day a post is scheduled, what should the team do?",
         "options": [
-          "AI always reduces costs",
-          "AI can create biased or unfair recommendations",
-          "AI stops customers from buying",
-          "AI eliminates the need for marketing"
+          "Post it anyway",
+          "Review and adjust the post for sensitivity",
+          "Delete the entire account",
+          "Ignore the news completely"
         ],
-        "explanation": "AI systems bias show kar sakte hain jo unfair recommendations cause karta hai.",
+        "explanation": "Brands must ensure content is appropriate in real-world context.",
         "correctAnswer": [1]
       },
       {
-        "question": "What is one ethical requirement for responsible AI marketing?",
+        "question": "Posting at the best time is mainly based on?",
         "options": [
-          "Collect as much data as possible without permission",
-          "Provide opt-in and opt-out choices for tracking",
-          "Hide all algorithm outputs from users",
-          "Avoid customer feedback completely"
+          "Competitor posting time",
+          "Audience activity data and analytics",
+          "Random guesses",
+          "Only business hours"
         ],
-        "explanation": "User consent aur control ethical AI marketing ka key part hai.",
-        "correctAnswer": [1]
-      },
-      {
-        "question": "Why should brands audit AI outputs regularly?",
-        "options": [
-          "To increase bias intentionally",
-          "To ensure fairness and reduce errors",
-          "To remove all personalization",
-          "To stop customer engagement"
-        ],
-        "explanation": "Auditing helps detect bias, mistakes, and irrelevant recommendations.",
-        "correctAnswer": [1]
-      },
-      {
-        "question": "What is the main benefit of responsible AI use in marketing?",
-        "options": [
-          "It reduces brand trust",
-          "It builds trust and protects reputation",
-          "It guarantees viral marketing always",
-          "It eliminates competition instantly"
-        ],
-        "explanation": "Responsible AI transparency aur fairness se trust build hota hai aur brand reputation safe hoti hai.",
+        "explanation": "Analytics helps identify when audience is most active.",
         "correctAnswer": [1]
       }
     ]
   }
+,
+  "passage_11": {
+    "title": "Digital Marketing Basics",
+    "passage": "Digital marketing refers to promoting products and services using digital channels such as websites, social media, email, and search engines. Unlike traditional marketing, digital marketing allows businesses to reach targeted audiences, track campaign performance, and adjust strategies quickly. It is widely used because it is cost-effective and provides measurable results through tools like analytics.",
+    "questions": [
+      {
+        "question": "What is digital marketing mainly used for?",
+        "options": [
+          "Promoting products using newspapers only",
+          "Promoting products using digital channels",
+          "Selling products only in stores",
+          "Avoiding online platforms"
+        ],
+        "explanation": "Digital marketing uses online/digital channels like websites, social media, and email.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which of the following is a digital marketing channel?",
+        "options": [
+          "Radio",
+          "Billboards",
+          "Email",
+          "Pamphlets"
+        ],
+        "explanation": "Email is a digital marketing channel.",
+        "correctAnswer": [2]
+      },
+      {
+        "question": "What is a major advantage of digital marketing over traditional marketing?",
+        "options": [
+          "It cannot be measured",
+          "It provides measurable results",
+          "It is always more expensive",
+          "It works only for big companies"
+        ],
+        "explanation": "Digital marketing campaigns can be tracked using analytics tools.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Why is digital marketing considered cost-effective?",
+        "options": [
+          "It requires printing materials",
+          "It allows targeting specific audiences",
+          "It avoids online communication",
+          "It depends only on TV ads"
+        ],
+        "explanation": "Digital marketing targets specific users, reducing wasted advertising cost.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which tool is commonly used to track digital marketing performance?",
+        "options": [
+          "Analytics tools",
+          "Paper receipts",
+          "Manual surveys only",
+          "Television ratings"
+        ],
+        "explanation": "Analytics tools help track clicks, visits, conversions, and engagement.",
+        "correctAnswer": [0]
+      }
+    ]
+  },
 
+  "passage_12": {
+    "title": "Digital Marketing Platforms",
+    "passage": "Digital marketing platforms are online spaces where businesses can promote their products. Social media platforms like Instagram, Facebook, and LinkedIn allow brands to interact directly with users. Search engines like Google help customers find products through search results and paid ads. Email marketing platforms are used to send newsletters and offers. Choosing the right platform depends on the target audience and business goals.",
+    "questions": [
+      {
+        "question": "What are digital marketing platforms?",
+        "options": [
+          "Only offline marketplaces",
+          "Online spaces used for promotion",
+          "Physical advertising boards",
+          "Newspaper publishing agencies"
+        ],
+        "explanation": "Digital marketing platforms are online channels where brands promote products.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which platform is best for professional networking?",
+        "options": [
+          "LinkedIn",
+          "TikTok",
+          "Snapchat",
+          "Pinterest"
+        ],
+        "explanation": "LinkedIn is designed for professional connections and business content.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Which platform helps customers find products through search results?",
+        "options": [
+          "Instagram",
+          "Google",
+          "WhatsApp",
+          "Telegram"
+        ],
+        "explanation": "Google search engine helps users discover products through search results.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "What is the main use of email marketing platforms?",
+        "options": [
+          "Posting reels",
+          "Sending newsletters and offers",
+          "Running TV ads",
+          "Creating billboards"
+        ],
+        "explanation": "Email marketing is used to send promotional messages to customers.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Choosing the right platform depends on?",
+        "options": [
+          "Brand logo color only",
+          "Target audience and business goals",
+          "Competitor’s personal choice",
+          "Random trending memes"
+        ],
+        "explanation": "Platform selection depends on audience location and marketing objectives.",
+        "correctAnswer": [1]
+      }
+    ]
+  },
 
+  "passage_13": {
+    "title": "Organic Marketing",
+    "passage": "Organic marketing refers to promoting a brand naturally without paying directly for ads. Examples include SEO, social media engagement, blog posts, and word-of-mouth promotion. Organic marketing builds long-term trust and brand authority. Although results take time, it can create a loyal audience and steady traffic without continuous advertising costs.",
+    "questions": [
+      {
+        "question": "What is organic marketing?",
+        "options": [
+          "Marketing that uses only paid ads",
+          "Marketing done naturally without direct ad payment",
+          "Marketing through billboards only",
+          "Marketing without using the internet"
+        ],
+        "explanation": "Organic marketing focuses on unpaid growth through content and engagement.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which is an example of organic marketing?",
+        "options": [
+          "Google paid ads",
+          "Instagram sponsored ads",
+          "SEO optimization",
+          "TV commercials"
+        ],
+        "explanation": "SEO improves ranking naturally, so it is organic marketing.",
+        "correctAnswer": [2]
+      },
+      {
+        "question": "What is the biggest benefit of organic marketing?",
+        "options": [
+          "Instant results in one day",
+          "Long-term trust and authority",
+          "Always higher cost",
+          "No need for content creation"
+        ],
+        "explanation": "Organic marketing builds trust and brand reputation over time.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Why does organic marketing take time?",
+        "options": [
+          "Because it depends on long-term engagement and ranking",
+          "Because it uses only newspapers",
+          "Because it cannot reach customers",
+          "Because it avoids social media"
+        ],
+        "explanation": "Organic growth depends on consistent effort and audience trust.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Which method supports word-of-mouth promotion?",
+        "options": [
+          "Customer referrals",
+          "TV ads only",
+          "Paid influencer spam",
+          "Ignoring reviews"
+        ],
+        "explanation": "Referrals help spread brand awareness organically through customers.",
+        "correctAnswer": [0]
+      }
+    ]
+  },
 
+  "passage_14": {
+    "title": "Paid Marketing",
+    "passage": "Paid marketing involves promoting products through paid advertisements on digital platforms. Examples include Google search ads, display ads, social media ads, and sponsored influencer posts. Paid marketing helps brands reach a large audience quickly and generate faster results. However, it requires a budget and careful monitoring to ensure good ROI.",
+    "questions": [
+      {
+        "question": "What is paid marketing?",
+        "options": [
+          "Promoting products without spending money",
+          "Promoting products using paid advertisements",
+          "Promoting products using referrals only",
+          "Promoting products without any platform"
+        ],
+        "explanation": "Paid marketing involves spending money on ads to promote products.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which is an example of paid marketing?",
+        "options": [
+          "SEO ranking",
+          "Google Ads",
+          "Word-of-mouth",
+          "Free blogging"
+        ],
+        "explanation": "Google Ads is a paid marketing method.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "What is a key advantage of paid marketing?",
+        "options": [
+          "Slow results",
+          "Quick reach and faster results",
+          "No need for budget",
+          "Only works offline"
+        ],
+        "explanation": "Paid marketing helps brands reach customers quickly through ads.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "What is a disadvantage of paid marketing?",
+        "options": [
+          "It needs a budget",
+          "It builds trust instantly",
+          "It has no tracking tools",
+          "It cannot target users"
+        ],
+        "explanation": "Paid marketing requires money to run ads continuously.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Why should paid campaigns be monitored regularly?",
+        "options": [
+          "To stop customer service",
+          "To improve ROI and performance",
+          "To remove ads permanently",
+          "To avoid analytics tools"
+        ],
+        "explanation": "Monitoring helps optimize ads for better conversions and ROI.",
+        "correctAnswer": [1]
+      }
+    ]
+  },
 
+  "passage_15": {
+    "title": "Emotional Marketing",
+    "passage": "Emotional marketing is a strategy where brands connect with customers by triggering emotions such as happiness, trust, fear, excitement, or nostalgia. Instead of focusing only on product features, emotional marketing focuses on storytelling and meaningful messages. It helps customers feel connected to the brand, increasing loyalty and engagement. Strong emotional campaigns often go viral because people like sharing content that makes them feel something.",
+    "questions": [
+      {
+        "question": "What is emotional marketing?",
+        "options": [
+          "Marketing based only on price discounts",
+          "Marketing that focuses on emotions and storytelling",
+          "Marketing that avoids customer feelings",
+          "Marketing using only technical product details"
+        ],
+        "explanation": "Emotional marketing connects customers through feelings and stories.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which emotion is commonly used in emotional marketing?",
+        "options": [
+          "Trust",
+          "Confusion",
+          "Boredom",
+          "Anger only"
+        ],
+        "explanation": "Trust is a powerful emotion used in branding and emotional marketing.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Why does emotional marketing increase loyalty?",
+        "options": [
+          "Because customers forget the brand",
+          "Because customers feel connected to the brand",
+          "Because it avoids storytelling",
+          "Because it always reduces prices"
+        ],
+        "explanation": "Emotional connection makes customers stay loyal.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which method is best for emotional marketing?",
+        "options": [
+          "Storytelling videos",
+          "Only product manuals",
+          "Only legal documents",
+          "Only technical charts"
+        ],
+        "explanation": "Storytelling helps create emotional connection.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Why do emotional campaigns often go viral?",
+        "options": [
+          "Because people share content that makes them feel something",
+          "Because they contain only numbers",
+          "Because they avoid visuals",
+          "Because they are always expensive"
+        ],
+        "explanation": "Emotional content is shareable, leading to viral reach.",
+        "correctAnswer": [0]
+      }
+    ]
+  },
 
-    }
+  "passage_16": {
+    "title": "Colour Psychology in Branding",
+    "passage": "Colour psychology is the study of how colors influence human emotions and decisions. In branding, colors are chosen carefully to create specific feelings. For example, blue often represents trust and security, red represents excitement and urgency, green represents nature and health, and black represents luxury and power. Brands use consistent colors in logos, websites, and ads to build recognition and influence customer behavior.",
+    "questions": [
+      {
+        "question": "What is colour psychology?",
+        "options": [
+          "Study of how colors affect emotions and decisions",
+          "Study of product manufacturing",
+          "Study of customer complaints",
+          "Study of website coding only"
+        ],
+        "explanation": "Colour psychology explains how colors influence feelings and choices.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Which color is commonly linked with trust and security?",
+        "options": [
+          "Red",
+          "Blue",
+          "Yellow",
+          "Pink"
+        ],
+        "explanation": "Blue is often used by banks and tech brands for trust and safety.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which color often represents nature and health?",
+        "options": [
+          "Green",
+          "Black",
+          "Purple",
+          "Orange"
+        ],
+        "explanation": "Green is linked to nature, health, and eco-friendly branding.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "What does black color usually represent in branding?",
+        "options": [
+          "Luxury and power",
+          "Nature and eco-friendliness",
+          "Fear and danger",
+          "Cheap pricing"
+        ],
+        "explanation": "Black is used by luxury brands to show premium and power.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Why do brands use consistent colors?",
+        "options": [
+          "To confuse customers",
+          "To build recognition and influence behavior",
+          "To avoid brand identity",
+          "To reduce product quality"
+        ],
+        "explanation": "Consistent color use builds strong brand identity and recognition.",
+        "correctAnswer": [1]
+      }
+    ]
+  },
+
+  "passage_17": {
+    "title": "Digital Marketing vs Traditional Marketing",
+    "passage": "Traditional marketing uses offline methods such as TV, radio, newspapers, and billboards. Digital marketing uses online channels like websites, email, and social media. Digital marketing provides real-time tracking, audience targeting, and faster optimization. Traditional marketing has limited tracking and is usually more expensive. Businesses today often combine both methods to reach customers effectively.",
+    "questions": [
+      {
+        "question": "Which is an example of traditional marketing?",
+        "options": [
+          "Email campaign",
+          "Instagram reels",
+          "Newspaper advertisement",
+          "SEO optimization"
+        ],
+        "explanation": "Newspaper advertisement is an offline traditional marketing method.",
+        "correctAnswer": [2]
+      },
+      {
+        "question": "Which is an example of digital marketing?",
+        "options": [
+          "Billboards",
+          "Radio ads",
+          "Email marketing",
+          "Pamphlets"
+        ],
+        "explanation": "Email marketing is a digital marketing method.",
+        "correctAnswer": [2]
+      },
+      {
+        "question": "What is a major advantage of digital marketing?",
+        "options": [
+          "Limited audience targeting",
+          "Real-time tracking and optimization",
+          "No internet required",
+          "Only offline reach"
+        ],
+        "explanation": "Digital marketing allows tracking clicks, conversions, and performance instantly.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Why is traditional marketing harder to measure?",
+        "options": [
+          "Because it has limited tracking tools",
+          "Because it uses social media",
+          "Because it has no customers",
+          "Because it is always free"
+        ],
+        "explanation": "Traditional marketing lacks accurate performance measurement tools.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "What do businesses often do today?",
+        "options": [
+          "Use only billboards",
+          "Avoid digital marketing completely",
+          "Combine digital and traditional marketing",
+          "Stop promoting products"
+        ],
+        "explanation": "Many businesses use both methods to maximize reach.",
+        "correctAnswer": [2]
+      }
+    ]
+  },
+
+  "passage_18": {
+    "title": "Role of Social Media in Digital Marketing",
+    "passage": "Social media marketing uses platforms like Instagram, Facebook, and YouTube to promote products. Brands post content such as images, videos, reels, and stories to engage audiences. Social media helps build community and trust by allowing direct interaction through comments and messages. Influencer marketing is also a part of social media marketing, where influencers promote products to their followers. Social media is important because it increases brand awareness and drives traffic to websites.",
+    "questions": [
+      {
+        "question": "What is social media marketing?",
+        "options": [
+          "Marketing through only newspapers",
+          "Marketing through platforms like Instagram and Facebook",
+          "Marketing through radio ads only",
+          "Marketing without content"
+        ],
+        "explanation": "Social media marketing uses online social platforms for promotion.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which content type is common on social media?",
+        "options": [
+          "Reels and stories",
+          "Printed flyers",
+          "Roadside posters",
+          "Telephone directories"
+        ],
+        "explanation": "Reels and stories are popular content formats on social media.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "How does social media build trust?",
+        "options": [
+          "By blocking customer messages",
+          "By direct interaction through comments and messages",
+          "By avoiding feedback",
+          "By hiding product information"
+        ],
+        "explanation": "Social media allows brands to connect and respond directly to customers.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "What is influencer marketing?",
+        "options": [
+          "Brands promoting products through influencers",
+          "Customers buying without reviews",
+          "Marketing through only TV channels",
+          "Email marketing campaigns"
+        ],
+        "explanation": "Influencer marketing means influencers promote products to their audience.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Why is social media important in digital marketing?",
+        "options": [
+          "It decreases brand awareness",
+          "It increases brand awareness and drives traffic",
+          "It stops online sales",
+          "It avoids customer engagement"
+        ],
+        "explanation": "Social media increases reach and sends users to websites or product pages.",
+        "correctAnswer": [1]
+      }
+    ]
+  },
+
+  "passage_19": {
+    "title": "Search Engine Marketing (SEM)",
+    "passage": "Search Engine Marketing (SEM) is a paid digital marketing strategy used to increase visibility on search engines like Google. SEM includes paid search ads where businesses bid on keywords. When users search for those keywords, the ads appear at the top of the search results. SEM provides fast results and is useful for businesses that want quick traffic. However, it requires proper keyword selection and budget management to avoid high costs.",
+    "questions": [
+      {
+        "question": "What does SEM stand for?",
+        "options": [
+          "Social Engagement Marketing",
+          "Search Engine Marketing",
+          "Sales Expansion Method",
+          "Smart Email Marketing"
+        ],
+        "explanation": "SEM means Search Engine Marketing.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "SEM is mainly a ______ strategy.",
+        "options": [
+          "Paid marketing",
+          "Offline marketing",
+          "Free marketing",
+          "Traditional marketing"
+        ],
+        "explanation": "SEM involves paid ads on search engines.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "How do SEM ads appear in search results?",
+        "options": [
+          "By guessing user interest",
+          "By bidding on keywords",
+          "By printing brochures",
+          "By using offline posters"
+        ],
+        "explanation": "Businesses bid on keywords to show ads on Google search results.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Why is SEM useful?",
+        "options": [
+          "It gives fast visibility and traffic",
+          "It works only after 2 years",
+          "It reduces website traffic",
+          "It avoids keywords"
+        ],
+        "explanation": "SEM helps in getting fast traffic through paid ads.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "What is important for SEM success?",
+        "options": [
+          "Random keyword selection",
+          "Proper keyword selection and budget control",
+          "Avoiding analytics",
+          "Ignoring audience intent"
+        ],
+        "explanation": "Keyword relevance and budget management decide SEM performance.",
+        "correctAnswer": [1]
+      }
+    ]
+  },
+
+  "passage_20": {
+    "title": "Digital Marketing Analytics",
+    "passage": "Digital marketing analytics refers to measuring and analyzing online marketing performance. Metrics like click-through rate (CTR), conversion rate, engagement, and website traffic help marketers understand what works. Analytics tools allow brands to identify top-performing campaigns and improve weak areas. Data-driven marketing helps companies make better decisions, reduce wasted spending, and increase ROI. Tracking performance regularly is essential for successful marketing strategies.",
+    "questions": [
+      {
+        "question": "What is digital marketing analytics?",
+        "options": [
+          "A method of printing ads",
+          "Measuring and analyzing marketing performance",
+          "A way to avoid data collection",
+          "A type of traditional marketing"
+        ],
+        "explanation": "Analytics means tracking and analyzing marketing results.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Which is a common digital marketing metric?",
+        "options": [
+          "CTR",
+          "Paper quality",
+          "Radio frequency",
+          "Billboard size"
+        ],
+        "explanation": "CTR (Click Through Rate) is a common digital marketing KPI.",
+        "correctAnswer": [0]
+      },
+      {
+        "question": "Why are analytics tools useful?",
+        "options": [
+          "They hide performance results",
+          "They help identify what works and what doesn't",
+          "They stop conversions",
+          "They reduce website visitors"
+        ],
+        "explanation": "Analytics tools show campaign performance so marketers can optimize.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "What is the main benefit of data-driven marketing?",
+        "options": [
+          "Wasting ad budget",
+          "Making better decisions using data",
+          "Ignoring audience behavior",
+          "Stopping marketing campaigns"
+        ],
+        "explanation": "Data-driven marketing improves strategy decisions based on performance data.",
+        "correctAnswer": [1]
+      },
+      {
+        "question": "Why should performance be tracked regularly?",
+        "options": [
+          "To avoid optimization",
+          "To improve weak areas and increase ROI",
+          "To stop customer engagement",
+          "To reduce online presence"
+        ],
+        "explanation": "Regular tracking helps optimize campaigns and improve ROI.",
+        "correctAnswer": [1]
+      }
+    ]
+  }
+}
+
   },
   unit2: {
     // Placeholder - copy of unit1 for now
@@ -3285,7 +5261,7 @@ export function getAllQuestions(mode?: PracticeMode): Question[] {
       ...unit1.module5,
       ...unit1.module6,
       ...unit1.module7,
-      ...unit1.assignment
+      // ...unit1.assignment
     ];
 
     // Randomly select 20 MCQ questions
