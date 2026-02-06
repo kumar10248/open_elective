@@ -362,18 +362,19 @@ export default function PracticeSelectionPage() {
                   </div>
                   
                   {/* All Modules Button */}
-                  <button
+                   <button
                     className={`w-full p-5 rounded-xl transition-all duration-300 transform hover:scale-105 font-bold text-lg shadow-2xl hover:shadow-3xl relative overflow-hidden group/all ${
-                      selectedMode === 'unit2'
-                        ? 'bg-gradient-to-r from-blue-500 via-indigo-500 to-blue-600 text-white shadow-blue-500/50 ring-2 ring-blue-300/60 scale-[1.02]'
-                        : 'bg-gradient-to-r from-blue-800/30 to-indigo-800/30 hover:from-blue-600/40 hover:to-indigo-600/40 border-2 border-blue-600/50 hover:border-blue-500/70 text-blue-200 hover:text-blue-100'
+                      selectedMode === 'unit3'
+                        ? 'bg-gradient-to-r from-green-500 via-emerald-500 to-green-600 text-white shadow-green-500/50 ring-2 ring-green-300/60 scale-[1.02]'
+                        : 'bg-gradient-to-r from-green-800/30 to-emerald-800/30 hover:from-green-600/40 hover:to-emerald-600/40 border-2 border-green-600/50 hover:border-green-500/70 text-green-200 hover:text-green-100'
                     }`}
                     onClick={() => setSelectedMode('unit2')}
+                    disabled={!hasQuestionsForMode('unit2')}
                   >
-                    <div className="absolute inset-0 bg-gradient-to-br from-blue-400/30 to-transparent opacity-0 group-hover/all:opacity-100 transition-opacity duration-300"></div>
+                    <div className="absolute inset-0 bg-gradient-to-br from-green-400/30 to-transparent opacity-0 group-hover/all:opacity-100 transition-opacity duration-300"></div>
                     <span className="relative z-10 flex items-center justify-center gap-3">
                       <FaStar className="text-2xl" />
-                      <span>All UNIT-2 Modules</span>
+                      <span>{hasQuestionsForMode('unit2') ? 'All UNIT-2 Modules' : 'Coming Soooon'}</span>
                     </span>
                   </button>
                 </div>
@@ -454,7 +455,7 @@ export default function PracticeSelectionPage() {
                     <div className="absolute inset-0 bg-gradient-to-br from-green-400/30 to-transparent opacity-0 group-hover/all:opacity-100 transition-opacity duration-300"></div>
                     <span className="relative z-10 flex items-center justify-center gap-3">
                       <FaStar className="text-2xl" />
-                      <span>{hasQuestionsForMode('unit3') ? 'All UNIT-3 Modules' : 'Coming Soon'}</span>
+                      <span>{hasQuestionsForMode('unit3') ? 'All UNIT-3 Modules' : 'Coming Soooon'}</span>
                     </span>
                   </button>
                 </div>
