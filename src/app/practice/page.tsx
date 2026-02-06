@@ -687,7 +687,7 @@ export default function PracticeSelectionPage() {
                     <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 to-transparent opacity-0 group-hover/btn:opacity-100 transition-opacity duration-300"></div>
                     <div className="text-left relative z-10">
                       <div className="font-bold text-lg text-white">📋 Assignment</div>
-                      <div className="text-sm text-gray-300 mt-1">Coursera Courses Graded MCQ</div>
+                      <div className="text-sm text-gray-300 mt-1">All Coursera Courses Graded MCQ</div>
                     </div>
                   </button>
                   <button
